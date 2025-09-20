@@ -58,11 +58,11 @@ const FormInputText2 = (props: Props) => {
   };
   return (
     <>
-      <TextDisplay text={title} styles={{ marginBottom: 10 }}>
+      <TextDisplay text={title} fontSize={14} styles={{ marginBottom: 10 }}>
       </TextDisplay>
-      <View style={[styles.inputContainer,{marginBottom:error? 0 : 15 }]}>
+      <View style={[styles.inputContainer, { marginBottom: error ? 0 : 15 }]}>
         <TextInput
-          style={[styles.input, { minHeight: minHeight || 50, paddingTop: multiline ? 10 : 0}]}
+          style={[styles.input, { minHeight: minHeight || 50, paddingTop: multiline ? 10 : 0 }]}
           value={value}
           placeholder={placeholder ?? ''}
           onChangeText={val => onChange(val)}
@@ -74,7 +74,7 @@ const FormInputText2 = (props: Props) => {
           multiline={multiline || false}
         />
       </View>
-      {error && <Text style={{ color: 'red', paddingLeft:10, marginTop: 5 }}>{error}</Text>}
+      {error && <Text style={{ color: 'red', paddingLeft: 10, marginTop: 5 }}>{error}</Text>}
     </>
   );
 };
@@ -94,11 +94,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 15,
-    // backgroundColor: appColors.white,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 4,
+
   },
 
   input: {
@@ -107,7 +103,5 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY.BeVietnamPro_Medium,
     fontWeight: '500',
     flex: 1
-    // paddingHorizontal:,
-    // color: appColors.text,
   },
 });

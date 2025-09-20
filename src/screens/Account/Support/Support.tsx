@@ -29,10 +29,6 @@ const Support = () => {
                         <FormEditAccount />
                     </ScrollView>
                 </TouchableOpacity>
-                <DividerCustom styles={[sty.mt_12]} height={1} color={"#F4F5F8"} />
-                <View style={styles.footer}>
-                    <ButtonLoadMore style={{ width: "85%", borderRadius: 20, paddingHorizontal: 20 }} fontText={16} color='#fff' height={50} onPress={() => { }} bgColor='#3683F7' title='Lưu' />
-                </View>
             </KeyboardAvoidingView>
         </GradientBackground>
     )

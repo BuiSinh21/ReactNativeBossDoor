@@ -18,15 +18,22 @@ const BoardInfor = () => {
                         <Image source={IMAGES.ACCOUNT.account_img} style={styles.image} />
                         <TextDisplay text={"Nguyễn văn A"} color='#3683F7' />
                     </View>
-                    <View style={[sty.flexRow,sty.mt_12]}>
+                    <View style={[sty.flexRow, sty.justifyBetween, sty.itemsCenter]}>
+                        <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Số đơn hoàn thành"} color='#fff' />
+                        <View style={[sty.flexRow, sty.justifyBetween,sty.gap_4, sty.itemsCenter]}>
+                            <Image style={{ width: 16, height: 16 }} source={IMAGES.ACCOUNT.locationWhite} />
+                            <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Hà Nội"} color='#fff' />
+                        </View>
+                    </View>
+                    <View style={[sty.flexRow, sty.mt_12]}>
                         <View style={{ flex: 1 }}>
                             <Image source={IMAGES.ACCOUNT.order_completed} style={styles.imageBoard} />
-                            <TextDisplay styles={[sty.pb_8,sty.pt_12]}  text={"Số đơn hoàn thành"} color='#fff'  />
+                            <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Số đơn hoàn thành"} color='#fff' />
                             <TextDisplay fontWeight='semibold' fontSize={18} text={"60"} color='#fff' />
                         </View>
                         <View style={{ flex: 1 }}>
                             <Image source={IMAGES.ACCOUNT.revenue_img} style={styles.imageBoard} />
-                            <TextDisplay styles={[sty.pb_8,sty.pt_12]} text={"Doanh thu"}  color='#fff' />
+                            <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Doanh thu"} color='#fff' />
                             <TextDisplay fontWeight='semibold' fontSize={18} text={"25,000,000"} color='#fff' />
                         </View>
                     </View>

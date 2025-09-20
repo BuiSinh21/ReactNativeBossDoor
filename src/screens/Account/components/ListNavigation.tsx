@@ -18,6 +18,10 @@ const ListNavigation = () => {
     const { user, employee, fcmToken } = useAppSelector(state => state.auth);
     const list =
     {
+        listTechnician: {
+            img: IMAGES.ACCOUNT.listTechnician,
+            label: "Danh sách kỹ thuật viên"
+        },
         ACCOUNT: {
             img: IMAGES.ACCOUNT.account_img,
             label: "Thông tin tài khoản"
@@ -69,7 +73,30 @@ const ListNavigation = () => {
             </TouchableOpacity>
 
             <View style={[styles.boxRequest]}>
-                <TouchableOpacity activeOpacity={0.8}>
+                <TouchableOpacity activeOpacity={0.8}
+                    onPress={() =>
+                        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
+                            screen: PROFILE_ROUTES.LIST_TECHNICIAN,
+                        })
+                    }>
+                    <View style={[sty.flexRow, styles.request]}>
+
+                        <View style={[sty.flexRow, styles.divName]}>
+                            <Image style={[styles.img, sty.mr_12]} source={list.listTechnician.img} />
+                            <TextDisplay styles={sty.pb_4} text={list.listTechnician.label} color="#444A55" />
+                        </View>
+                        <View>
+                            <IconArrowRight />
+                        </View>
+                    </View>
+                </TouchableOpacity>
+                <DividerCustom />
+                <TouchableOpacity activeOpacity={0.8}
+                    onPress={() =>
+                        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
+                            screen: PROFILE_ROUTES.REQUEST_SUPPORT,
+                        })
+                    }>
                     <View style={[sty.flexRow, styles.request]}>
 
                         <View style={[sty.flexRow, styles.divName]}>
@@ -82,7 +109,7 @@ const ListNavigation = () => {
                     </View>
                 </TouchableOpacity>
                 <DividerCustom />
-                <TouchableOpacity  onPress={() =>
+                <TouchableOpacity onPress={() =>
                     navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
                         screen: PROFILE_ROUTES.SUPPORT,
                     })

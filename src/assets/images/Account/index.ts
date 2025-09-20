@@ -9,6 +9,10 @@ const eye = require('./eye.png');
 const gmail = require('./gmail.png');
 const phone = require('./phone.png');
 const address = require('./address.png');
+const imageUpload = require('./imageUpload.png');
+const locationWhite = require('./locationWhite.png');
+const listTechnician = require('./listTechnician.png');
+const imageTest = require('./imageTest.png');
 const IMAGES_ACCOUNT = {
     account_img,
     order_completed,
@@ -19,6 +23,9 @@ const IMAGES_ACCOUNT = {
     eye,
     gmail,
     phone,
-    address
+    address,
+    imageUpload,
+    locationWhite, listTechnician,
+    imageTest
 };
 export default IMAGES_ACCOUNT;

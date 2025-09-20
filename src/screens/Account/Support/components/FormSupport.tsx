@@ -15,8 +15,8 @@ const FormSupport = () => {
     const navigate = useNavigation<any>()
 
     return (
-        <View style={[ styles.form]}>
-            <View style={sty.flexRow}>
+        <View style={[styles.form]}>
+            <View style={[sty.flexRow, sty.mb_12]}>
                 <View style={styles.icon}>
                     <Image style={{ width: 20, height: 20 }} source={IMAGES.ACCOUNT.phone}></Image>
                 </View>
@@ -26,7 +26,7 @@ const FormSupport = () => {
                 </View>
             </View>
             <View style={styles.dashedLine} />
-            <View style={sty.flexRow}>
+            <View style={[sty.flexRow, sty.mb_12]}>
                 <View style={styles.icon}>
                     <Image style={{ width: 24, height: 20 }} source={IMAGES.ACCOUNT.gmail}></Image>
                 </View>
@@ -37,13 +37,13 @@ const FormSupport = () => {
             </View>
             <View style={styles.dashedLine} />
 
-            <View style={sty.flexRow}>
+            <View style={[sty.flexRow, sty.mb_12]}>
                 <View style={styles.icon}>
                     <Image style={{ width: 20, height: 24 }} source={IMAGES.ACCOUNT.address}></Image>
                 </View>
-                <View style={{flex:1}} >
+                <View style={{ flex: 1 }} >
                     <TextDisplay text={"Địa chỉ"}></TextDisplay>
-                    <Text numberOfLines={2} style={{ color: appColor.primary,  fontSize: 16, fontWeight: '600' }} >
+                    <Text numberOfLines={2} style={{ color: appColor.primary, fontSize: 16, fontWeight: '600' }} >
                         123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh
                     </Text>
                 </View>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         paddingTop: 15,
         paddingBottom: 15,
-        paddingRight:15,
+        paddingRight: 15,
         paddingHorizontal: 15,
         borderRadius: 20
     },
