@@ -34,9 +34,9 @@ const ListTechnicianDisplay = () => {
     return (
 
         <View style={[sty.flex_1]}>
-            <TextDisplay text={"Lịch sử đơn hàng"} color={appColor.textBlack} />
-            {listUser.map((item: any) =>
-                <View style={styles.box} >
+            <TextDisplay text={"Danh sách kỹ thuật viên"} color={appColor.textBlack} />
+            {listUser.map((item: any,index:number) =>
+                <View key={"key_"+index} style={styles.box} >
                     <TouchableOpacity style={{ width: "100%" }} onPress={() =>
                         navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
                             screen: PROFILE_ROUTES.REVENUA_INFO,

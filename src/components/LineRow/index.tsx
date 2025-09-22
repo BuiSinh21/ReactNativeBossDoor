@@ -1,8 +1,8 @@
-import { StyleProp, StyleSheet, View } from 'react-native';
+import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import React from 'react';
 
 interface DividerCustomProps {
-  style?: StyleProp<any>;
+  style?: StyleProp<ViewStyle>;
 }
 
 const LineRow = ({ style }: DividerCustomProps) => {

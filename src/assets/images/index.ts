@@ -3,6 +3,7 @@ import IMAGES_COMMON from './COMMON';
 import IMAGES_FORM from './FORM';
 import IMAGES_HOME from './HOME';
 import IMAGES_LOGIN from './LOGIN';
+import IMAGE_ORDER from './ORDER';
 import IMAGES_PROFILE from './PROFILE';
 import IMAGES_WORK_SHEET from './WORKSHEET';
 
@@ -28,6 +29,9 @@ const IMAGES = {
   },
   ACCOUNT: {
     ...IMAGES_ACCOUNT,
+  },
+  ORDER: {
+    ...IMAGE_ORDER,
   }
 };
 

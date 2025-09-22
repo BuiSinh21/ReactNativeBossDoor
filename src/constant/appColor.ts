@@ -8,7 +8,7 @@ export const appColor = {
     bgOrange: '#FDF1DF',
     textOrange: '#F4A227',
     textGreen: '#19C43F',
-    bgGreen: "DDF6E2",
+    bgGreen: "#DDF6E2",
     colorBorder: "#C3CAD7",
     bgGray: "#F4F5F8"
 } 

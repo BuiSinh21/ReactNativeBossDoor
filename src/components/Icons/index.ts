@@ -11,6 +11,7 @@ import IconArrowRight from './IconArrowRight';
 import IconPhone from './IconPhone';
 import IconGmail from './IconGmail';
 import IconAddress from './IconAddress';
+import IconStar from './IconStar';
 
 export {
   IconHome,
@@ -25,5 +26,6 @@ export {
   IconArrowRight,
   IconPhone,
   IconGmail,
-  IconAddress
+  IconAddress,
+  IconStar
 };

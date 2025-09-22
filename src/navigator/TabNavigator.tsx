@@ -13,6 +13,7 @@ import {
   IconHome, IconHomeActive, IconOrder, IconOrderActive, IconAccount,
   IconAcountActive
 } from '../components/Icons';
+import OrdersScreen from '../screens/Oders/OrderScreen';
 
 const Tab = createBottomTabNavigator<any>();
 const TabNavigator = () => {
@@ -38,7 +39,7 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name={BOTTOM_TAB_ROUTES.ORDER}
-        component={Home}
+        component={OrdersScreen}
         options={{
           tabBarIcon: ({ focused }) =>
             focused ? <IconOrderActive /> : <IconOrder />,

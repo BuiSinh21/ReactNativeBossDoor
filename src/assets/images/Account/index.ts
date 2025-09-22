@@ -26,6 +26,6 @@ const IMAGES_ACCOUNT = {
     address,
     imageUpload,
     locationWhite, listTechnician,
-    imageTest
+    imageTest,
 };
 export default IMAGES_ACCOUNT;

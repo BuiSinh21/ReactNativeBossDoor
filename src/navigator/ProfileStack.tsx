@@ -8,6 +8,7 @@ import RevenuaInformation from '../screens/Account/InformationRevenua/Informatio
 import Support from '../screens/Account/Support/Support';
 import RequestSupport from '../screens/Account/RequestSupport/RequestSupport';
 import ListTechnician from '../screens/Account/ListTechnician/ListTechnician';
+import DetailOrdersScreen from '../screens/Oders/DetailOrder/DetailOrder';
 
 const Stack = createNativeStackNavigator<any>();
 
@@ -59,6 +60,13 @@ const ProfileStack = () => {
       <Stack.Screen
         name={PROFILE_ROUTES.LIST_TECHNICIAN}
         component={ListTechnician}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name={PROFILE_ROUTES.DETAIL_ORDER}
+        component={DetailOrdersScreen}
         options={{
           headerShown: false,
         }}
