@@ -26,7 +26,7 @@ interface Props {
   required?: boolean;
 }
 
-const FormInputText2 = (props: Props) => {
+const FormPassword = (props: Props) => {
   const {
     value,
     onChange,
@@ -90,7 +90,7 @@ const FormInputText2 = (props: Props) => {
   );
 };
 
-export default FormInputText2;
+export default FormPassword;
 
 const styles = StyleSheet.create({
   label: {

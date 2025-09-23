@@ -4,8 +4,9 @@ import {useAppDispatch} from '../redux/hooks';
 import {rootStore} from '../redux/store';
 import { Host, Portal } from 'react-native-portalize';
 import RootStack from './RootStack';
-import { ModalLoading, ModalSuccess, Toast, ToastNoti } from '../components';
-
+import { ModalLoading, ModalSuccess, ToastNoti } from '../components';
+import Toast from "react-native-toast-message";
+import ToastCustom from '../components/Toast';
 const AppNavigator = () => {
   // const dispatch = useAppDispatch();
   // useEffect(() => {
@@ -42,7 +43,8 @@ const AppNavigator = () => {
         <Portal>
         <ModalLoading />
           <ModalSuccess />
-          <Toast />
+          <Toast topOffset={50}/>
+          <ToastCustom />
           <ToastNoti />
         </Portal>
       </Host>

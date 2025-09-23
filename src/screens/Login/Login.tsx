@@ -89,6 +89,8 @@ const Login = () => {
         password: pass,
       });
       if (res.status == 200) {
+        console.log(44444,res?.data?.data);
+        
         dispatch(setAccessToken(res?.data?.data?.access_token));
         navigate.dispatch(
           CommonActions.reset({

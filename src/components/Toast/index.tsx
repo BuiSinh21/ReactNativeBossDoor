@@ -16,7 +16,7 @@ import { setToast } from '../../redux/slices/commonSlice';
 
 const {width} = Dimensions.get('window');
 
-const Toast = () => {
+const ToastCustom = () => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const dispatch = useAppDispatch();
   const {openToast, titleToast} = useAppSelector(state => state.common);
@@ -90,7 +90,7 @@ const Toast = () => {
   );
 };
 
-export default Toast;
+export default ToastCustom;
 
 const styles = StyleSheet.create({
   Overlay: {

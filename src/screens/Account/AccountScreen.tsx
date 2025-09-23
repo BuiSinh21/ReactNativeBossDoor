@@ -1,5 +1,5 @@
 import { View, Text, KeyboardAvoidingView, Platform, Keyboard, TouchableOpacity, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './components/Header'
 import { DividerCustom, GradientBackground } from '../../components';
 import sty from '../../themes/sty';
@@ -8,11 +8,16 @@ import BoardInfor from './components/BoardInfor';
 import ListNavigation from './components/ListNavigation';
 import { useNavigation } from '@react-navigation/core';
 import { PROFILE_ROUTES, ROOT_ROUTES } from '../../routes';
+import { useAppDispatch } from '../../redux/hooks';
+import { fetchUserProfile } from '../../redux/slices/profileSlice';
 
 const AccountScreen = () => {
     const insets = useSafeAreaInsets();
     const navigate = useNavigation<any>();
-
+    const dispath = useAppDispatch();
+    // useEffect(()=>{
+    //     dispath(fetchUserProfile())
+    // },[dispath])
     return (
         <GradientBackground>
             <Header text='Tài khoản' />

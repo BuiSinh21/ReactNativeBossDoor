@@ -19,7 +19,7 @@ import TextDisplay from '../TextDisplay';
 // import AntDesign from 'react-native-vector-icons/AntDesign';
 
 interface Props {
-  title: string,
+  title?: string,
   value: string;
   onChange: (val: string) => void;
   placeholder?: string;
@@ -58,8 +58,10 @@ const FormInputText2 = (props: Props) => {
   };
   return (
     <>
-      <TextDisplay text={title} fontSize={14} styles={{ marginBottom: 10 }}>
-      </TextDisplay>
+      {title &&
+        <TextDisplay text={title} fontSize={14} styles={{ marginBottom: 10 }}>
+        </TextDisplay>
+      }
       <View style={[styles.inputContainer, { marginBottom: error ? 0 : 15 }]}>
         <TextInput
           style={[styles.input, { minHeight: minHeight || 50, paddingTop: multiline ? 10 : 0 }]}

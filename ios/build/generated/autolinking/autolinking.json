@@ -1,26 +1,26 @@
 {
-  "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor",
-  "reactNativePath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native",
+  "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor",
+  "reactNativePath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native",
   "reactNativeVersion": "0.81",
   "dependencies": {
     "@react-native-clipboard/clipboard": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/@react-native-clipboard/clipboard",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/@react-native-clipboard/clipboard",
       "name": "@react-native-clipboard/clipboard",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/@react-native-clipboard/clipboard/RNCClipboard.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/@react-native-clipboard/clipboard/RNCClipboard.podspec",
           "version": "1.16.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/@react-native-clipboard/clipboard/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/@react-native-clipboard/clipboard/android",
           "packageImportPath": "import com.reactnativecommunity.clipboard.ClipboardPackage;",
           "packageInstance": "new ClipboardPackage()",
           "buildTypes": [],
           "libraryName": "rnclipboard",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/@react-native-clipboard/clipboard/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/@react-native-clipboard/clipboard/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -29,23 +29,23 @@
       }
     },
     "react-native-config": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-config",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config",
       "name": "react-native-config",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-config/react-native-config.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config/react-native-config.podspec",
           "version": "1.5.9",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-config/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config/android",
           "packageImportPath": "import com.lugg.RNCConfig.RNCConfigPackage;",
           "packageInstance": "new RNCConfigPackage()",
           "buildTypes": [],
           "libraryName": "RNCConfigModule",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -54,17 +54,17 @@
       }
     },
     "react-native-gesture-handler": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-gesture-handler",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
           "version": "2.28.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-gesture-handler/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-gesture-handler/android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -73,7 +73,7 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -82,22 +82,47 @@
       }
     },
     "react-native-get-random-values": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-get-random-values",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-get-random-values",
       "name": "react-native-get-random-values",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-get-random-values/react-native-get-random-values.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-get-random-values/react-native-get-random-values.podspec",
           "version": "1.11.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-get-random-values/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-get-random-values/android",
           "packageImportPath": "import org.linusu.RNGetRandomValuesPackage;",
           "packageInstance": "new RNGetRandomValuesPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-get-random-values/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-image-picker": {
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker",
+      "name": "react-native-image-picker",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/react-native-image-picker.podspec",
+          "version": "8.2.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android",
+          "packageImportPath": "import com.imagepicker.ImagePickerPackage;",
+          "packageInstance": "new ImagePickerPackage()",
+          "buildTypes": [],
+          "libraryName": "RNImagePickerSpec",
+          "componentDescriptors": [],
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -106,22 +131,58 @@
       }
     },
     "react-native-linear-gradient": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-linear-gradient",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-linear-gradient",
       "name": "react-native-linear-gradient",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-linear-gradient/BVLinearGradient.podspec",
           "version": "2.8.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-linear-gradient/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-linear-gradient/android",
           "packageImportPath": "import com.BV.LinearGradient.LinearGradientPackage;",
           "packageInstance": "new LinearGradientPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-linear-gradient/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-maps": {
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-maps",
+      "name": "react-native-maps",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-maps/react-native-maps.podspec",
+          "version": "1.26.9",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-maps/android",
+          "packageImportPath": "import com.rnmaps.maps.MapsPackage;",
+          "packageInstance": "new MapsPackage()",
+          "buildTypes": [],
+          "libraryName": "RNMapsSpecs",
+          "componentDescriptors": [
+            "RNMapsCalloutComponentDescriptor",
+            "RNMapsCircleComponentDescriptor",
+            "RNMapsGoogleMapViewComponentDescriptor",
+            "RNMapsGooglePolygonComponentDescriptor",
+            "RNMapsMapViewComponentDescriptor",
+            "RNMapsMarkerComponentDescriptor",
+            "RNMapsOverlayComponentDescriptor",
+            "RNMapsPolylineComponentDescriptor",
+            "RNMapsUrlTileComponentDescriptor",
+            "RNMapsWMSTileComponentDescriptor"
+          ],
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-maps/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -130,47 +191,74 @@
       }
     },
     "react-native-mmkv": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-mmkv",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv",
       "name": "react-native-mmkv",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-mmkv/react-native-mmkv.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/react-native-mmkv.podspec",
           "version": "3.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-mmkv/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/android",
           "packageImportPath": "import com.mrousavy.mmkv.MmkvPackage;",
           "packageInstance": "new MmkvPackage()",
           "buildTypes": [],
           "libraryName": "RNMmkvSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": "react-native-mmkv",
-          "cxxModuleCMakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-mmkv/android/CMakeLists.txt",
+          "cxxModuleCMakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/android/CMakeLists.txt",
           "cxxModuleHeaderName": "NativeMmkvModule",
           "isPureCxxDependency": false
         }
       }
     },
     "react-native-network-info": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-network-info",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info",
       "name": "react-native-network-info",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-network-info/react-native-network-info.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/react-native-network-info.podspec",
           "version": "5.2.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-network-info/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android",
           "packageImportPath": "import com.pusherman.networkinfo.RNNetworkInfoPackage;",
           "packageInstance": "new RNNetworkInfoPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-pager-view": {
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-pager-view",
+      "name": "react-native-pager-view",
+      "platforms": {
+        "ios": {
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-pager-view/react-native-pager-view.podspec",
+          "version": "6.9.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-pager-view/android",
+          "packageImportPath": "import com.reactnativepagerview.PagerViewPackage;",
+          "packageInstance": "new PagerViewPackage()",
+          "buildTypes": [],
+          "libraryName": "pagerview",
+          "componentDescriptors": [
+            "RNCViewPagerComponentDescriptor"
+          ],
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -179,23 +267,23 @@
       }
     },
     "react-native-permissions": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-permissions",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-permissions",
       "name": "react-native-permissions",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-permissions/RNPermissions.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-permissions/RNPermissions.podspec",
           "version": "5.4.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-permissions/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-permissions/android",
           "packageImportPath": "import com.zoontek.rnpermissions.RNPermissionsPackage;",
           "packageInstance": "new RNPermissionsPackage()",
           "buildTypes": [],
           "libraryName": "RNPermissionsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -204,17 +292,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-safe-area-context",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "5.6.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -223,7 +311,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -232,17 +320,17 @@
       }
     },
     "react-native-screens": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-screens",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-screens/RNScreens.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-screens/RNScreens.podspec",
           "version": "4.16.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-screens/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-screens/android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -261,7 +349,7 @@
             "RNSModalScreenComponentDescriptor",
             "RNSBottomTabsComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -270,17 +358,17 @@
       }
     },
     "react-native-svg": {
-      "root": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-svg",
+      "root": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-svg",
       "name": "react-native-svg",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-svg/RNSVG.podspec",
+          "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-svg/RNSVG.podspec",
           "version": "15.13.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-svg/android",
+          "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-svg/android",
           "packageImportPath": "import com.horcrux.svg.SvgPackage;",
           "packageInstance": "new SvgPackage()",
           "buildTypes": [],
@@ -316,7 +404,7 @@
             "RNSVGTSpanComponentDescriptor",
             "RNSVGUseComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -487,7 +575,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/ios"
+          "default": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/ios"
         },
         {
           "name": "--platform <string>",
@@ -789,7 +877,7 @@
   ],
   "project": {
     "ios": {
-      "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/ios",
+      "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/ios",
       "xcodeProject": {
         "name": "AppBossDoor.xcworkspace",
         "path": ".",
@@ -798,7 +886,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/macminim4/Desktop/Vietapp/AppBossDoor/android",
+      "sourceDir": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android",
       "appName": "app",
       "packageName": "com.appbossdoor",
       "applicationId": "com.appbossdoor",

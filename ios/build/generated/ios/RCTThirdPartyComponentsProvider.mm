@@ -21,6 +21,11 @@
   dispatch_once(&nativeComponentsToken, ^{
     thirdPartyComponents = @{
 		@"RNGestureHandlerButton": NSClassFromString(@"RNGestureHandlerButtonComponentView"), // react-native-gesture-handler
+		@"RNMapsGoogleMapView": NSClassFromString(@"RNMapsGoogleMapView"), // react-native-maps
+		@"RNMapsGooglePolygon": NSClassFromString(@"RNMapsGooglePolygonView"), // react-native-maps
+		@"RNMapsMapView": NSClassFromString(@"RNMapsMapView"), // react-native-maps
+		@"RNMapsMarker": NSClassFromString(@"RNMapsMarkerView"), // react-native-maps
+		@"RNCViewPager": NSClassFromString(@"RNCPagerViewComponentView"), // react-native-pager-view
 		@"RNCSafeAreaProvider": NSClassFromString(@"RNCSafeAreaProviderComponentView"), // react-native-safe-area-context
 		@"RNCSafeAreaView": NSClassFromString(@"RNCSafeAreaViewComponentView"), // react-native-safe-area-context
 		@"RNSVGCircle": NSClassFromString(@"RNSVGCircle"), // react-native-svg
