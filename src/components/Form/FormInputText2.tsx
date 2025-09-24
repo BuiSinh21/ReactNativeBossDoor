@@ -30,6 +30,8 @@ interface Props {
   onEnd?: () => void;
   minHeight?: number;
   required?: boolean;
+  setCheck?: React.Dispatch<React.SetStateAction<boolean>>
+
 }
 
 const FormInputText2 = (props: Props) => {
@@ -43,17 +45,31 @@ const FormInputText2 = (props: Props) => {
     minHeight,
     multiline,
     onEnd,
-    required
+    required,
+    setCheck
   } = props;
 
   const [isShowPass, setIsShowPass] = useState(isPassword ?? false);
   const [error, setError] = useState<string | null>(null);
+  const functionCheck = (value: boolean) => {
+    if (!!setCheck) {
+      return setCheck(value);
+    }
+  }
   const handleEndEditing = () => {
     if (required && !value.trim()) {
+      functionCheck(false);
       setError(`${title} không được để trống`);
-    } else {
+    }
+    else if (type === 'numeric' && value.trim() && !/^\d+$/.test(value.trim())) {
+      setError('Chỉ được nhập số');
+      functionCheck(false);
+    }
+    else {
+       functionCheck(true);
       setError(null);
     }
+
     onEnd && onEnd();
   };
   return (

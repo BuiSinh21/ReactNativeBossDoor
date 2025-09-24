@@ -1,4 +1,4 @@
-import { StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
+import { ActivityIndicator, StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
 import React from 'react';
 import TextDisplay from '../TextDisplay';
 import { appColor } from '../../constant/appColor';
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   Button: {
     // alignSelf: 'center',
     display: "flex",
-   
+
     alignContent: 'center',
     alignItems: 'center',
     justifyContent: 'center', // Thêm dòng này để căn giữa theo chiều dọc
@@ -43,6 +43,6 @@ const styles = StyleSheet.create({
     borderColor: '#1354D4',
     borderWidth: 1,
     borderRadius: 12,
-    
+
   },
 });

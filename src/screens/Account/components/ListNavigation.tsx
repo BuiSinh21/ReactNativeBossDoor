@@ -15,7 +15,7 @@ import { logoutAPI } from '../../../apis/auth';
 const ListNavigation = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
-    const { user, employee, fcmToken } = useAppSelector(state => state.auth);
+    const { user, refresh_token } = useAppSelector(state => state.auth);
     const list =
     {
         listTechnician: {
@@ -40,7 +40,7 @@ const ListNavigation = () => {
     const handleLogout = async () => {
         try {
             dispatch(setModalLoading(true));
-            await logoutAPI({ fcm_token: fcmToken as string });
+            await logoutAPI({ refresh_token: refresh_token as string });
             dispatch(resetAuthState());
             navigate.reset({
                 index: 0,

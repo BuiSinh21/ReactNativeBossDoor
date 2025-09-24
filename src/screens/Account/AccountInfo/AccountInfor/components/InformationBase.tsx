@@ -4,7 +4,7 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import IMAGES from '../../../../../assets/images';
 import { TextDisplay } from '../../../../../components';
-import { useAppDispatch } from '../../../../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../../../../redux/hooks';
 import { ROOT_ROUTES, PROFILE_ROUTES } from '../../../../../routes';
 import sty from '../../../../../themes/sty';
 
@@ -12,6 +12,8 @@ import sty from '../../../../../themes/sty';
 const InformationBase = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
+    const { user } = useAppSelector(state => state.auth);
+
     return (
         <View style={[sty.flex_1]}>
             <View style={[sty.flexRow, sty.justifyBetween, sty.mt_16]}>
@@ -32,7 +34,7 @@ const InformationBase = () => {
                             <TextDisplay styles={[sty.pb_4, sty.flex_1]} text={"Họ và tên:"} color="#444A55" />
                         </View>
                         <View style={[sty.pb_4, sty.flex_2]}>
-                            <TextDisplay styles={{ textAlign: 'right' }} text={"Nguyễn Văn A"} color="#181D27" fontWeight='bold' />
+                            <TextDisplay styles={{ textAlign: 'right' }} text={user?.full_name} color="#181D27" fontWeight='bold' />
                         </View>
                     </View>
                 </View>
@@ -43,7 +45,7 @@ const InformationBase = () => {
                             <TextDisplay styles={[sty.pb_4, sty.flex_1]} text={"Số CCCD:"} color="#444A55" />
                         </View>
                         <View style={[sty.pb_4, sty.flex_2]}>
-                            <TextDisplay styles={{ textAlign: 'right' }} text={"044448839927"} color="#181D27" fontWeight='bold' />
+                            <TextDisplay styles={{ textAlign: 'right' }} text={user?.cccd} color="#181D27" fontWeight='bold' />
                         </View>
                     </View>
                 </View>
@@ -54,7 +56,7 @@ const InformationBase = () => {
                             <TextDisplay styles={[sty.pb_4, sty.flex_1]} text={"Số điện thoại:"} color="#444A55" />
                         </View>
                         <View style={[sty.pb_4, sty.flex_2]}>
-                            <TextDisplay styles={{ textAlign: 'right' }} text={"Nguyễn Văn A"} color="#181D27" fontWeight='bold' />
+                            <TextDisplay styles={{ textAlign: 'right' }} text={user?.phone} color="#181D27" fontWeight='bold' />
                         </View>
                     </View>
                 </View>
@@ -65,7 +67,7 @@ const InformationBase = () => {
                             <TextDisplay text={"Địa chỉ:"} color="#444A55" />
                         </View>
                         <View style={[sty.pb_4, sty.flex_2]}>
-                            <TextDisplay styles={{ textAlign: 'right' }} text={"123 Đường Xuân Thủy, Quận Cầu giấy, Hà Nội, Việt Nam"} color="#181D27" fontWeight='bold' />
+                            <TextDisplay styles={{ textAlign: 'right' }} text={user?.address} color="#181D27" fontWeight='bold' />
                         </View>
 
                     </View>
@@ -85,7 +87,7 @@ const InformationBase = () => {
                             <TextDisplay styles={[sty.pb_4, sty.flex_1]} text={"Tên tài khoản:"} color="#444A55" />
                         </View>
                         <View style={[sty.pb_4, sty.flex_2]}>
-                            <TextDisplay styles={{ textAlign: 'right' }} text={"hoangngcling98"} color="#181D27" fontWeight='bold' />
+                            <TextDisplay styles={{ textAlign: 'right' }}  text={user?.username}  color="#181D27" fontWeight='bold' />
                         </View>
                     </View>
                 </View>

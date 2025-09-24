@@ -1,34 +1,41 @@
 import { View, StyleSheet } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { useNavigation } from '@react-navigation/native';
 import FormInputText2 from '../../../../../components/Form/FormInputText2';
-import { useAppDispatch } from '../../../../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../../../../redux/hooks';
 import sty from '../../../../../themes/sty';
-
-const FormEditAccount = () => {
-    const dispatch = useAppDispatch();
-    const navigate = useNavigation<any>();
-    const [name, setName] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("")
-    const [cccd, setCCCD] = useState("")
-    const [address, setAddress] = useState("")
+interface Props {
+    name: string,
+    setName: React.Dispatch<React.SetStateAction<string>>,
+    phoneNumber: string,
+    setPhoneNumber: React.Dispatch<React.SetStateAction<string>>
+    cccd: string,
+    setCCCD: React.Dispatch<React.SetStateAction<string>>
+    address: string;
+    setAddress: React.Dispatch<React.SetStateAction<string>>
+    setCheck: React.Dispatch<React.SetStateAction<boolean>>
+}
+const FormEditAccount = (props: Props) => {
     return (
         <View style={[sty.flex_1, styles.form]}>
             <FormInputText2
                 title='Họ và tên'
                 placeholder='Nhập họ và tên'
-                value={name}
-                onChange={(value: string) => setName(value)}
+                value={props.name}
+                onChange={(value: string) => props.setName(value)}
                 required={true}
+                setCheck={props.setCheck}
             />
             <View style={styles.dashedLine} />
             <FormInputText2
                 title='Số điện thoại'
-                value={phoneNumber}
+                value={props.phoneNumber}
                 required={true}
+                type='numeric'
+                setCheck={props.setCheck}
                 placeholder='Nhập số diện thoại'
-                onChange={(value: string) => setPhoneNumber(value)}
+                onChange={(value: string) => props.setPhoneNumber(value)}
             />
             <View style={styles.dashedLine} />
 
@@ -36,18 +43,21 @@ const FormEditAccount = () => {
                 title='Số CCCD'
                 required={true}
                 placeholder='Nhập số CCCD'
-                value={cccd}
-                onChange={(value: string) => setCCCD(value)}
+                type='numeric'
+                value={props.cccd}
+                setCheck={props.setCheck}
+                onChange={(value: string) => props.setCCCD(value)}
             />
             <View style={styles.dashedLine} />
             <FormInputText2
                 minHeight={100}
                 multiline={true}
                 title='Địa chỉ'
+                setCheck={props.setCheck}
                 required={true}
                 placeholder='Nhập địa chỉ'
-                value={address}
-                onChange={(value: string) => setAddress(value)}
+                value={props.address}
+                onChange={(value: string) => props.setAddress(value)}
             />
         </View >
     )

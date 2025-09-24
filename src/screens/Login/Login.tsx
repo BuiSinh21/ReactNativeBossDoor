@@ -27,9 +27,11 @@ import { useAppDispatch } from '../../redux/hooks';
 import { setModalLoading, setToast, setToastNoti } from '../../redux/slices/commonSlice';
 // import {loginAPI, saveFcmToken} from '../../apis/auth';
 import { CommonActions, useNavigation } from '@react-navigation/native';
-import {  BOTTOM_TAB_ROUTES, ROOT_ROUTES } from '../../routes';
+import { BOTTOM_TAB_ROUTES, ROOT_ROUTES } from '../../routes';
 import {
   setAccessToken,
+  setRefreshToken,
+  setUser,
 } from '../../redux/slices/authSlice';
 import { handleErrorMessage } from '../../utils/helpers';
 import { loginAPI } from '../../apis/auth';
@@ -89,9 +91,10 @@ const Login = () => {
         password: pass,
       });
       if (res.status == 200) {
-        console.log(44444,res?.data?.data);
-        
+        console.log(44444, res?.data?.data);
         dispatch(setAccessToken(res?.data?.data?.access_token));
+        dispatch(setRefreshToken(res?.data?.data?.refresh_token));
+        dispatch(setUser(res?.data?.data?.technician))
         navigate.dispatch(
           CommonActions.reset({
             index: 0,

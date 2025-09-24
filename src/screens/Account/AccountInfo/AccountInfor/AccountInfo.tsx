@@ -5,10 +5,11 @@ import InformationBase from './components/InformationBase';
 import IMAGES from '../../../../assets/images';
 import { GradientBackground, HeaderBack, DividerCustom, TextDisplay } from '../../../../components';
 import sty from '../../../../themes/sty';
+import { useAppSelector } from '../../../../redux/hooks';
 
 const AccountInfo = () => {
     const insets = useSafeAreaInsets();
-
+    const { user } = useAppSelector(state => state.auth);
     return (
         <GradientBackground >
             <HeaderBack title='Thông tin tài khoản' />
@@ -30,20 +31,21 @@ const AccountInfo = () => {
                         showsVerticalScrollIndicator={false}>
 
                         <View>
-                            <View style={[sty.gap_12, sty.flexRow,sty.mb_8, sty.itemsCenter, styles.bg_white]}>
+                            <View style={[sty.gap_12, sty.flexRow, sty.mb_8, sty.itemsCenter, styles.bg_white]}>
                                 <Image
-                                    // source={avatarError || !profile?.employee?.avatar
-                                    //         ? IMAGES.PROFILE.avatar_default
-                                    //         : { uri: profile?.employee?.avatar }
-                                    // }
-                                    source={IMAGES.PROFILE.avatar_default}
+                                    source={
+                                        user && user.avatar
+                                            ? { uri: user.avatar }
+                                            : IMAGES.PROFILE.avatar_default
+                                    }
+                                    // source={IMAGES.PROFILE.avatar_default}
                                     style={styles.Avatar}
                                 // onError={() => setAvatarError(true)}
                                 />
                                 <TextDisplay
                                     fontSize={16}
                                     lineHeight={24}
-                                    text={"Nguyễn Văn A"}
+                                    text={user?.full_name}
                                     color="#181D27"
                                     fontWeight="bold"
                                 />
@@ -71,6 +73,6 @@ const styles = StyleSheet.create({
     },
     bg_white: {
         backgroundColor: "#fff"
-        
+
     }
 })

@@ -1,0 +1,16 @@
+CMake Error at /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/build/generated/autolinking/src/main/jni/Android-autolinking.cmake:10 (add_subdirectory):
+  add_subdirectory given source
+  "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config/android/build/generated/source/codegen/jni/"
+  which is not an existing directory.
+Call Stack (most recent call first):
+  /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native/ReactAndroid/cmake-utils/ReactNative-application.cmake:94 (include)
+  CMakeLists.txt:31 (include)
+
+
+CMake Error at /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native/ReactAndroid/cmake-utils/ReactNative-application.cmake:97 (target_link_libraries):
+  Cannot specify link libraries for target "react_codegen_RNCConfigModule"
+  which is not built by this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:31 (include)
+
+

@@ -1,10 +1,9 @@
-import { EmployeeParams, UserParams } from "../interfaces/auth";
+import {  UserAccount, } from "../interfaces/auth";
 
 export interface AuthState {
   access_token?: string;
   refresh_token?: string;
-  user: UserParams;
-  employee?: EmployeeParams;
+  user: UserAccount;
   role: {
     role_id: number;
     role_name: string;

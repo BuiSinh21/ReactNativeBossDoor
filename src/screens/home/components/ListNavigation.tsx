@@ -15,7 +15,7 @@ import { logoutAPI } from '../../../apis/auth';
 const ListNavigation = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
-    const { user, employee, fcmToken } = useAppSelector(state => state.auth);
+    const { user, fcmToken } = useAppSelector(state => state.auth);
     const list =
     {
         listTechnician: {
@@ -37,21 +37,7 @@ const ListNavigation = () => {
         },
     }
 
-    const handleLogout = async () => {
-        try {
-            dispatch(setModalLoading(true));
-            await logoutAPI({ fcm_token: fcmToken as string });
-            dispatch(resetAuthState());
-            navigate.reset({
-                index: 0,
-                routes: [{ name: ROOT_ROUTES.AUTH_STACK }],
-            });
-            dispatch(setModalLoading(false));
-        } catch (error) {
-            dispatch(setModalLoading(false));
-            handleErrorMessage(error);
-        }
-    };
+  
 
     return (
         <View style={[sty.flex_1]}>
@@ -126,19 +112,7 @@ const ListNavigation = () => {
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity onPress={handleLogout} style={styles.ButtonLogout}>
-                <Image
-                    style={[sty.w_20, sty.h_20, sty.objectScaleDown]}
-                    source={IMAGES.PROFILE.icon_logout}
-                />
-                <TextDisplay
-                    text="Đăng xuất"
-                    fontSize={14}
-                    lineHeight={24}
-                    fontWeight="semibold"
-                    color="#444A55"
-                />
-            </TouchableOpacity>
+         
         </View >
     )
 }

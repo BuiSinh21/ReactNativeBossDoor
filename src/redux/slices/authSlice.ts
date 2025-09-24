@@ -1,13 +1,14 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {AuthState} from '../interface';
+import { use } from 'react';
 
 const initialState = {
   access_token: undefined,
   refresh_token: undefined,
   user: {},
-  employee: undefined,
   role: {},
   fcmToken: undefined,
+
 } as AuthState;
 
 const authSlice = createSlice({
@@ -23,9 +24,7 @@ const authSlice = createSlice({
     setUser(state, action) {
       state.user = action.payload;
     },
-    setEmployee(state, action) {
-      state.employee = action.payload;
-    },
+  
     setRole(state, action) {
       state.role = action.payload;
     },
@@ -43,7 +42,6 @@ export const {
   setRefreshToken,
   resetAuthState,
   setUser,
-  setEmployee,
   setRole,
   setFcmToken,
 } = authSlice.actions;

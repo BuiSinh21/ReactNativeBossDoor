@@ -1,13 +1,56 @@
 import { View, Text, KeyboardAvoidingView, Platform, Keyboard, TouchableOpacity, ScrollView, Image, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import FormEditAccount from './components/FormEditAccount';
 import { GradientBackground, HeaderBack, DividerCustom, ButtonLoadMore } from '../../../../components';
 import sty from '../../../../themes/sty';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
+import { updateTechnician } from '../../../../apis/technician';
+import { setModalLoading } from '../../../../redux/slices/commonSlice';
+import { handleErrorMessage } from '../../../../utils/helpers';
+import { UserAccount } from '../../../../interfaces/auth';
 
 const EditAccount = () => {
     const insets = useSafeAreaInsets();
-
+    const { user } = useAppSelector(state => state.auth);
+    const [name, setName] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("")
+    const [cccd, setCCCD] = useState("")
+    const [address, setAddress] = useState("")
+    const [data, setData] = useState<UserAccount | undefined>(undefined)
+    const dispatch = useAppDispatch()
+    const [check, setCheck] = useState<boolean>(true);
+    useEffect(() => {
+        if (user) {
+            setName(user.full_name);
+            setPhoneNumber(user.phone)
+            setCCCD(user.cccd)
+            setAddress(user.address)
+            setData(user);
+        }
+    }, [user])
+    const handleSave = async () => {
+        try {
+            dispatch(setModalLoading(true));
+            if (check == true) {
+              const customdata = {
+                ...data,
+                address: address,
+                full_name: name,
+                cccd: cccd,
+                phone: phoneNumber
+            };
+            console.log(customdata);
+            
+                const res = await updateTechnician(customdata)
+                if (res.status == 200) {
+                }
+            }
+        } catch (error) {
+            dispatch(setModalLoading(false));
+            handleErrorMessage(error);
+        }
+    }
     return (
         <GradientBackground >
             <HeaderBack title='Chỉnh sửa thông tin' />
@@ -26,12 +69,22 @@ const EditAccount = () => {
                             { paddingBottom: insets.bottom + 16 },
                         ]}
                         showsVerticalScrollIndicator={false}>
-                        <FormEditAccount />
+                        <FormEditAccount
+                            name={name}
+                            setName={setName}
+                            phoneNumber={phoneNumber}
+                            setPhoneNumber={setPhoneNumber}
+                            cccd={cccd}
+                            setCCCD={setCCCD}
+                            address={address}
+                            setAddress={setAddress}
+                            setCheck={setCheck}
+                        />
                     </ScrollView>
                 </TouchableOpacity>
                 <DividerCustom styles={[sty.mt_12]} height={1} color={"#F4F5F8"} />
                 <View style={styles.footer}>
-                    <ButtonLoadMore style={{ width: "85%",borderRadius:20,paddingHorizontal:20}} fontText={16} color='#fff' height={50} onPress={() => { }} bgColor='#3683F7' title='Lưu' />
+                    <ButtonLoadMore style={{ width: "85%", borderRadius: 20, paddingHorizontal: 20 }} fontText={16} color='#fff' height={50} onPress={() => handleSave()} bgColor='#3683F7' title='Lưu' />
                 </View>
             </KeyboardAvoidingView>
         </GradientBackground>

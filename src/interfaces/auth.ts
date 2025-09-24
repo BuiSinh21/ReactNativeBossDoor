@@ -1,15 +1,18 @@
 
-export interface UserParams {
+export interface UserAccount {
   id: number;
-  name: string;
-  email?: string;
-  username: string;
-  phone: string;
-}
-
-export interface EmployeeParams {
-  id: number;
-  user_id: number;
   full_name: string;
-  phone_number: string;
+  cccd: string;
+  phone: string;
+  avatar: string;
+  address: string;
+  username: string;
+  latitude: number;
+  longitude: number;
+  position_id: number;
+  province_id: number;
+  status: number;
+  commissions: string,
+  completed_orders: any[];
+  revenue: any[];
 }

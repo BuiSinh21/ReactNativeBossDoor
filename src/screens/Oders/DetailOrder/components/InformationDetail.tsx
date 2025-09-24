@@ -155,7 +155,7 @@ const InformationDetail = () => {
                                 key={i}
                                 style={[
                                     styles.dot,
-                                    { backgroundColor: i === page ? "#007bff" : "#ccc" },
+                                    { backgroundColor: i === page2 ? "#007bff" : "#ccc" },
                                 ]}
                             />
                         ))}

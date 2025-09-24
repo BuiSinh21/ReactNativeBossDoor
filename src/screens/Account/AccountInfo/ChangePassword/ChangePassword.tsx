@@ -6,6 +6,7 @@ import { GradientBackground, HeaderBack, DividerCustom, ButtonLoadMore } from '.
 import { useAppDispatch } from '../../../../redux/hooks';
 import { setToast } from '../../../../redux/slices/commonSlice';
 import sty from '../../../../themes/sty';
+import { resetPassword } from '../../../../apis/technician';
 const ChangePassword = () => {
     const insets = useSafeAreaInsets();
     const [oldPassword, setOldPassword] = useState("");
@@ -13,25 +14,35 @@ const ChangePassword = () => {
     const [rePassword, setRepassword] = useState("")
     const dispatch = useAppDispatch();
 
-    const onChangePassword = () => {
-        if (oldPassword && newPassword && rePassword && oldPassword != "" && newPassword != "" && rePassword != "") {
-            if (newPassword != rePassword) {
+    const onChangePassword = async () => {
+        try {
+            if (oldPassword && newPassword && rePassword && oldPassword != "" && newPassword != "" && rePassword != "") {
+                if (newPassword != rePassword) {
+                    return dispatch(
+                        setToast({
+                            open: true,
+                            title: 'Mật khẩu mới chưa trùng khớp',
+                        }),
+                    );
+                }
+                else {
+                    // const res = await resetPassword({})
+                    // if (res.status == 200) {
+                    // }
+                }
+            }
+            else {
                 return dispatch(
                     setToast({
                         open: true,
-                        title: 'Mật khẩu mới chưa trùng khớp',
+                        title: 'Bạn hãy nhập đủ đủ 3 trường',
                     }),
                 );
             }
+        } catch (error) {
+
         }
-        else {
-            return dispatch(
-                setToast({
-                    open: true,
-                    title: 'Bạn hãy nhập đủ đủ 3 trường',
-                }),
-            );
-        }
+
     }
     return (
         <GradientBackground >

@@ -64,7 +64,7 @@ const refreshAuthLogic = async (failedRequest: AxiosError) => {
   if (refreshToken) {
     try {
       console.log('Refresh Token');
-      const response = await axios.get(`${Config.API_BASE}/refresh`, {
+      const response = await axios.get(`${Config.API_BASE}/technician/refresh`, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           Authorization: `Bearer ${refreshToken}`,
