@@ -8,16 +8,21 @@ import BoardInfor from './components/BoardInfor';
 import ListNavigation from './components/ListNavigation';
 import { useNavigation } from '@react-navigation/core';
 import { PROFILE_ROUTES, ROOT_ROUTES } from '../../routes';
-import { useAppDispatch } from '../../redux/hooks';
-import { fetchUserProfile } from '../../redux/slices/profileSlice';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { getAllTechnician } from '../../apis/technician';
+import { fetchAllTechnician } from '../../redux/slices/technician';
 
 const AccountScreen = () => {
     const insets = useSafeAreaInsets();
     const navigate = useNavigation<any>();
     const dispath = useAppDispatch();
-    // useEffect(()=>{
-    //     dispath(fetchUserProfile())
-    // },[dispath])
+    const { user } = useAppSelector(state => state.auth);
+
+    useEffect(() => {
+        if (user?.position_id == 1) {
+            dispath(fetchAllTechnician())
+        }
+    }, [dispath, user])
     return (
         <GradientBackground>
             <Header text='Tài khoản' />
@@ -42,6 +47,7 @@ const AccountScreen = () => {
                             onPress={() =>
                                 navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
                                     screen: PROFILE_ROUTES.REVENUA_INFO,
+                                 params: { data: { check: true } },
                                 })
                             }>
                             <BoardInfor></BoardInfor>

@@ -3,10 +3,11 @@ import { View, Image, StyleSheet, Alert, TouchableOpacity } from "react-native";
 import { launchImageLibrary, Asset } from "react-native-image-picker";
 import IMAGES from "../../assets/images";
 import TextDisplay from "../TextDisplay";
-
-const ImagePickerComponent = () => {
-  const [photo, setPhoto] = useState<Asset | null>(null);
-
+interface Props {
+  photo: Asset | null,
+  setPhoto:React.Dispatch<React.SetStateAction<Asset | null>>
+}
+const ImagePickerComponent = (props: Props) => {
   const handleOpenLibrary = () => {
     launchImageLibrary(
       {
@@ -18,7 +19,7 @@ const ImagePickerComponent = () => {
         } else if (response.errorCode) {
           Alert.alert("Lỗi", response.errorMessage || "Không thể mở thư viện ảnh");
         } else if (response.assets && response.assets.length > 0) {
-          setPhoto(response.assets[0]);
+          props.setPhoto(response.assets[0]);
         }
       }
     );
@@ -26,13 +27,15 @@ const ImagePickerComponent = () => {
 
   return (
     <View style={styles.container}>
-      {!photo ? (
+      {!props.photo ? (
         <TouchableOpacity style={styles.uploadBox} onPress={handleOpenLibrary}>
           <Image source={IMAGES.ACCOUNT.imageUpload} style={styles.icon} />
           <TextDisplay fontSize={16} text={"Chọn file"} color="#3683F7" />
         </TouchableOpacity>
       ) : (
-        <Image source={{ uri: photo.uri }} style={styles.preview} />
+        <TouchableOpacity style={styles.uploadBox} onPress={handleOpenLibrary}>
+          <Image source={{ uri: props.photo.uri }} style={styles.preview} />
+        </TouchableOpacity>
       )}
     </View>
   );

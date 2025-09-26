@@ -3,6 +3,7 @@ import mmkvStorage from './mmkv-store';
 import { combineReducers } from '@reduxjs/toolkit';
 import authReducer from './slices/authSlice';
 import commonReducer from './slices/commonSlice';
+import technicianReducer from './slices/technician';
 
 const persistConfig = {
   key: 'root',
@@ -40,7 +41,7 @@ export const rootReducer = combineReducers({
   // notification: persistReducer(notificationPersistConfig, notificationReducer),
   // timekeeping: persistReducer(timekeepingPersistConfig, timekeepingReducer),
   // collaborator: collaboratorReducer,
-  // takeOff: takeOffReducer,
+  technician: technicianReducer,
   // request: requestReducer,
   // configWifi: configWifiReducer,
   // info: infoReducer,

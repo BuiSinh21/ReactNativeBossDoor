@@ -4,8 +4,12 @@ import { TextDisplay } from '../../../../components';
 import sty from '../../../../themes/sty';
 import IMAGES from '../../../../assets/images';
 import { appColor } from '../../../../constant/appColor';
+import { useAppSelector } from '../../../../redux/hooks';
 
 const BoardInfor = () => {
+    const { result: listTechnician } = useAppSelector(state => state.technician);
+    console.log(11111,listTechnician);
+    
     return (
         <View style={styles.background}>
             <View style={[sty.flexRow, { padding: 2, }]}>

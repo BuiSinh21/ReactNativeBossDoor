@@ -1,19 +1,25 @@
 import { View, Text, KeyboardAvoidingView, Platform, Keyboard, TouchableOpacity, ScrollView, Image, StyleSheet } from 'react-native'
-import React from 'react'
-import Header from './components/Header'
+import React, { useEffect, useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/core';
-import BoardInfor from './components/BoardInfor';
+import { useRoute } from '@react-navigation/native';
 import ListHistoryOrder from './components/ListHistoryOrder';
 import { DividerCustom, GradientBackground, HeaderBack, TextDisplay } from '../../../components';
 import sty from '../../../themes/sty';
 import { appColor } from '../../../constant/appColor';
 import IMAGES from '../../../assets/images';
-import { IconArrowRight } from '../../../components/Icons';
+import { useAppSelector } from '../../../redux/hooks';
+import { formatPhoneNumber } from '../../../common/until';
+import BoardInforRevenua from './components/BoardInforRevenua';
 
 const RevenuaInformation = () => {
     const insets = useSafeAreaInsets();
     const navigate = useNavigation<any>();
+    const { detailTechnician } = useAppSelector(state => state.technician);
+    const { user, userDisplay } = useAppSelector(state => state.auth);
+    const route = useRoute();
+    const { data } = route.params as { data: { check: boolean } };
+
     return (
         <GradientBackground>
             <HeaderBack title='Thông tin doanh thu' />
@@ -32,18 +38,27 @@ const RevenuaInformation = () => {
                             { paddingBottom: insets.bottom + 16 },
                         ]}
                         showsVerticalScrollIndicator={false}>
-                        <View style={styles.box} >
-                            <View style={[sty.flexRow, sty.selfCenter, sty.gap_8]}>
-                                <Image style={{ width: 52, height: 52 }} source={IMAGES.ACCOUNT.imageTest}></Image>
-                                <View style={[sty.flex_2, sty.selfCenter]}>
-                                    <TextDisplay color={appColor.textBlack} text={"Nguyễn Đức B"}></TextDisplay>
-                                    <TextDisplay text={"0987147414"}></TextDisplay>
+                        {data && data.check == true ? <></> :
+                            <View style={styles.box} >
+                                <View style={[sty.flexRow, sty.selfCenter, sty.gap_8]}>
+                                    <Image style={{ width: 52, height: 52 }}
+                                        source={
+                                            detailTechnician && detailTechnician.technician?.avatar
+                                                ? { uri: detailTechnician?.technician?.avatar }
+                                                : IMAGES.PROFILE.avatar_default
+                                        }
+                                    ></Image>
+                                    <View style={[sty.flex_2, sty.selfCenter]}>
+                                        <TextDisplay color={appColor.textBlack} text={detailTechnician?.technician?.full_name}></TextDisplay>
+                                        <TextDisplay text={formatPhoneNumber(detailTechnician?.technician?.phone)}></TextDisplay>
+                                    </View>
                                 </View>
+
                             </View>
-                        </View>
+                        }
 
 
-                        <BoardInfor></BoardInfor>
+                        <BoardInforRevenua></BoardInforRevenua>
                         <ListHistoryOrder />
                     </ScrollView>
                 </TouchableOpacity>
@@ -66,5 +81,5 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 15
     },
-  
+
 })

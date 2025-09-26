@@ -1,9 +1,10 @@
-import {  UserAccount, } from "../interfaces/auth";
+import {  SummaryDto, UserAccount, UserAccountInfor, } from "../interfaces/auth";
 
 export interface AuthState {
   access_token?: string;
   refresh_token?: string;
   user: UserAccount;
+  userDisplay: UserAccountInfor;
   role: {
     role_id: number;
     role_name: string;
@@ -26,4 +27,9 @@ export interface CommonState {
   openWarningTimekeeping: boolean;
   openNoti: boolean;
   notiTitle?: string;
+}
+
+export interface SummaryState {
+  lich_su_don_hang:{};
+  thong_ke_doanh_thu:SummaryDto,
 }

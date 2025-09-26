@@ -6,9 +6,11 @@ import { GradientBackground, HeaderBack, DividerCustom, ButtonLoadMore } from '.
 import sty from '../../../../themes/sty';
 import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
 import { updateTechnician } from '../../../../apis/technician';
-import { setModalLoading } from '../../../../redux/slices/commonSlice';
+import { setModalLoading, setToastNoti } from '../../../../redux/slices/commonSlice';
 import { handleErrorMessage } from '../../../../utils/helpers';
 import { UserAccount } from '../../../../interfaces/auth';
+import { setUser } from '../../../../redux/slices/authSlice';
+import { useNavigation } from '@react-navigation/core';
 
 const EditAccount = () => {
     const insets = useSafeAreaInsets();
@@ -19,6 +21,7 @@ const EditAccount = () => {
     const [address, setAddress] = useState("")
     const [data, setData] = useState<UserAccount | undefined>(undefined)
     const dispatch = useAppDispatch()
+    const navigate = useNavigation<any>();
     const [check, setCheck] = useState<boolean>(true);
     useEffect(() => {
         if (user) {
@@ -33,22 +36,30 @@ const EditAccount = () => {
         try {
             dispatch(setModalLoading(true));
             if (check == true) {
-              const customdata = {
-                ...data,
-                address: address,
-                full_name: name,
-                cccd: cccd,
-                phone: phoneNumber
-            };
-            console.log(customdata);
-            
+                const customdata = {
+                    id: user.id,
+                    address: address,
+                    full_name: name,
+                    cccd: cccd,
+                    phone: phoneNumber,
+                    avatar: user.avatar
+                };
                 const res = await updateTechnician(customdata)
                 if (res.status == 200) {
+                    dispatch(setModalLoading(false));
+                    dispatch(setUser(res.data?.data));
+                    navigate.goBack()
+                    dispatch(
+                        setToastNoti({
+                            open: true,
+                            title: "Cập nhật thông tin thành công",
+                        }),
+                    );
                 }
             }
-        } catch (error) {
+        } catch (error: any) {
             dispatch(setModalLoading(false));
-            handleErrorMessage(error);
+            handleErrorMessage(error, undefined, error?.data?.message);
         }
     }
     return (

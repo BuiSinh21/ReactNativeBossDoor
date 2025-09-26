@@ -6,6 +6,7 @@ const initialState = {
   access_token: undefined,
   refresh_token: undefined,
   user: {},
+  userDisplay: {},
   role: {},
   fcmToken: undefined,
 
@@ -23,6 +24,9 @@ const authSlice = createSlice({
     },
     setUser(state, action) {
       state.user = action.payload;
+    },
+    setUserDisplay(state, action) {
+      state.userDisplay = action.payload;
     },
   
     setRole(state, action) {
@@ -44,6 +48,7 @@ export const {
   setUser,
   setRole,
   setFcmToken,
+  setUserDisplay
 } = authSlice.actions;
 
 export default authSlice.reducer;

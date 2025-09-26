@@ -73,24 +73,29 @@ const ListNavigation = () => {
             </TouchableOpacity>
 
             <View style={[styles.boxRequest]}>
-                <TouchableOpacity activeOpacity={0.8}
-                    onPress={() =>
-                        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
-                            screen: PROFILE_ROUTES.LIST_TECHNICIAN,
-                        })
-                    }>
-                    <View style={[sty.flexRow, styles.request]}>
+                {
+                    user.position_id == 1 ?
+                    <> <TouchableOpacity activeOpacity={0.8}
+                        onPress={() =>
+                            navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
+                                screen: PROFILE_ROUTES.LIST_TECHNICIAN,
+                            })
+                        }>
+                        <View style={[sty.flexRow, styles.request]}>
 
-                        <View style={[sty.flexRow, styles.divName]}>
-                            <Image style={[styles.img, sty.mr_12]} source={list.listTechnician.img} />
-                            <TextDisplay styles={sty.pb_4} text={list.listTechnician.label} color="#444A55" />
+                            <View style={[sty.flexRow, styles.divName]}>
+                                <Image  style={[styles.img, sty.mr_12]} source={list.listTechnician.img} />
+                                <TextDisplay styles={sty.pb_4} text={list.listTechnician.label} color="#444A55" />
+                            </View>
+                            <View>
+                                <IconArrowRight />
+                            </View>
                         </View>
-                        <View>
-                            <IconArrowRight />
-                        </View>
-                    </View>
-                </TouchableOpacity>
-                <DividerCustom />
+                    </TouchableOpacity>
+                        <DividerCustom />
+                    </>
+                    :''
+                }
                 <TouchableOpacity activeOpacity={0.8}
                     onPress={() =>
                         navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {

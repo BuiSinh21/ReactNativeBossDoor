@@ -1,52 +1,58 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
-import { useAppDispatch } from '../../../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
 import sty from '../../../../themes/sty';
 import { TextDisplay } from '../../../../components';
 import { appColor } from '../../../../constant/appColor';
-import { formatPrice } from '../../../../utils/helpers';
+import { formatPrice, handleErrorMessage } from '../../../../utils/helpers';
 import IMAGES from '../../../../assets/images';
 import { IconArrowRight } from '../../../../components/Icons';
 import { PROFILE_ROUTES, ROOT_ROUTES } from '../../../../routes';
+import { showTechniciant } from '../../../../apis/technician';
+import { UserAccount } from '../../../../interfaces/auth';
+import { setDetailTechnician } from '../../../../redux/slices/technician';
+import { formatPhoneNumber } from '../../../../common/until';
 
 const ListTechnicianDisplay = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
-    const listUser = [
-        {
-            image: '',
-            name: "Nguyễn Đức Bảo",
-            phone: "0964425636"
-        },
-        {
-            image: '',
-            name: "Nguyễn Đức Mạnh",
-            phone: "0964425636"
-        },
-        {
-            image: '',
-            name: "Nguyễn Hoài Nam",
-            phone: "0964425636"
-        },
-        ,
-    ]
+    const { result: listTechnician } = useAppSelector(state => state.technician);
+    const getDetailTechnician = async (id: number) => {
+        try {
+            if (id) {
+                const res = await showTechniciant(id);
+                if (res.status == 200) {
+                    const data = res.data?.data
+                    dispatch(setDetailTechnician(data));
+                    navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
+                        screen: PROFILE_ROUTES.REVENUA_INFO,
+                        params: { data: { check: false } },
+                    })
+                }
+            }
+        } catch (error) {
+            handleErrorMessage(error)
+        }
+    }
     return (
 
         <View style={[sty.flex_1]}>
             <TextDisplay text={"Danh sách kỹ thuật viên"} color={appColor.textBlack} />
-            {listUser.map((item: any,index:number) =>
-                <View key={"key_"+index} style={styles.box} >
+            {listTechnician.map((item, index: number) =>
+                <View key={"key_" + index} style={styles.box} >
                     <TouchableOpacity style={{ width: "100%" }} onPress={() =>
-                        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
-                            screen: PROFILE_ROUTES.REVENUA_INFO,
-                        })
+                        getDetailTechnician(item.id)
                     }>
                         <View style={[sty.flexRow, sty.selfCenter, sty.gap_8]}>
-                            <Image style={{ width: 52, height: 52 }} source={IMAGES.ACCOUNT.imageTest}></Image>
+                            <Image source={
+                                item && item.avatar
+                                    ? { uri: item.avatar }
+                                    : IMAGES.PROFILE.avatar_default
+                            } style={{ width: 52, height: 52 }} ></Image>
                             <View style={[sty.flex_2, sty.selfCenter]}>
-                                <TextDisplay color={appColor.textBlack} text={item.name}></TextDisplay>
-                                <TextDisplay text={item.phone}></TextDisplay>
+                                <TextDisplay color={appColor.textBlack} text={item.full_name}></TextDisplay>
+                                <TextDisplay text={formatPhoneNumber(item.phone)}></TextDisplay>
                             </View>
                             <View style={[styles.around, sty.flexRow, sty.selfCenter]}>
                                 <IconArrowRight />

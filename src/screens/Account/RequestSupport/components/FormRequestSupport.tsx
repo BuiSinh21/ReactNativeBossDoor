@@ -11,24 +11,31 @@ import { appColor } from '../../../../constant/appColor';
 import IMAGES from '../../../../assets/images';
 import LineRow from '../../../../components/LineRow';
 import ImagePickerComponent from '../../../../components/Image';
-const FormRequestSupport = () => {
+import { Asset } from 'react-native-image-picker';
+interface Props {
+    debcribe: string,
+    setDebcribe: React.Dispatch<React.SetStateAction<string>>;
+    photo: Asset | null,
+    setPhoto: React.Dispatch<React.SetStateAction<Asset | null>>
+}
+const FormRequestSupport = (props: Props) => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
-    const [debcribe, setDebcribe] = useState("")
     return (
         <View style={[sty.flex_1, styles.form]}>
             <FormInputText2
                 minHeight={100}
+                redCheck={true}
                 multiline={true}
-                title='Mô tả hỗ trơ'
+                title='Mô tả hỗ trợ'
                 required={true}
                 placeholder='Nhập mô tả'
-                value={debcribe}
-                onChange={(value: string) => setDebcribe(value)}
+                value={props.debcribe}
+                onChange={(value: string) => props.setDebcribe(value)}
             />
             <View style={styles.dashedLine} />
-            <TextDisplay fontSize={14} text={"Hình ảnh"} styles={{marginBottom:10}} />
-            <ImagePickerComponent />
+            <TextDisplay fontSize={14} text={"Hình ảnh"} styles={{ marginBottom: 10 }} />
+            <ImagePickerComponent photo={props.photo} setPhoto={props.setPhoto} />
         </View >
     )
 }

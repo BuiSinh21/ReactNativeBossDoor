@@ -3,16 +3,20 @@ import React, { useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import FormChangePassword from './components/FormChangePassword';
 import { GradientBackground, HeaderBack, DividerCustom, ButtonLoadMore } from '../../../../components';
-import { useAppDispatch } from '../../../../redux/hooks';
-import { setToast } from '../../../../redux/slices/commonSlice';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
+import { setToast, setToastNoti } from '../../../../redux/slices/commonSlice';
 import sty from '../../../../themes/sty';
-import { resetPassword } from '../../../../apis/technician';
+import { changePassword } from '../../../../apis/technician';
+import { handleErrorMessage } from '../../../../utils/helpers';
+import { useNavigation } from '@react-navigation/core';
 const ChangePassword = () => {
     const insets = useSafeAreaInsets();
     const [oldPassword, setOldPassword] = useState("");
     const [newPassword, setNewPassword] = useState("")
     const [rePassword, setRepassword] = useState("")
     const dispatch = useAppDispatch();
+    const navigate = useNavigation<any>();
+    const { user } = useAppSelector(state => state.auth);
 
     const onChangePassword = async () => {
         try {
@@ -26,21 +30,35 @@ const ChangePassword = () => {
                     );
                 }
                 else {
-                    // const res = await resetPassword({})
-                    // if (res.status == 200) {
-                    // }
+                    const res = await changePassword({
+                        current_password: oldPassword,
+                        password: newPassword
+                    }, user.id)
+                    if (res.status == 200) {
+                        dispatch(
+                            setToastNoti({
+                                open: true,
+                                title: "Thay đổi password thành công",
+                            }),
+                        );
+                        navigate.back();
+                    }
                 }
             }
             else {
                 return dispatch(
                     setToast({
                         open: true,
-                        title: 'Bạn hãy nhập đủ đủ 3 trường',
+                        title: 'Bạn hãy nhập đủ đủ các trường',
                     }),
                 );
             }
         } catch (error) {
-
+            handleErrorMessage(error, {
+                403: 'Mật khẩu cũ không đúng.',
+                404: 'Dữ không hợp lệ.',
+                422: 'Mật khẩu mới phải khác mật khẩu hiện tại.',
+            });
         }
 
     }

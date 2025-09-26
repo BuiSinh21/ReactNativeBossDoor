@@ -1,17 +1,17 @@
 import Config from 'react-native-config';
-import {rootStore} from '../redux/store';
+import { rootStore } from '../redux/store';
 import {
   resetAuthState,
   setAccessToken,
   setRefreshToken,
 } from '../redux/slices/authSlice';
 import createAuthRefreshInterceptor from 'axios-auth-refresh';
-import axios, {AxiosError} from 'axios';
+import axios, { AxiosError } from 'axios';
 // import {clearTimer, resetTimer} from '../redux/slices/timerSlice';
 // import {resetCollaboratorState} from '../redux/slices/collaboratorSlice';
 // import {resetTakeOffState} from '../redux/slices/takeOffSlice';
 // import {resetRequestState} from '../redux/slices/requestSlice';
-import {resetInfoState} from '../redux/slices/infoSlice';
+import { resetInfoState } from '../redux/slices/infoSlice';
 
 const handleClear = () => {
   rootStore.dispatch(resetAuthState());
@@ -64,28 +64,63 @@ const refreshAuthLogic = async (failedRequest: AxiosError) => {
   if (refreshToken) {
     try {
       console.log('Refresh Token');
-      const response = await axios.get(`${Config.API_BASE}/technician/refresh`, {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          Authorization: `Bearer ${refreshToken}`,
+      const response = await axios.post(
+        `${Config.API_BASE}/technician/refresh`,
+        {
+          refresh_token: refreshToken,
+          fcm_token: ""
         },
-      });
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
       console.log('Data Refresh: ', response);
+
       rootStore.dispatch(setAccessToken(response?.data?.data?.access_token));
       rootStore.dispatch(setRefreshToken(response?.data?.data?.refresh_token));
       axiosBase.defaults.headers.common[
         'Authorization'
       ] = `Bearer ${response?.data?.data?.access_token}`;
-      return await Promise.resolve();
+      return Promise.resolve();
     } catch (error) {
       console.log('Error Refresh: ', error);
       handleClear();
-      return await Promise.reject();
+      return Promise.reject();
     }
   }
   handleClear();
-  return await Promise.reject(failedRequest);
+  return Promise.reject(failedRequest);
 };
+
+// const refreshAuthLogic = async (failedRequest: AxiosError) => {
+//   const refreshToken = rootStore.getState()?.auth?.refresh_token;
+//   if (refreshToken) {
+//     try {
+//       console.log('Refresh Token');
+//       const response = await axios.get(`${Config.API_BASE}/technician/refresh`, {
+//         headers: {
+//           'Content-Type': 'application/x-www-form-urlencoded',
+//           Authorization: `Bearer ${refreshToken}`,
+//         },
+//       });
+//       console.log('Data Refresh: ', response);
+//       rootStore.dispatch(setAccessToken(response?.data?.data?.access_token));
+//       rootStore.dispatch(setRefreshToken(response?.data?.data?.refresh_token));
+//       axiosBase.defaults.headers.common[
+//         'Authorization'
+//       ] = `Bearer ${response?.data?.data?.access_token}`;
+//       return await Promise.resolve();
+//     } catch (error) {
+//       console.log('Error Refresh: ', error);
+//       handleClear();
+//       return await Promise.reject();
+//     }
+//   }
+//   handleClear();
+//   return await Promise.reject(failedRequest);
+// };
 
 createAuthRefreshInterceptor(axiosBase, refreshAuthLogic, {
   statusCodes: [402],

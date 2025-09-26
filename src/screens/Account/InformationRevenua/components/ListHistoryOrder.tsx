@@ -1,53 +1,54 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { useNavigation } from '@react-navigation/native';
-import { useAppDispatch } from '../../../../redux/hooks';
+import { useNavigation, useRoute } from '@react-navigation/native';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
 import sty from '../../../../themes/sty';
 import { TextDisplay } from '../../../../components';
 import { appColor } from '../../../../constant/appColor';
 import { formatPrice } from '../../../../utils/helpers';
+import { DetailOrder } from '../../../../interfaces/auth';
+import moment from 'moment';
 
 const ListHistoryOrder = () => {
     const dispatch = useAppDispatch();
-    const navigate = useNavigation<any>();
-    const listExample = [
-        {
-            date: "06:45 - 14/07/2025",
-            content: "Mã đơn hàng: DV-F9S8H3. Dịch vụ sửa chữa cửa cuốn",
-            amount: 400000
-        },
-        {
-            date: "06:45 - 14/07/2025",
-            content: "Mã đơn hàng: DV-F9S8H3. Dịch vụ sửa chữa cửa cuốn",
-            amount: 400000
-        },
-        {
-            date: "06:45 - 14/07/2025",
-            content: "Mã đơn hàng: DV-F9S8H3. Dịch vụ sửa chữa cửa cuốn",
-            amount: 400000
-        },
-        {
-            date: "06:45 - 14/07/2025",
-            content: "Mã đơn hàng: DV-F9S8H3. Dịch vụ sửa chữa cửa cuốn",
-            amount: 400000
-        },
-    ]
+    const { detailTechnician } = useAppSelector(state => state.technician);
+    const { userDisplay } = useAppSelector(state => state.auth);
+    const route = useRoute();
+    const { data } = route.params as { data: { check: boolean } };
     return (
 
         <View style={[sty.flex_1]}>
             <TextDisplay text={"Lịch sử đơn hàng"} color={appColor.textBlack} />
-            {listExample.map((item: any) =>
-                <View style={styles.box} >
-                    <TextDisplay text={item.date} lineHeight={30}></TextDisplay>
-                    <View style={[sty.flexRow, sty.gap_8]}>
-                        <View style={sty.flex_2}>
-                            <TextDisplay text={item.content}></TextDisplay>
+            {data.check == true ?
+                <>
+                    {userDisplay?.lich_su_don_hang.data.map((item: DetailOrder) =>
+                        <View style={styles.box} >
+                            <TextDisplay text={moment(item.order_date).format("HH:mm - DD/MM/YYYY")} lineHeight={30}></TextDisplay>
+                            <View style={[sty.flexRow, sty.gap_8]}>
+                                <View style={sty.flex_2}>
+                                    <TextDisplay fontSize={13} text={"Mã đơn hàng: " + item.order_code + "."}></TextDisplay>
+                                </View>
+                                <TextDisplay styles={[sty.flex_1, { textAlign: 'right' }]} text={formatPrice(Number(item.tong_tien)) + " đ"} color={appColor.primary} fontWeight='semibold' fontSize={16}>
+                                </TextDisplay>
+                            </View>
                         </View>
-                        <TextDisplay styles={[sty.flex_1, { textAlign: 'right' }]} text={formatPrice(item.amount) + " đ"} color={appColor.primary} fontWeight='semibold' fontSize={16}>
-                        </TextDisplay>
-                    </View>
-                </View>
-            )}
+                    )}
+                </> :
+                <>
+                    {detailTechnician?.lich_su_don_hang.data.map((item: DetailOrder) =>
+                        <View style={styles.box} >
+                            <TextDisplay text={moment(item.order_date).format("HH:mm - DD/MM/YYYY")} lineHeight={30}></TextDisplay>
+                            <View style={[sty.flexRow, sty.gap_8]}>
+                                <View style={sty.flex_2}>
+                                    <TextDisplay fontSize={13} text={"Mã đơn hàng: " + item.order_code + "."}></TextDisplay>
+                                </View>
+                                <TextDisplay styles={[sty.flex_1, { textAlign: 'right' }]} text={formatPrice(Number(item.tong_tien)) + " đ"} color={appColor.primary} fontWeight='semibold' fontSize={16}>
+                                </TextDisplay>
+                            </View>
+                        </View>
+                    )}
+                </>
+            }
         </View >
     )
 }

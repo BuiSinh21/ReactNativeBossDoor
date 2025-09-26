@@ -1,13 +1,46 @@
 import { View, Text, KeyboardAvoidingView, Platform, Keyboard, TouchableOpacity, ScrollView, Image, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GradientBackground, HeaderBack, DividerCustom, ButtonLoadMore } from '../../../components';
 import sty from '../../../themes/sty';
 import FormRequestSupport from './components/FormRequestSupport';
+import { Asset } from 'react-native-image-picker';
+import { updateTechnicianSupports } from '../../../apis/technician';
+import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
+import { handleErrorMessage } from '../../../utils/helpers';
+import { setModalSuccess } from '../../../redux/slices/commonSlice';
+import { useNavigation } from '@react-navigation/native';
 
 const RequestSupport = () => {
     const insets = useSafeAreaInsets();
+    const dispatch = useAppDispatch();
+    const navigator = useNavigation();
+    const [debcribe, setDebcribe] = useState("")
+    const [photo, setPhoto] = useState<Asset | null>(null)
+    const { user } = useAppSelector(state => state.auth);
 
+    const updateSupport = async () => {
+        if (debcribe != "")
+            try {
+                const res = await updateTechnicianSupports({
+                    id:null,
+                    customers_id: user.id,
+                    error_description: debcribe,
+                    image: photo ? photo.base64 : null,
+                })
+                if (res.status == 200) {
+                    dispatch(
+                        setModalSuccess({
+                            open: true,
+                            title: 'Yêu cầu hỗ trợ thành công.',
+                        }),
+                    );
+                    navigator.goBack()
+                }
+            } catch (error) {
+                handleErrorMessage(error)
+            }
+    }
     return (
         <GradientBackground >
             <HeaderBack title='Yêu cầu hỗ trợ' />
@@ -25,12 +58,12 @@ const RequestSupport = () => {
                             { paddingBottom: insets.bottom + 16 },
                         ]}
                         showsVerticalScrollIndicator={false}>
-                        <FormRequestSupport />
+                        <FormRequestSupport photo={photo} setPhoto={setPhoto} debcribe={debcribe} setDebcribe={setDebcribe} />
                     </ScrollView>
                 </TouchableOpacity>
                 <DividerCustom styles={[sty.mt_12]} height={1} color={"#F4F5F8"} />
                 <View style={styles.footer}>
-                    <ButtonLoadMore style={{ width: "85%", borderRadius: 20, paddingHorizontal: 20 }} fontText={16} color='#fff' height={50} onPress={() => { }} bgColor='#3683F7' title='Gửi yêu cầu' />
+                    <ButtonLoadMore style={{ width: "85%", borderRadius: 20, paddingHorizontal: 20 }} fontText={16} color='#fff' height={50} onPress={() => updateSupport()} bgColor='#3683F7' title='Gửi yêu cầu' />
                 </View>
             </KeyboardAvoidingView>
         </GradientBackground>

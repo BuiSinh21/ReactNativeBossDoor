@@ -12,6 +12,7 @@ import { Touchable } from 'react-native';
 import { appColor } from '../../constant/appColor';
 import { FONT_FAMILY } from '../../themes/fontFamily';
 import TextDisplay from '../TextDisplay';
+import sty from '../../themes/sty';
 // import {EyeSlash} from 'iconsax-react-native';
 // import {appColors} from '../constants/appColors';
 // import {globalStyles} from '../styles/globalStyles';
@@ -30,7 +31,8 @@ interface Props {
   onEnd?: () => void;
   minHeight?: number;
   required?: boolean;
-  setCheck?: React.Dispatch<React.SetStateAction<boolean>>
+  setCheck?: React.Dispatch<React.SetStateAction<boolean>>,
+  redCheck?: boolean,
 
 }
 
@@ -46,7 +48,7 @@ const FormInputText2 = (props: Props) => {
     multiline,
     onEnd,
     required,
-    setCheck
+    setCheck, redCheck
   } = props;
 
   const [isShowPass, setIsShowPass] = useState(isPassword ?? false);
@@ -66,7 +68,7 @@ const FormInputText2 = (props: Props) => {
       functionCheck(false);
     }
     else {
-       functionCheck(true);
+      functionCheck(true);
       setError(null);
     }
 
@@ -75,8 +77,15 @@ const FormInputText2 = (props: Props) => {
   return (
     <>
       {title &&
-        <TextDisplay text={title} fontSize={14} styles={{ marginBottom: 10 }}>
-        </TextDisplay>
+        <View style={[sty.flexRow]}>
+          <TextDisplay text={title} fontSize={14} styles={{ marginBottom: 10 }}>
+          </TextDisplay>
+          {
+            redCheck &&
+            <TextDisplay text={"*"} color='red' fontSize={14} styles={{ marginBottom: 10 }}>
+            </TextDisplay>
+          }
+        </View>
       }
       <View style={[styles.inputContainer, { marginBottom: error ? 0 : 15 }]}>
         <TextInput
