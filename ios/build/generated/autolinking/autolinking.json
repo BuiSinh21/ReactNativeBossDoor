@@ -196,7 +196,7 @@
       "platforms": {
         "ios": {
           "podspecPath": "/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/react-native-mmkv.podspec",
-          "version": "3.3.1",
+          "version": "3.3.3",
           "configurations": [],
           "scriptPhases": []
         },

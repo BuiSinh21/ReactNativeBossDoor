@@ -1843,7 +1843,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-mmkv (3.3.1):
+  - react-native-mmkv (3.3.3):
     - boost
     - DoubleConversion
     - fast_float
@@ -3008,7 +3008,7 @@ SPEC CHECKSUMS:
   react-native-get-random-values: d16467cf726c618e9c7a8c3c39c31faa2244bbba
   react-native-image-picker: 0314366753615115fa55c3cc937ac44cb7e75702
   react-native-maps: 1586d0ab8035cd6c22ae2b25376f2fced6822961
-  react-native-mmkv: a46b0a6df32c179997628085b3a5e0f3386d4053
+  react-native-mmkv: ac7507625cd74bac0eb5333604a7cd7b08fe9e3e
   react-native-network-info: 23b4f34419d7998727c9e50bf8dee3c1bd3f975a
   react-native-pager-view: a0516effb17ca5120ac2113bfd21b91130ad5748
   react-native-safe-area-context: c6e2edd1c1da07bdce287fa9d9e60c5f7b514616
