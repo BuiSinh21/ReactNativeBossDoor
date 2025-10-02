@@ -7,62 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		097BA20BEBD24BE4BEC0D0D4 /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AABBD5D2720041F9BC3D46B5 /* BeVietnamPro-ExtraBold.ttf */; };
-		0C80B921A6F3F58F76C31292 /* libPods-AppBossDoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AppBossDoor.a */; };
-		116ECFA887EF4B4F8BEF9F91 /* BeVietnamPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05555CE8767349409DF310E5 /* BeVietnamPro-Thin.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		1B1387373CDF4106B9537095 /* BeVietnamPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBF3D70E31548DBA88C70FE /* BeVietnamPro-SemiBoldItalic.ttf */; };
-		2D8A87B8DB1E4969B3D7ABFD /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95DD7C4D4DFA4EFBA163EC2B /* BeVietnamPro-Bold.ttf */; };
-		3DA621014BAA4531A2EC3F4B /* BeVietnamPro-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E056C1F3420A4A9CA1493472 /* BeVietnamPro-ThinItalic.ttf */; };
-		40DAE6228CCE434C89E1949D /* BeVietnamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47A32FCE9994DAD873B3138 /* BeVietnamPro-BoldItalic.ttf */; };
-		5B5862C93F0A42C8812E43D6 /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 456A3A8346EE4958AA507C50 /* BeVietnamPro-Regular.ttf */; };
-		5E88EECF75344C9FB0BD0818 /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EC32CEDE1614C23BEDDDB67 /* BeVietnamPro-ExtraBoldItalic.ttf */; };
-		6B0B130A3D7E4BBA94FDBC9F /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C20F7E0AB3A427A9F391A17 /* BeVietnamPro-Medium.ttf */; };
-		6B711F080D664F8996B7F182 /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E573015E18E94734A96FC0E0 /* BeVietnamPro-SemiBold.ttf */; };
+		2E8653B8EC78454FB4FE3655 /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16BB22315C545E6B00608FF /* BeVietnamPro-Bold.ttf */; };
+		36331DE3D0474FC8BF93AF4B /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC881F32A654E8C983CB5DE /* BeVietnamPro-ExtraBoldItalic.ttf */; };
+		3D13F9DCA7BD40E9B192D908 /* BeVietnamPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1F72108124A458C595538 /* BeVietnamPro-ExtraLightItalic.ttf */; };
+		464BAEA8AD614831AC369A41 /* BeVietnamPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC3A1A525BCC46FD89B53598 /* BeVietnamPro-SemiBoldItalic.ttf */; };
+		520CF2E70CE62ED22E8AA00C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		54BB7B72744243B9A41FF6AB /* BeVietnamPro-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C392B7B920874906B2ACBC5E /* BeVietnamPro-ThinItalic.ttf */; };
+		5E2F7BB62E4F2CF900141C9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E2F7BB52E4F2CF900141C9B /* GoogleService-Info.plist */; };
+		6E10610007AB43FF86A482EB /* BeVietnamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B0E57E6856D4A79B928438E /* BeVietnamPro-BlackItalic.ttf */; };
+		6E8A291F523F4ECC9B38CBCA /* BeVietnamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C043F5E410844DB82333BA8 /* BeVietnamPro-Italic.ttf */; };
+		742777DF6F16426392638A51 /* BeVietnamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41EB34F047E646D8B3937ABE /* BeVietnamPro-MediumItalic.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		7BDE4AACCEE1489D807E2194 /* BeVietnamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9E74321A66F410C8DC9835A /* BeVietnamPro-LightItalic.ttf */; };
-		7C687E5533D04273A82C7EF2 /* BeVietnamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A2D8112AAE4A4D84D92A32 /* BeVietnamPro-Italic.ttf */; };
-		7D12D2527F854976949BF2ED /* BeVietnamPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D33BE3552D36446D8F985122 /* BeVietnamPro-ExtraLight.ttf */; };
-		800B3C7F12A245EF9E1B4117 /* BeVietnamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6325851ADE7A4E04A865C335 /* BeVietnamPro-BlackItalic.ttf */; };
-		803AF818E6E745209CBC7D4C /* BeVietnamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F6211630CA46BFBF4B17F4 /* BeVietnamPro-Light.ttf */; };
-		80C9BAFC8D034C9C97FE2985 /* BeVietnamPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D44C18480378483EA6327B6D /* BeVietnamPro-ExtraLightItalic.ttf */; };
+		794519053915472AA67B74A5 /* BeVietnamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A62E6187551A4315BF629CFA /* BeVietnamPro-BoldItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9AED2A823A614AEB89FFF119 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE7FEA5271CC4A9D949E7038 /* OFL.txt */; };
-		9EF8641BE3F5451E93DCEF6F /* BeVietnamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3887553397854131B80711C1 /* BeVietnamPro-Black.ttf */; };
-		CBC8B06062B54BD3F7C2637A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		F760F21713014501AF39653C /* BeVietnamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EA5AE4F26641E1A7DBCEE9 /* BeVietnamPro-MediumItalic.ttf */; };
+		85BF196A1A294CE9B090E69C /* BeVietnamPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E91CD7B2CB143A7A3E5B09D /* BeVietnamPro-Thin.ttf */; };
+		90B4DD7BBA774E7287C650A4 /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00E6EB49F555437D832958CC /* BeVietnamPro-ExtraBold.ttf */; };
+		9C762057A2E5A34F8E6CC948 /* Pods_AppBossDoor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074380A05F651FFC7A00DFB2 /* Pods_AppBossDoor.framework */; };
+		A6841998161E4C249C3424C7 /* BeVietnamPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D73777DEC47748755FD72 /* BeVietnamPro-ExtraLight.ttf */; };
+		AB4812F890F34F9AACFE9A70 /* BeVietnamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B79350D66D4FEC98FAA8B1 /* BeVietnamPro-Black.ttf */; };
+		BD8E71EC0C0647E0A7DB9FD6 /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 648FCB53BD1248BE8B056F5D /* BeVietnamPro-Regular.ttf */; };
+		C2A191119C514CFB9CA5E30B /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB6D9A14D4ED480FAAB947C6 /* BeVietnamPro-SemiBold.ttf */; };
+		D4AE46AF2F8D4E689547A454 /* BeVietnamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DDCA3F8AC6D475786280B6C /* BeVietnamPro-Light.ttf */; };
+		EA317C7A1F6840BAAF07A2CC /* BeVietnamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE6E59FBCC4C5BB52A4D8C /* BeVietnamPro-LightItalic.ttf */; };
+		FD190B92A41347EF90071E5D /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5D8572EAF844239A3D5556B /* BeVietnamPro-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01F6211630CA46BFBF4B17F4 /* BeVietnamPro-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Light.ttf"; path = "../assets/fonts/BeVietnamPro-Light.ttf"; sourceTree = "<group>"; };
-		05555CE8767349409DF310E5 /* BeVietnamPro-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Thin.ttf"; path = "../assets/fonts/BeVietnamPro-Thin.ttf"; sourceTree = "<group>"; };
+		00E6EB49F555437D832958CC /* BeVietnamPro-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraBold.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		02B79350D66D4FEC98FAA8B1 /* BeVietnamPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Black.ttf"; path = "../assets/fonts/BeVietnamPro-Black.ttf"; sourceTree = "<group>"; };
+		074380A05F651FFC7A00DFB2 /* Pods_AppBossDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppBossDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* AppBossDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBossDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AppBossDoor/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppBossDoor/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = AppBossDoor/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1EC32CEDE1614C23BEDDDB67 /* BeVietnamPro-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraBoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		29A2D8112AAE4A4D84D92A32 /* BeVietnamPro-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Italic.ttf"; path = "../assets/fonts/BeVietnamPro-Italic.ttf"; sourceTree = "<group>"; };
-		3887553397854131B80711C1 /* BeVietnamPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Black.ttf"; path = "../assets/fonts/BeVietnamPro-Black.ttf"; sourceTree = "<group>"; };
+		1B0E57E6856D4A79B928438E /* BeVietnamPro-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-BlackItalic.ttf"; path = "../assets/fonts/BeVietnamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1DC881F32A654E8C983CB5DE /* BeVietnamPro-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraBoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-AppBossDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBossDoor.debug.xcconfig"; path = "Target Support Files/Pods-AppBossDoor/Pods-AppBossDoor.debug.xcconfig"; sourceTree = "<group>"; };
-		456A3A8346EE4958AA507C50 /* BeVietnamPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Regular.ttf"; path = "../assets/fonts/BeVietnamPro-Regular.ttf"; sourceTree = "<group>"; };
-		4BBF3D70E31548DBA88C70FE /* BeVietnamPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-SemiBoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3EC1F72108124A458C595538 /* BeVietnamPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraLightItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		41EB34F047E646D8B3937ABE /* BeVietnamPro-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-MediumItalic.ttf"; path = "../assets/fonts/BeVietnamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-AppBossDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppBossDoor.release.xcconfig"; path = "Target Support Files/Pods-AppBossDoor/Pods-AppBossDoor.release.xcconfig"; sourceTree = "<group>"; };
-		5C20F7E0AB3A427A9F391A17 /* BeVietnamPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Medium.ttf"; path = "../assets/fonts/BeVietnamPro-Medium.ttf"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-AppBossDoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppBossDoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6325851ADE7A4E04A865C335 /* BeVietnamPro-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-BlackItalic.ttf"; path = "../assets/fonts/BeVietnamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5ABE6E59FBCC4C5BB52A4D8C /* BeVietnamPro-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-LightItalic.ttf"; path = "../assets/fonts/BeVietnamPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		5E247CAE2E452D64000603C5 /* AppBossDoor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = AppBossDoor.entitlements; path = AppBossDoor/AppBossDoor.entitlements; sourceTree = "<group>"; };
+		5E2F7BB52E4F2CF900141C9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		648FCB53BD1248BE8B056F5D /* BeVietnamPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Regular.ttf"; path = "../assets/fonts/BeVietnamPro-Regular.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppBossDoor/AppDelegate.swift; sourceTree = "<group>"; };
+		7C043F5E410844DB82333BA8 /* BeVietnamPro-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Italic.ttf"; path = "../assets/fonts/BeVietnamPro-Italic.ttf"; sourceTree = "<group>"; };
+		7E4D73777DEC47748755FD72 /* BeVietnamPro-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraLight.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7E91CD7B2CB143A7A3E5B09D /* BeVietnamPro-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Thin.ttf"; path = "../assets/fonts/BeVietnamPro-Thin.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppBossDoor/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		95DD7C4D4DFA4EFBA163EC2B /* BeVietnamPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Bold.ttf"; path = "../assets/fonts/BeVietnamPro-Bold.ttf"; sourceTree = "<group>"; };
-		A1EA5AE4F26641E1A7DBCEE9 /* BeVietnamPro-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-MediumItalic.ttf"; path = "../assets/fonts/BeVietnamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
-		AABBD5D2720041F9BC3D46B5 /* BeVietnamPro-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraBold.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraBold.ttf"; sourceTree = "<group>"; };
-		CE7FEA5271CC4A9D949E7038 /* OFL.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OFL.txt; path = ../assets/fonts/OFL.txt; sourceTree = "<group>"; };
-		D33BE3552D36446D8F985122 /* BeVietnamPro-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraLight.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraLight.ttf"; sourceTree = "<group>"; };
-		D44C18480378483EA6327B6D /* BeVietnamPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ExtraLightItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		D9E74321A66F410C8DC9835A /* BeVietnamPro-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-LightItalic.ttf"; path = "../assets/fonts/BeVietnamPro-LightItalic.ttf"; sourceTree = "<group>"; };
-		E056C1F3420A4A9CA1493472 /* BeVietnamPro-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ThinItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ThinItalic.ttf"; sourceTree = "<group>"; };
-		E573015E18E94734A96FC0E0 /* BeVietnamPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-SemiBold.ttf"; path = "../assets/fonts/BeVietnamPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		9DDCA3F8AC6D475786280B6C /* BeVietnamPro-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Light.ttf"; path = "../assets/fonts/BeVietnamPro-Light.ttf"; sourceTree = "<group>"; };
+		A62E6187551A4315BF629CFA /* BeVietnamPro-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-BoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C392B7B920874906B2ACBC5E /* BeVietnamPro-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-ThinItalic.ttf"; path = "../assets/fonts/BeVietnamPro-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C5D8572EAF844239A3D5556B /* BeVietnamPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Medium.ttf"; path = "../assets/fonts/BeVietnamPro-Medium.ttf"; sourceTree = "<group>"; };
+		CC3A1A525BCC46FD89B53598 /* BeVietnamPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-SemiBoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E16BB22315C545E6B00608FF /* BeVietnamPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Bold.ttf"; path = "../assets/fonts/BeVietnamPro-Bold.ttf"; sourceTree = "<group>"; };
+		EB6D9A14D4ED480FAAB947C6 /* BeVietnamPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-SemiBold.ttf"; path = "../assets/fonts/BeVietnamPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F47A32FCE9994DAD873B3138 /* BeVietnamPro-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-BoldItalic.ttf"; path = "../assets/fonts/BeVietnamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-AppBossDoor.a in Frameworks */,
+				9C762057A2E5A34F8E6CC948 /* Pods_AppBossDoor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +81,8 @@
 		13B07FAE1A68108700A75B9A /* AppBossDoor */ = {
 			isa = PBXGroup;
 			children = (
+				5E2F7BB52E4F2CF900141C9B /* GoogleService-Info.plist */,
+				5E247CAE2E452D64000603C5 /* AppBossDoor.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -93,36 +96,34 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-AppBossDoor.a */,
+				074380A05F651FFC7A00DFB2 /* Pods_AppBossDoor.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		34172750E46046389936E909 /* Resources */ = {
+		3ABC58DCEB1D435FB75C23B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3887553397854131B80711C1 /* BeVietnamPro-Black.ttf */,
-				6325851ADE7A4E04A865C335 /* BeVietnamPro-BlackItalic.ttf */,
-				95DD7C4D4DFA4EFBA163EC2B /* BeVietnamPro-Bold.ttf */,
-				F47A32FCE9994DAD873B3138 /* BeVietnamPro-BoldItalic.ttf */,
-				AABBD5D2720041F9BC3D46B5 /* BeVietnamPro-ExtraBold.ttf */,
-				1EC32CEDE1614C23BEDDDB67 /* BeVietnamPro-ExtraBoldItalic.ttf */,
-				D33BE3552D36446D8F985122 /* BeVietnamPro-ExtraLight.ttf */,
-				D44C18480378483EA6327B6D /* BeVietnamPro-ExtraLightItalic.ttf */,
-				29A2D8112AAE4A4D84D92A32 /* BeVietnamPro-Italic.ttf */,
-				01F6211630CA46BFBF4B17F4 /* BeVietnamPro-Light.ttf */,
-				D9E74321A66F410C8DC9835A /* BeVietnamPro-LightItalic.ttf */,
-				5C20F7E0AB3A427A9F391A17 /* BeVietnamPro-Medium.ttf */,
-				A1EA5AE4F26641E1A7DBCEE9 /* BeVietnamPro-MediumItalic.ttf */,
-				456A3A8346EE4958AA507C50 /* BeVietnamPro-Regular.ttf */,
-				E573015E18E94734A96FC0E0 /* BeVietnamPro-SemiBold.ttf */,
-				4BBF3D70E31548DBA88C70FE /* BeVietnamPro-SemiBoldItalic.ttf */,
-				05555CE8767349409DF310E5 /* BeVietnamPro-Thin.ttf */,
-				E056C1F3420A4A9CA1493472 /* BeVietnamPro-ThinItalic.ttf */,
-				CE7FEA5271CC4A9D949E7038 /* OFL.txt */,
+				02B79350D66D4FEC98FAA8B1 /* BeVietnamPro-Black.ttf */,
+				1B0E57E6856D4A79B928438E /* BeVietnamPro-BlackItalic.ttf */,
+				E16BB22315C545E6B00608FF /* BeVietnamPro-Bold.ttf */,
+				A62E6187551A4315BF629CFA /* BeVietnamPro-BoldItalic.ttf */,
+				00E6EB49F555437D832958CC /* BeVietnamPro-ExtraBold.ttf */,
+				1DC881F32A654E8C983CB5DE /* BeVietnamPro-ExtraBoldItalic.ttf */,
+				7E4D73777DEC47748755FD72 /* BeVietnamPro-ExtraLight.ttf */,
+				3EC1F72108124A458C595538 /* BeVietnamPro-ExtraLightItalic.ttf */,
+				7C043F5E410844DB82333BA8 /* BeVietnamPro-Italic.ttf */,
+				9DDCA3F8AC6D475786280B6C /* BeVietnamPro-Light.ttf */,
+				5ABE6E59FBCC4C5BB52A4D8C /* BeVietnamPro-LightItalic.ttf */,
+				C5D8572EAF844239A3D5556B /* BeVietnamPro-Medium.ttf */,
+				41EB34F047E646D8B3937ABE /* BeVietnamPro-MediumItalic.ttf */,
+				648FCB53BD1248BE8B056F5D /* BeVietnamPro-Regular.ttf */,
+				EB6D9A14D4ED480FAAB947C6 /* BeVietnamPro-SemiBold.ttf */,
+				CC3A1A525BCC46FD89B53598 /* BeVietnamPro-SemiBoldItalic.ttf */,
+				7E91CD7B2CB143A7A3E5B09D /* BeVietnamPro-Thin.ttf */,
+				C392B7B920874906B2ACBC5E /* BeVietnamPro-ThinItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -140,7 +141,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				34172750E46046389936E909 /* Resources */,
+				3ABC58DCEB1D435FB75C23B0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -178,6 +179,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				3B8A4A5938C2CA63A6DAE48F /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
@@ -226,26 +228,26 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CBC8B06062B54BD3F7C2637A /* PrivacyInfo.xcprivacy in Resources */,
-				9EF8641BE3F5451E93DCEF6F /* BeVietnamPro-Black.ttf in Resources */,
-				800B3C7F12A245EF9E1B4117 /* BeVietnamPro-BlackItalic.ttf in Resources */,
-				2D8A87B8DB1E4969B3D7ABFD /* BeVietnamPro-Bold.ttf in Resources */,
-				40DAE6228CCE434C89E1949D /* BeVietnamPro-BoldItalic.ttf in Resources */,
-				097BA20BEBD24BE4BEC0D0D4 /* BeVietnamPro-ExtraBold.ttf in Resources */,
-				5E88EECF75344C9FB0BD0818 /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */,
-				7D12D2527F854976949BF2ED /* BeVietnamPro-ExtraLight.ttf in Resources */,
-				80C9BAFC8D034C9C97FE2985 /* BeVietnamPro-ExtraLightItalic.ttf in Resources */,
-				7C687E5533D04273A82C7EF2 /* BeVietnamPro-Italic.ttf in Resources */,
-				803AF818E6E745209CBC7D4C /* BeVietnamPro-Light.ttf in Resources */,
-				7BDE4AACCEE1489D807E2194 /* BeVietnamPro-LightItalic.ttf in Resources */,
-				6B0B130A3D7E4BBA94FDBC9F /* BeVietnamPro-Medium.ttf in Resources */,
-				F760F21713014501AF39653C /* BeVietnamPro-MediumItalic.ttf in Resources */,
-				5B5862C93F0A42C8812E43D6 /* BeVietnamPro-Regular.ttf in Resources */,
-				6B711F080D664F8996B7F182 /* BeVietnamPro-SemiBold.ttf in Resources */,
-				1B1387373CDF4106B9537095 /* BeVietnamPro-SemiBoldItalic.ttf in Resources */,
-				116ECFA887EF4B4F8BEF9F91 /* BeVietnamPro-Thin.ttf in Resources */,
-				3DA621014BAA4531A2EC3F4B /* BeVietnamPro-ThinItalic.ttf in Resources */,
-				9AED2A823A614AEB89FFF119 /* OFL.txt in Resources */,
+				520CF2E70CE62ED22E8AA00C /* PrivacyInfo.xcprivacy in Resources */,
+				5E2F7BB62E4F2CF900141C9B /* GoogleService-Info.plist in Resources */,
+				AB4812F890F34F9AACFE9A70 /* BeVietnamPro-Black.ttf in Resources */,
+				6E10610007AB43FF86A482EB /* BeVietnamPro-BlackItalic.ttf in Resources */,
+				2E8653B8EC78454FB4FE3655 /* BeVietnamPro-Bold.ttf in Resources */,
+				794519053915472AA67B74A5 /* BeVietnamPro-BoldItalic.ttf in Resources */,
+				90B4DD7BBA774E7287C650A4 /* BeVietnamPro-ExtraBold.ttf in Resources */,
+				36331DE3D0474FC8BF93AF4B /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */,
+				A6841998161E4C249C3424C7 /* BeVietnamPro-ExtraLight.ttf in Resources */,
+				3D13F9DCA7BD40E9B192D908 /* BeVietnamPro-ExtraLightItalic.ttf in Resources */,
+				6E8A291F523F4ECC9B38CBCA /* BeVietnamPro-Italic.ttf in Resources */,
+				D4AE46AF2F8D4E689547A454 /* BeVietnamPro-Light.ttf in Resources */,
+				EA317C7A1F6840BAAF07A2CC /* BeVietnamPro-LightItalic.ttf in Resources */,
+				FD190B92A41347EF90071E5D /* BeVietnamPro-Medium.ttf in Resources */,
+				742777DF6F16426392638A51 /* BeVietnamPro-MediumItalic.ttf in Resources */,
+				BD8E71EC0C0647E0A7DB9FD6 /* BeVietnamPro-Regular.ttf in Resources */,
+				C2A191119C514CFB9CA5E30B /* BeVietnamPro-SemiBold.ttf in Resources */,
+				464BAEA8AD614831AC369A41 /* BeVietnamPro-SemiBoldItalic.ttf in Resources */,
+				85BF196A1A294CE9B090E69C /* BeVietnamPro-Thin.ttf in Resources */,
+				54BB7B72744243B9A41FF6AB /* BeVietnamPro-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +286,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppBossDoor/Pods-AppBossDoor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3B8A4A5938C2CA63A6DAE48F /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n\n##########################################################################\n##########################################################################\n#\n#  NOTE THAT IF YOU CHANGE THIS FILE YOU MUST RUN pod install AFTERWARDS\n#\n#  This file is installed as an Xcode build script in the project file\n#  by cocoapods, and you will not see your changes until you pod install\n#\n##########################################################################\n##########################################################################\n\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  if ! _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\"); then\n    echo \"error: Failed to parse firebase.json, check for syntax errors.\"\n    exit 1\n  fi\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_analytics_storage\n  _ANALYTICS_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_analytics_storage\")\n  if [[ $_ANALYTICS_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_ANALYTICS_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_storage\n  _ANALYTICS_AD_STORAGE=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_storage\")\n  if [[ $_ANALYTICS_AD_STORAGE ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_STORAGE\")\")\n  fi\n\n  # config.analytics_default_allow_ad_user_data\n  _ANALYTICS_AD_USER_DATA=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_user_data\")\n  if [[ $_ANALYTICS_AD_USER_DATA ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AD_USER_DATA\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -344,9 +359,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = AppBossDoor/AppBossDoor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PQ4S338S3K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppBossDoor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Việc Làm TT";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,8 +380,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vieclamtt.vietapp.vn;
 				PRODUCT_NAME = AppBossDoor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TTHRMVietappProvisioning;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -372,8 +396,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = AppBossDoor/AppBossDoor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PQ4S338S3K;
 				INFOPLIST_FILE = AppBossDoor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Việc Làm TT";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,8 +416,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vieclamtt.vietapp.vn;
 				PRODUCT_NAME = AppBossDoor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TTHRMVietappProvisioning;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -441,6 +474,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -460,6 +504,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
@@ -510,6 +558,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -528,6 +587,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;

@@ -11,3 +11,17 @@ build/
 
 # Bỏ qua file môi trường
 .env
+
+android/app/build/
+android/.gradle/
+android/captures/
+android/gradlew.bat
+android/local.properties
+android/app/.cxx
+
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcshareddata/

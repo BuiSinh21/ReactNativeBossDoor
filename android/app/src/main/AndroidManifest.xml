@@ -2,6 +2,16 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -9,8 +19,18 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme"
-      android:usesCleartextTraffic="${usesCleartextTraffic}"
       android:supportsRtl="true">
+      <!-- FileProvider để chia sẻ file cho các app viewer khác mà không dính lỗi "FileUriExposed"  -->
+      <!-- applicationId phải khớp với applicationId thực tế"  -->
+      <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/file_paths" />
+      </provider>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
@@ -24,4 +44,11 @@
         </intent-filter>
       </activity>
     </application>
+    <queries>
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <!-- If you don't know the MIME type in advance, set "mimeType" to "*/*". -->
+        <data android:mimeType="application/pdf" />
+      </intent>
+    </queries>
 </manifest>

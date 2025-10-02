@@ -37,12 +37,6 @@ static inline std::string toString(const RNSBottomTabsTabBarItemLabelVisibilityM
     case RNSBottomTabsTabBarItemLabelVisibilityMode::Unlabeled: return "unlabeled";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsTabBarItemLabelVisibilityMode &value) {
-  return toString(value);
-}
-#endif
 enum class RNSBottomTabsTabBarMinimizeBehavior { Automatic, Never, OnScrollDown, OnScrollUp };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSBottomTabsTabBarMinimizeBehavior &result) {
@@ -62,12 +56,6 @@ static inline std::string toString(const RNSBottomTabsTabBarMinimizeBehavior &va
     case RNSBottomTabsTabBarMinimizeBehavior::OnScrollUp: return "onScrollUp";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsTabBarMinimizeBehavior &value) {
-  return toString(value);
-}
-#endif
 
 class RNSBottomTabsProps final : public ViewProps {
  public:
@@ -93,12 +81,6 @@ class RNSBottomTabsProps final : public ViewProps {
   SharedColor tabBarTintColor{};
   RNSBottomTabsTabBarMinimizeBehavior tabBarMinimizeBehavior{RNSBottomTabsTabBarMinimizeBehavior::Automatic};
   bool controlNavigationStateInJS{false};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSBottomTabsScreenOrientation { Inherit, All, AllButUpsideDown, Portrait, PortraitUp, PortraitDown, Landscape, LandscapeLeft, LandscapeRight };
@@ -130,12 +112,6 @@ static inline std::string toString(const RNSBottomTabsScreenOrientation &value) 
     case RNSBottomTabsScreenOrientation::LandscapeRight: return "landscapeRight";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsScreenOrientation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSBottomTabsScreenIconType { Image, Template, SfSymbol };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSBottomTabsScreenIconType &result) {
@@ -153,12 +129,6 @@ static inline std::string toString(const RNSBottomTabsScreenIconType &value) {
     case RNSBottomTabsScreenIconType::SfSymbol: return "sfSymbol";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsScreenIconType &value) {
-  return toString(value);
-}
-#endif
 enum class RNSBottomTabsScreenSystemItem { None, Bookmarks, Contacts, Downloads, Favorites, Featured, History, More, MostRecent, MostViewed, Recents, Search, TopRated };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSBottomTabsScreenSystemItem &result) {
@@ -196,26 +166,9 @@ static inline std::string toString(const RNSBottomTabsScreenSystemItem &value) {
     case RNSBottomTabsScreenSystemItem::TopRated: return "topRated";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsScreenSystemItem &value) {
-  return toString(value);
-}
-#endif
 struct RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct {
   bool popToRoot{true};
   bool scrollToTop{true};
-
-#ifdef RN_SERIALIZABLE_STATE
-  bool operator==(const RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct&) const = default;
-
-  folly::dynamic toDynamic() const {
-    folly::dynamic result = folly::dynamic::object();
-    result["popToRoot"] = popToRoot;
-    result["scrollToTop"] = scrollToTop;
-    return result;
-  }
-#endif
 };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct &result) {
@@ -235,24 +188,8 @@ static inline std::string toString(const RNSBottomTabsScreenSpecialEffectsRepeat
   return "[Object RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct]";
 }
 
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct &value) {
-  return value.toDynamic();
-}
-#endif
-
 struct RNSBottomTabsScreenSpecialEffectsStruct {
   RNSBottomTabsScreenSpecialEffectsRepeatedTabSelectionStruct repeatedTabSelection{};
-
-#ifdef RN_SERIALIZABLE_STATE
-  bool operator==(const RNSBottomTabsScreenSpecialEffectsStruct&) const = default;
-
-  folly::dynamic toDynamic() const {
-    folly::dynamic result = folly::dynamic::object();
-    result["repeatedTabSelection"] = ::facebook::react::toDynamic(repeatedTabSelection);
-    return result;
-  }
-#endif
 };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSBottomTabsScreenSpecialEffectsStruct &result) {
@@ -267,12 +204,6 @@ static inline void fromRawValue(const PropsParserContext& context, const RawValu
 static inline std::string toString(const RNSBottomTabsScreenSpecialEffectsStruct &value) {
   return "[Object RNSBottomTabsScreenSpecialEffectsStruct]";
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSBottomTabsScreenSpecialEffectsStruct &value) {
-  return value.toDynamic();
-}
-#endif
 class RNSBottomTabsScreenProps final : public ViewProps {
  public:
   RNSBottomTabsScreenProps() = default;
@@ -299,12 +230,6 @@ class RNSBottomTabsScreenProps final : public ViewProps {
   RNSBottomTabsScreenSystemItem systemItem{RNSBottomTabsScreenSystemItem::None};
   RNSBottomTabsScreenSpecialEffectsStruct specialEffects{};
   bool overrideScrollViewContentInsetAdjustmentBehavior{true};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSFullWindowOverlayProps final : public ViewProps {
@@ -315,12 +240,6 @@ class RNSFullWindowOverlayProps final : public ViewProps {
 #pragma mark - Props
 
   bool accessibilityContainerViewIsModal{true};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenStackHostProps final : public ViewProps {
@@ -331,12 +250,6 @@ class RNSScreenStackHostProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSSplitViewHostPreferredDisplayMode { Automatic, SecondaryOnly, OneBesideSecondary, OneOverSecondary, TwoBesideSecondary, TwoOverSecondary, TwoDisplaceSecondary };
@@ -364,12 +277,6 @@ static inline std::string toString(const RNSSplitViewHostPreferredDisplayMode &v
     case RNSSplitViewHostPreferredDisplayMode::TwoDisplaceSecondary: return "twoDisplaceSecondary";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostPreferredDisplayMode &value) {
-  return toString(value);
-}
-#endif
 enum class RNSSplitViewHostPreferredSplitBehavior { Automatic, Displace, Overlay, Tile };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSplitViewHostPreferredSplitBehavior &result) {
@@ -389,12 +296,6 @@ static inline std::string toString(const RNSSplitViewHostPreferredSplitBehavior 
     case RNSSplitViewHostPreferredSplitBehavior::Tile: return "tile";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostPreferredSplitBehavior &value) {
-  return toString(value);
-}
-#endif
 enum class RNSSplitViewHostPrimaryEdge { Leading, Trailing };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSplitViewHostPrimaryEdge &result) {
@@ -410,12 +311,6 @@ static inline std::string toString(const RNSSplitViewHostPrimaryEdge &value) {
     case RNSSplitViewHostPrimaryEdge::Trailing: return "trailing";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostPrimaryEdge &value) {
-  return toString(value);
-}
-#endif
 enum class RNSSplitViewHostDisplayModeButtonVisibility { Always, Automatic, Never };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSplitViewHostDisplayModeButtonVisibility &result) {
@@ -433,12 +328,6 @@ static inline std::string toString(const RNSSplitViewHostDisplayModeButtonVisibi
     case RNSSplitViewHostDisplayModeButtonVisibility::Never: return "never";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostDisplayModeButtonVisibility &value) {
-  return toString(value);
-}
-#endif
 enum class RNSSplitViewHostOrientation { Inherit, All, AllButUpsideDown, Portrait, PortraitUp, PortraitDown, Landscape, LandscapeLeft, LandscapeRight };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSplitViewHostOrientation &result) {
@@ -468,12 +357,6 @@ static inline std::string toString(const RNSSplitViewHostOrientation &value) {
     case RNSSplitViewHostOrientation::LandscapeRight: return "landscapeRight";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostOrientation &value) {
-  return toString(value);
-}
-#endif
 struct RNSSplitViewHostColumnMetricsStruct {
   Float minimumPrimaryColumnWidth{-1.0};
   Float maximumPrimaryColumnWidth{-1.0};
@@ -486,26 +369,6 @@ struct RNSSplitViewHostColumnMetricsStruct {
   Float minimumInspectorColumnWidth{-1.0};
   Float maximumInspectorColumnWidth{-1.0};
   Float preferredInspectorColumnWidthOrFraction{-1.0};
-
-#ifdef RN_SERIALIZABLE_STATE
-  bool operator==(const RNSSplitViewHostColumnMetricsStruct&) const = default;
-
-  folly::dynamic toDynamic() const {
-    folly::dynamic result = folly::dynamic::object();
-    result["minimumPrimaryColumnWidth"] = minimumPrimaryColumnWidth;
-    result["maximumPrimaryColumnWidth"] = maximumPrimaryColumnWidth;
-    result["preferredPrimaryColumnWidthOrFraction"] = preferredPrimaryColumnWidthOrFraction;
-    result["minimumSupplementaryColumnWidth"] = minimumSupplementaryColumnWidth;
-    result["maximumSupplementaryColumnWidth"] = maximumSupplementaryColumnWidth;
-    result["preferredSupplementaryColumnWidthOrFraction"] = preferredSupplementaryColumnWidthOrFraction;
-    result["minimumSecondaryColumnWidth"] = minimumSecondaryColumnWidth;
-    result["preferredSecondaryColumnWidthOrFraction"] = preferredSecondaryColumnWidthOrFraction;
-    result["minimumInspectorColumnWidth"] = minimumInspectorColumnWidth;
-    result["maximumInspectorColumnWidth"] = maximumInspectorColumnWidth;
-    result["preferredInspectorColumnWidthOrFraction"] = preferredInspectorColumnWidthOrFraction;
-    return result;
-  }
-#endif
 };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSplitViewHostColumnMetricsStruct &result) {
@@ -560,12 +423,6 @@ static inline void fromRawValue(const PropsParserContext& context, const RawValu
 static inline std::string toString(const RNSSplitViewHostColumnMetricsStruct &value) {
   return "[Object RNSSplitViewHostColumnMetricsStruct]";
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewHostColumnMetricsStruct &value) {
-  return value.toDynamic();
-}
-#endif
 class RNSSplitViewHostProps final : public ViewProps {
  public:
   RNSSplitViewHostProps() = default;
@@ -582,12 +439,6 @@ class RNSSplitViewHostProps final : public ViewProps {
   RNSSplitViewHostOrientation orientation{RNSSplitViewHostOrientation::Inherit};
   bool presentsWithGesture{true};
   bool showInspector{false};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSSplitViewScreenColumnType { Column, Inspector };
@@ -606,12 +457,6 @@ static inline std::string toString(const RNSSplitViewScreenColumnType &value) {
   }
 }
 
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSplitViewScreenColumnType &value) {
-  return toString(value);
-}
-#endif
-
 class RNSSplitViewScreenProps final : public ViewProps {
  public:
   RNSSplitViewScreenProps() = default;
@@ -620,12 +465,6 @@ class RNSSplitViewScreenProps final : public ViewProps {
 #pragma mark - Props
 
   RNSSplitViewScreenColumnType columnType{RNSSplitViewScreenColumnType::Column};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSStackScreenProps final : public ViewProps {
@@ -637,12 +476,6 @@ class RNSStackScreenProps final : public ViewProps {
 
   int maxLifecycleState{0};
   std::string screenKey{};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSModalScreenStackPresentation { Push, Modal, TransparentModal, FullScreenModal, FormSheet, PageSheet, ContainedModal, ContainedTransparentModal };
@@ -672,12 +505,6 @@ static inline std::string toString(const RNSModalScreenStackPresentation &value)
     case RNSModalScreenStackPresentation::ContainedTransparentModal: return "containedTransparentModal";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSModalScreenStackPresentation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSModalScreenStackAnimation { Default, Flip, Simple_push, None, Fade, Slide_from_right, Slide_from_left, Slide_from_bottom, Fade_from_bottom, Ios_from_right, Ios_from_left };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSModalScreenStackAnimation &result) {
@@ -711,12 +538,6 @@ static inline std::string toString(const RNSModalScreenStackAnimation &value) {
     case RNSModalScreenStackAnimation::Ios_from_left: return "ios_from_left";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSModalScreenStackAnimation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSModalScreenReplaceAnimation { Pop, Push };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSModalScreenReplaceAnimation &result) {
@@ -732,12 +553,6 @@ static inline std::string toString(const RNSModalScreenReplaceAnimation &value) 
     case RNSModalScreenReplaceAnimation::Push: return "push";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSModalScreenReplaceAnimation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSModalScreenSwipeDirection { Vertical, Horizontal };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSModalScreenSwipeDirection &result) {
@@ -753,30 +568,11 @@ static inline std::string toString(const RNSModalScreenSwipeDirection &value) {
     case RNSModalScreenSwipeDirection::Horizontal: return "horizontal";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSModalScreenSwipeDirection &value) {
-  return toString(value);
-}
-#endif
 struct RNSModalScreenGestureResponseDistanceStruct {
   Float start{0.0};
   Float end{0.0};
   Float top{0.0};
   Float bottom{0.0};
-
-#ifdef RN_SERIALIZABLE_STATE
-  bool operator==(const RNSModalScreenGestureResponseDistanceStruct&) const = default;
-
-  folly::dynamic toDynamic() const {
-    folly::dynamic result = folly::dynamic::object();
-    result["start"] = start;
-    result["end"] = end;
-    result["top"] = top;
-    result["bottom"] = bottom;
-    return result;
-  }
-#endif
 };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSModalScreenGestureResponseDistanceStruct &result) {
@@ -803,12 +599,6 @@ static inline void fromRawValue(const PropsParserContext& context, const RawValu
 static inline std::string toString(const RNSModalScreenGestureResponseDistanceStruct &value) {
   return "[Object RNSModalScreenGestureResponseDistanceStruct]";
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSModalScreenGestureResponseDistanceStruct &value) {
-  return value.toDynamic();
-}
-#endif
 class RNSModalScreenProps final : public ViewProps {
  public:
   RNSModalScreenProps() = default;
@@ -848,12 +638,6 @@ class RNSModalScreenProps final : public ViewProps {
   bool navigationBarTranslucent{false};
   bool navigationBarHidden{false};
   bool nativeBackButtonDismissalEnabled{false};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenContainerProps final : public ViewProps {
@@ -864,12 +648,6 @@ class RNSScreenContainerProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenContentWrapperProps final : public ViewProps {
@@ -880,12 +658,6 @@ class RNSScreenContentWrapperProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenFooterProps final : public ViewProps {
@@ -896,12 +668,6 @@ class RNSScreenFooterProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSScreenStackPresentation { Push, Modal, TransparentModal, FullScreenModal, FormSheet, PageSheet, ContainedModal, ContainedTransparentModal };
@@ -931,12 +697,6 @@ static inline std::string toString(const RNSScreenStackPresentation &value) {
     case RNSScreenStackPresentation::ContainedTransparentModal: return "containedTransparentModal";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackPresentation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSScreenStackAnimation { Default, Flip, Simple_push, None, Fade, Slide_from_right, Slide_from_left, Slide_from_bottom, Fade_from_bottom, Ios_from_right, Ios_from_left };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenStackAnimation &result) {
@@ -970,12 +730,6 @@ static inline std::string toString(const RNSScreenStackAnimation &value) {
     case RNSScreenStackAnimation::Ios_from_left: return "ios_from_left";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackAnimation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSScreenReplaceAnimation { Pop, Push };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenReplaceAnimation &result) {
@@ -991,12 +745,6 @@ static inline std::string toString(const RNSScreenReplaceAnimation &value) {
     case RNSScreenReplaceAnimation::Push: return "push";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenReplaceAnimation &value) {
-  return toString(value);
-}
-#endif
 enum class RNSScreenSwipeDirection { Vertical, Horizontal };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenSwipeDirection &result) {
@@ -1012,30 +760,11 @@ static inline std::string toString(const RNSScreenSwipeDirection &value) {
     case RNSScreenSwipeDirection::Horizontal: return "horizontal";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenSwipeDirection &value) {
-  return toString(value);
-}
-#endif
 struct RNSScreenGestureResponseDistanceStruct {
   Float start{0.0};
   Float end{0.0};
   Float top{0.0};
   Float bottom{0.0};
-
-#ifdef RN_SERIALIZABLE_STATE
-  bool operator==(const RNSScreenGestureResponseDistanceStruct&) const = default;
-
-  folly::dynamic toDynamic() const {
-    folly::dynamic result = folly::dynamic::object();
-    result["start"] = start;
-    result["end"] = end;
-    result["top"] = top;
-    result["bottom"] = bottom;
-    return result;
-  }
-#endif
 };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenGestureResponseDistanceStruct &result) {
@@ -1062,12 +791,6 @@ static inline void fromRawValue(const PropsParserContext& context, const RawValu
 static inline std::string toString(const RNSScreenGestureResponseDistanceStruct &value) {
   return "[Object RNSScreenGestureResponseDistanceStruct]";
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenGestureResponseDistanceStruct &value) {
-  return value.toDynamic();
-}
-#endif
 class RNSScreenProps final : public ViewProps {
  public:
   RNSScreenProps() = default;
@@ -1107,12 +830,6 @@ class RNSScreenProps final : public ViewProps {
   bool navigationBarTranslucent{false};
   bool navigationBarHidden{false};
   bool nativeBackButtonDismissalEnabled{false};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenNavigationContainerProps final : public ViewProps {
@@ -1123,12 +840,6 @@ class RNSScreenNavigationContainerProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSScreenStackHeaderConfigDirection { Rtl, Ltr };
@@ -1146,12 +857,6 @@ static inline std::string toString(const RNSScreenStackHeaderConfigDirection &va
     case RNSScreenStackHeaderConfigDirection::Ltr: return "ltr";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackHeaderConfigDirection &value) {
-  return toString(value);
-}
-#endif
 enum class RNSScreenStackHeaderConfigBackButtonDisplayMode { Minimal, Default, Generic };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenStackHeaderConfigBackButtonDisplayMode &result) {
@@ -1169,12 +874,6 @@ static inline std::string toString(const RNSScreenStackHeaderConfigBackButtonDis
     case RNSScreenStackHeaderConfigBackButtonDisplayMode::Generic: return "generic";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackHeaderConfigBackButtonDisplayMode &value) {
-  return toString(value);
-}
-#endif
 enum class RNSScreenStackHeaderConfigBlurEffect { None, ExtraLight, Light, Dark, Regular, Prominent, SystemUltraThinMaterial, SystemThinMaterial, SystemMaterial, SystemThickMaterial, SystemChromeMaterial, SystemUltraThinMaterialLight, SystemThinMaterialLight, SystemMaterialLight, SystemThickMaterialLight, SystemChromeMaterialLight, SystemUltraThinMaterialDark, SystemThinMaterialDark, SystemMaterialDark, SystemThickMaterialDark, SystemChromeMaterialDark };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSScreenStackHeaderConfigBlurEffect &result) {
@@ -1229,12 +928,6 @@ static inline std::string toString(const RNSScreenStackHeaderConfigBlurEffect &v
   }
 }
 
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackHeaderConfigBlurEffect &value) {
-  return toString(value);
-}
-#endif
-
 class RNSScreenStackHeaderConfigProps final : public ViewProps {
  public:
   RNSScreenStackHeaderConfigProps() = default;
@@ -1270,12 +963,6 @@ class RNSScreenStackHeaderConfigProps final : public ViewProps {
   bool backButtonInCustomView{false};
   RNSScreenStackHeaderConfigBlurEffect blurEffect{RNSScreenStackHeaderConfigBlurEffect::None};
   bool topInsetEnabled{false};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSScreenStackHeaderSubviewType { Back, Right, Left, Title, Center, SearchBar };
@@ -1302,12 +989,6 @@ static inline std::string toString(const RNSScreenStackHeaderSubviewType &value)
   }
 }
 
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSScreenStackHeaderSubviewType &value) {
-  return toString(value);
-}
-#endif
-
 class RNSScreenStackHeaderSubviewProps final : public ViewProps {
  public:
   RNSScreenStackHeaderSubviewProps() = default;
@@ -1316,12 +997,6 @@ class RNSScreenStackHeaderSubviewProps final : public ViewProps {
 #pragma mark - Props
 
   RNSScreenStackHeaderSubviewType type{RNSScreenStackHeaderSubviewType::Left};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 class RNSScreenStackProps final : public ViewProps {
@@ -1332,12 +1007,6 @@ class RNSScreenStackProps final : public ViewProps {
 #pragma mark - Props
 
   
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 enum class RNSSearchBarAutoCapitalize { None, Words, Sentences, Characters };
@@ -1359,12 +1028,6 @@ static inline std::string toString(const RNSSearchBarAutoCapitalize &value) {
     case RNSSearchBarAutoCapitalize::Characters: return "characters";
   }
 }
-
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSearchBarAutoCapitalize &value) {
-  return toString(value);
-}
-#endif
 enum class RNSSearchBarPlacement { Automatic, Inline, Stacked, Integrated, IntegratedButton, IntegratedCentered };
 
 static inline void fromRawValue(const PropsParserContext& context, const RawValue &value, RNSSearchBarPlacement &result) {
@@ -1389,12 +1052,6 @@ static inline std::string toString(const RNSSearchBarPlacement &value) {
   }
 }
 
-#ifdef RN_SERIALIZABLE_STATE
-static inline folly::dynamic toDynamic(const RNSSearchBarPlacement &value) {
-  return toString(value);
-}
-#endif
-
 class RNSSearchBarProps final : public ViewProps {
  public:
   RNSSearchBarProps() = default;
@@ -1418,12 +1075,6 @@ class RNSSearchBarProps final : public ViewProps {
   SharedColor hintTextColor{};
   SharedColor headerIconColor{};
   bool shouldShowHintSearchIcon{true};
-
-  #ifdef RN_SERIALIZABLE_STATE
-  ComponentName getDiffPropsImplementationTarget() const override;
-
-  folly::dynamic getDiffProps(const Props* prevProps) const override;
-  #endif
 };
 
 } // namespace facebook::react

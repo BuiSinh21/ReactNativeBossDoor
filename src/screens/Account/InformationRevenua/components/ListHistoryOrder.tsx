@@ -21,8 +21,8 @@ const ListHistoryOrder = () => {
             <TextDisplay text={"Lịch sử đơn hàng"} color={appColor.textBlack} />
             {data.check == true ?
                 <>
-                    {userDisplay?.lich_su_don_hang.data.map((item: DetailOrder) =>
-                        <View style={styles.box} >
+                    {userDisplay?.lich_su_don_hang?.data.map((item: DetailOrder) =>
+                        <View  key={"key_"+ item.order_id} style={styles.box} >
                             <TextDisplay text={moment(item.order_date).format("HH:mm - DD/MM/YYYY")} lineHeight={30}></TextDisplay>
                             <View style={[sty.flexRow, sty.gap_8]}>
                                 <View style={sty.flex_2}>
@@ -35,8 +35,8 @@ const ListHistoryOrder = () => {
                     )}
                 </> :
                 <>
-                    {detailTechnician?.lich_su_don_hang.data.map((item: DetailOrder) =>
-                        <View style={styles.box} >
+                    {detailTechnician?.lich_su_don_hang?.data.map((item: DetailOrder) =>
+                        <View key={"key_"+ item.order_id} style={styles.box} >
                             <TextDisplay text={moment(item.order_date).format("HH:mm - DD/MM/YYYY")} lineHeight={30}></TextDisplay>
                             <View style={[sty.flexRow, sty.gap_8]}>
                                 <View style={sty.flex_2}>

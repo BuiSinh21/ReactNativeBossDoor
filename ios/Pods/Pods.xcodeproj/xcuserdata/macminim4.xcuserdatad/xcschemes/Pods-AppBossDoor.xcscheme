@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "82F69C0A16107EC42FDED2BDA75BA4B2"
-               BuildableName = "libPods-AppBossDoor.a"
+               BuildableName = "Pods_AppBossDoor.framework"
                BlueprintName = "Pods-AppBossDoor"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

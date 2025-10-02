@@ -34,6 +34,7 @@ export interface HistoryOrderDto {
   total: number,
 }
 export interface DetailOrder {
+  danh_sach_dich_vu: string[],
   dia_chi: string,
   order_id: number,
   order_code: string,
@@ -41,4 +42,27 @@ export interface DetailOrder {
   so_dien_thoai: string,
   ten_khach_hang: string,
   tong_tien: string,
+  status:string,
+  before_repair_images:any[],
+  after_repair_images:any[],
+  vote:number|null,
+  vote_trung_binh:number|null,
+
+
+}
+export interface DetailOrderReport {
+  order_id: number,
+  order_code: string,
+  order_date: string,
+  so_dien_thoai: string,
+  ten_khach_hang: string,
+  tong_doanh_thu: string,
+  services:Services[]
+}
+export interface Services {
+  order_id: number,
+  service_details_id: number,
+  ten_dich_vu: string,
+  quantity: number,
+  doanh_thu: number,
 }

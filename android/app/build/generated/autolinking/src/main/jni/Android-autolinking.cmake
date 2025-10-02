@@ -6,25 +6,50 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 # or link against a old prefab target (this is needed for React Native 0.76 on).
 set(REACTNATIVE_MERGED_SO true)
 
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/@react-native-clipboard/clipboard/android/build/generated/source/codegen/jni/" rnclipboard_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-config/android/build/generated/source/codegen/jni/" RNCConfigModule_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/" rngesturehandler_codegen_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-clipboard/clipboard/android/build/generated/source/codegen/jni/" rnclipboard_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-community/geolocation/android/build/generated/source/codegen/jni/" RNCGeolocationSpec_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-community/slider/android/src/main/jni/" RNCSlider_autolinked_build)
 
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/" RNImagePickerSpec_autolinked_build)
 
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-maps/android/src/main/jni/" RNMapsSpecs_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/" RNMmkvSpec_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-mmkv/android/" RNMmkvSpec_cxxmodule_autolinked_build)
 
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/" pagerview_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/" RNPermissionsSpec_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-safe-area-context/android/src/main/jni/" safeareacontext_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-screens/android/src/main/jni/" rnscreens_autolinked_build)
-add_subdirectory("/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-svg/android/src/main/jni/" rnsvg_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-camera-kit/android/build/generated/source/codegen/jni/" rncamerakit_specs_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-config/android/build/generated/source/codegen/jni/" RNCConfigModule_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-date-picker/android/build/generated/source/codegen/jni/" RNDatePickerSpecs_autolinked_build)
+
+
+
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/" rngesturehandler_codegen_autolinked_build)
+
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/" RNImagePickerSpec_autolinked_build)
+
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-maps/android/src/main/jni/" RNMapsSpecs_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/" RNMmkvSpec_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-mmkv/android/" RNMmkvSpec_cxxmodule_autolinked_build)
+
+
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-pager-view/android/build/generated/source/codegen/jni/" pagerview_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-permissions/android/build/generated/source/codegen/jni/" RNPermissionsSpec_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-safe-area-context/android/src/main/jni/" safeareacontext_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-screens/android/src/main/jni/" rnscreens_autolinked_build)
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-svg/android/src/main/jni/" rnsvg_autolinked_build)
+
+
+
+add_subdirectory("/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/generated/source/codegen/jni/" RNCWebViewSpec_autolinked_build)
 
 set(AUTOLINKED_LIBRARIES
   react_codegen_rnclipboard
+  react_codegen_RNCGeolocationSpec
+  react_codegen_RNCSlider
+  
+  
+  
+  react_codegen_rncamerakit_specs
   react_codegen_RNCConfigModule
+  react_codegen_RNDatePickerSpecs
+  
+  
+  
   react_codegen_rngesturehandler_codegen
   
   react_codegen_RNImagePickerSpec
@@ -33,9 +58,14 @@ set(AUTOLINKED_LIBRARIES
   react_codegen_RNMmkvSpec
 react-native-mmkv
   
+  
   react_codegen_pagerview
   react_codegen_RNPermissionsSpec
   react_codegen_safeareacontext
   react_codegen_rnscreens
   react_codegen_rnsvg
+  
+  
+  
+  react_codegen_RNCWebViewSpec
 )

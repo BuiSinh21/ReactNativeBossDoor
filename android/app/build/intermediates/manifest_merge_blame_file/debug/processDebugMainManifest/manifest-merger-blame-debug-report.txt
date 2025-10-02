@@ -1,428 +1,962 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.appbossdoor"
+3    package="com.AppBossDoor"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-9        android:targetSdkVersion="36" />
+9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:3:5-67
-11-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:3:22-64
+11-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:3:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[:react-native-network-info] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-79
-12-->[:react-native-network-info] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-76
+12-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:5:5-78
+12-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:5:22-76
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[:react-native-network-info] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:5-76
-13-->[:react-native-network-info] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-network-info/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:22-73
-14    <!--
-15    This manifest file is used only by Gradle to configure debug-only capabilities
-16    for React Native Apps.
-17    -->
-18    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-18-->[com.facebook.react:react-android:0.81.4] /Users/macminim4/.gradle/caches/8.14.3/transforms/74c934cba612c86652108f0e4f0f16aa/transformed/react-android-0.81.4-debug/AndroidManifest.xml:16:5-78
-18-->[com.facebook.react:react-android:0.81.4] /Users/macminim4/.gradle/caches/8.14.3/transforms/74c934cba612c86652108f0e4f0f16aa/transformed/react-android-0.81.4-debug/AndroidManifest.xml:16:22-75
+13-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:6:5-75
+13-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:6:22-73
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:7:5-80
+14-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:8:5-78
+15-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:8:22-76
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:9:5-84
+16-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:9:22-82
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:11:5-77
+17-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:11:22-74
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:13:5-65
+18-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:13:22-62
 19
-20    <uses-feature
-20-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
-21        android:glEsVersion="0x00020000"
-21-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
-22        android:required="true" />
-22-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
-23
-24    <queries>
-24-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:27:5-30:15
-25
-26        <!-- Needs to be explicitly declared on Android R+ -->
-27        <package android:name="com.google.android.apps.maps" />
-27-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
-27-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
-28    </queries>
-29
-30    <uses-permission android:name="android.permission.WAKE_LOCK" />
-30-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:23:5-68
-30-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:23:22-65
-31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-31-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:5-81
-31-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:22-78
-32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-32-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:5-77
-32-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:22-74
-33
-34    <permission
-34-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
-35        android:name="com.appbossdoor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-35-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
-36        android:protectionLevel="signature" />
-36-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
-37
-38    <uses-permission android:name="com.appbossdoor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-38-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
-38-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
-39
-40    <application
-41        android:name="com.appbossdoor.MainApplication"
-41-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:6:7-38
-42        android:allowBackup="false"
-42-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:10:7-34
-43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cf850040613750ad87bc046a1179613b/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
-44        android:debuggable="true"
-45        android:extractNativeLibs="false"
-46        android:icon="@mipmap/ic_launcher"
-46-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:8:7-41
-47        android:label="@string/app_name"
-47-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:7:7-39
-48        android:roundIcon="@mipmap/ic_launcher_round"
-48-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:9:7-52
-49        android:supportsRtl="true"
-49-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:13:7-33
-50        android:theme="@style/AppTheme"
-50-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:11:7-38
-51        android:usesCleartextTraffic="true" >
-51-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:12:7-61
-52        <activity
-52-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:14:7-25:18
-53            android:name="com.appbossdoor.MainActivity"
-53-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:15:9-37
-54            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-54-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:17:9-118
-55            android:exported="true"
-55-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:20:9-32
-56            android:label="@string/app_name"
-56-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:16:9-41
-57            android:launchMode="singleTask"
-57-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:18:9-40
-58            android:windowSoftInputMode="adjustResize" >
-58-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:19:9-51
-59            <intent-filter>
-59-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:21:9-24:25
-60                <action android:name="android.intent.action.MAIN" />
-60-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:22:13-65
-60-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:22:21-62
-61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:23:13-73
-62-->/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/src/main/AndroidManifest.xml:23:23-70
-63            </intent-filter>
-64        </activity>
+20    <queries>
+20-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:47:5-53:15
+21        <intent>
+21-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:48:7-52:16
+22            <action android:name="android.intent.action.VIEW" />
+22-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:9-61
+22-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:17-58
+23            <!-- If you don't know the MIME type in advance, set "mimeType" to "*/*". -->
+24            <data android:mimeType="application/pdf" />
+24-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:51:9-52
+24-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:51:15-49
+25        </intent>
+26        <intent>
+26-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-10:18
+27            <action android:name="org.chromium.intent.action.PAY" />
+27-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-69
+27-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:21-66
+28        </intent>
+29        <intent>
+29-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:9-13:18
+30            <action android:name="org.chromium.intent.action.IS_READY_TO_PAY" />
+30-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-81
+30-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:21-78
+31        </intent>
+32        <intent>
+32-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:9-16:18
+33            <action android:name="org.chromium.intent.action.UPDATE_PAYMENT_DETAILS" />
+33-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-88
+33-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:21-85
+34        </intent>
+35        <intent>
+35-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:23:9-25:18
+36            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+36-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:24:13-86
+36-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:24:21-83
+37        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+38        <package android:name="com.google.android.apps.maps" />
+38-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:7-61
+38-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:29:16-59
+39    </queries>
+40
+41    <uses-permission android:name="android.permission.WAKE_LOCK" />
+41-->[:react-native-firebase_auth] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-68
+41-->[:react-native-firebase_auth] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-65
+42    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+42-->[:react-native-camera-kit] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-camera-kit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-80
+42-->[:react-native-camera-kit] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-camera-kit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-77
+43    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+43-->[:react-native-camera-kit] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-camera-kit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:5-81
+43-->[:react-native-camera-kit] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-camera-kit/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:22-78
+44    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+44-->[:react-native-touch-id] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-touch-id/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-74
+44-->[:react-native-touch-id] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-touch-id/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-71
+45    <!--
+46    This manifest file is used only by Gradle to configure debug-only capabilities
+47    for React Native Apps.
+48    -->
+49    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+49-->[com.facebook.react:react-android:0.79.1] /Users/macminim4/.gradle/caches/8.13/transforms/58eb1a4899b574bbb11744576335cc71/transformed/react-android-0.79.1-debug/AndroidManifest.xml:16:5-78
+49-->[com.facebook.react:react-android:0.79.1] /Users/macminim4/.gradle/caches/8.13/transforms/58eb1a4899b574bbb11744576335cc71/transformed/react-android-0.79.1-debug/AndroidManifest.xml:16:22-75
+50    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+50-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:5-81
+50-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:25:22-78
+51    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+51-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:5-77
+51-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:26:22-74
+52
+53    <uses-feature
+53-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:22:5-24:33
+54        android:glEsVersion="0x00020000"
+54-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:23:8-40
+55        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+55-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:24:8-31
+56    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+56-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:5-82
+56-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:26:22-79
+57    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+57-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/macminim4/.gradle/caches/8.13/transforms/654a78f5e62197830af6d4323203186c/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:5-98
+57-->[com.google.android.recaptcha:recaptcha:18.6.1] /Users/macminim4/.gradle/caches/8.13/transforms/654a78f5e62197830af6d4323203186c/transformed/recaptcha-18.6.1/AndroidManifest.xml:9:22-95
+58
+59    <permission
+59-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+60        android:name="com.AppBossDoor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+60-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+61        android:protectionLevel="signature" />
+61-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+62
+63    <uses-permission android:name="com.AppBossDoor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+63-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+63-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+64    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+64-->[com.android.installreferrer:installreferrer:1.1.2] /Users/macminim4/.gradle/caches/8.13/transforms/1801546601201e2f0546b7b443aa19d2/transformed/installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+64-->[com.android.installreferrer:installreferrer:1.1.2] /Users/macminim4/.gradle/caches/8.13/transforms/1801546601201e2f0546b7b443aa19d2/transformed/installreferrer-1.1.2/AndroidManifest.xml:9:22-107
 65
-66        <provider
-66-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-16:20
-67            android:name="com.imagepicker.ImagePickerProvider"
-67-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-63
-68            android:authorities="com.appbossdoor.imagepickerprovider"
-68-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-71
-69            android:exported="false"
-69-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
-70            android:grantUriPermissions="true" >
-70-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-47
-71            <meta-data
-71-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-15:70
-72                android:name="android.support.FILE_PROVIDER_PATHS"
-72-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:17-67
-73                android:resource="@xml/imagepicker_provider_paths" />
-73-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:17-67
-74        </provider>
-75
-76        <activity
-76-->[com.facebook.react:react-android:0.81.4] /Users/macminim4/.gradle/caches/8.14.3/transforms/74c934cba612c86652108f0e4f0f16aa/transformed/react-android-0.81.4-debug/AndroidManifest.xml:19:9-21:40
-77            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-77-->[com.facebook.react:react-android:0.81.4] /Users/macminim4/.gradle/caches/8.14.3/transforms/74c934cba612c86652108f0e4f0f16aa/transformed/react-android-0.81.4-debug/AndroidManifest.xml:20:13-77
-78            android:exported="false" />
-78-->[com.facebook.react:react-android:0.81.4] /Users/macminim4/.gradle/caches/8.14.3/transforms/74c934cba612c86652108f0e4f0f16aa/transformed/react-android-0.81.4-debug/AndroidManifest.xml:21:13-37
-79
-80        <meta-data
-80-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/80a02bfeb858dadd93aa6dab4e5c31e9/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:23:9-25:69
-81            android:name="com.google.android.gms.version"
-81-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/80a02bfeb858dadd93aa6dab4e5c31e9/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:24:13-58
-82            android:value="@integer/google_play_services_version" /> <!-- Needs to be explicitly declared on P+ -->
-82-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/80a02bfeb858dadd93aa6dab4e5c31e9/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:25:13-66
-83        <uses-library
-83-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
-84            android:name="org.apache.http.legacy"
-84-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
-85            android:required="false" />
-85-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/dd154a5b53a3ce17cade28c19ecfaffb/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
-86
-87        <activity
-87-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cb64bd601add9508a19d80b9bedaf996/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
-88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-88-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cb64bd601add9508a19d80b9bedaf996/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
-89            android:exported="false"
-89-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cb64bd601add9508a19d80b9bedaf996/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
-90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-90-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/cb64bd601add9508a19d80b9bedaf996/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
-91
-92        <provider
-92-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:29:9-37:20
-93            android:name="androidx.startup.InitializationProvider"
-93-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:30:13-67
-94            android:authorities="com.appbossdoor.androidx-startup"
-94-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:31:13-68
-95            android:exported="false" >
-95-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:32:13-37
-96            <meta-data
-96-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
-97                android:name="androidx.work.WorkManagerInitializer"
-97-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
-98                android:value="androidx.startup" />
-98-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
-99            <meta-data
-99-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/5d89df379fb5e288766425186a57c744/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-100-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/5d89df379fb5e288766425186a57c744/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-101                android:value="androidx.startup" />
-101-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/5d89df379fb5e288766425186a57c744/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-102            <meta-data
-102-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.14.3/transforms/a09e07c69b92fa1f48279abc46fdb413/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
-103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-103-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.14.3/transforms/a09e07c69b92fa1f48279abc46fdb413/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
-104                android:value="androidx.startup" />
-104-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.14.3/transforms/a09e07c69b92fa1f48279abc46fdb413/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
-105            <meta-data
-105-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
-106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-106-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
-107                android:value="androidx.startup" />
-107-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
-108        </provider>
-109
-110        <service
-110-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
-111            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-111-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
-112            android:directBootAware="false"
-112-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
-113            android:enabled="@bool/enable_system_alarm_service_default"
-113-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
-114            android:exported="false" />
-114-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
-115        <service
-115-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
-116            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-116-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
-117            android:directBootAware="false"
-117-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
-118            android:enabled="@bool/enable_system_job_service_default"
-118-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
-119            android:exported="true"
-119-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
-120            android:permission="android.permission.BIND_JOB_SERVICE" />
-120-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
-121        <service
-121-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
-122            android:name="androidx.work.impl.foreground.SystemForegroundService"
-122-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
-123            android:directBootAware="false"
-123-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
-124            android:enabled="@bool/enable_system_foreground_service_default"
-124-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
-125            android:exported="false" />
-125-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
-126
-127        <receiver
-127-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
-128            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-128-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
-129            android:directBootAware="false"
-129-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
-130            android:enabled="true"
-130-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
-131            android:exported="false" />
-131-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
-132        <receiver
-132-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
-133            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-133-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
-134            android:directBootAware="false"
-134-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
-135            android:enabled="false"
-135-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
-136            android:exported="false" >
-136-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
-137            <intent-filter>
-137-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
-138                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-138-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
-138-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
-139                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-139-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
-139-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
-140            </intent-filter>
-141        </receiver>
-142        <receiver
-142-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
-143            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-143-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
-144            android:directBootAware="false"
-144-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
-145            android:enabled="false"
-145-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
-146            android:exported="false" >
-146-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
-147            <intent-filter>
-147-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
-148                <action android:name="android.intent.action.BATTERY_OKAY" />
-148-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
-148-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
-149                <action android:name="android.intent.action.BATTERY_LOW" />
-149-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
-149-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
-150            </intent-filter>
-151        </receiver>
-152        <receiver
-152-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
-153            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-153-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
-154            android:directBootAware="false"
-154-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
-155            android:enabled="false"
-155-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
-156            android:exported="false" >
-156-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
-157            <intent-filter>
-157-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
-158                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-158-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
-158-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
-159                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-159-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
-159-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
-160            </intent-filter>
-161        </receiver>
-162        <receiver
-162-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
-163            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-163-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
-164            android:directBootAware="false"
-164-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
-165            android:enabled="false"
-165-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
-166            android:exported="false" >
-166-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
-167            <intent-filter>
-167-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
-168                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-168-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
-168-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
-169            </intent-filter>
-170        </receiver>
-171        <receiver
-171-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
-172            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-172-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
-173            android:directBootAware="false"
-173-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
-174            android:enabled="false"
-174-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
-175            android:exported="false" >
-175-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
-176            <intent-filter>
-176-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
-177                <action android:name="android.intent.action.BOOT_COMPLETED" />
-177-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:17-79
-177-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:25-76
-178                <action android:name="android.intent.action.TIME_SET" />
-178-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
-178-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
-179                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-179-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
-179-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
-180            </intent-filter>
-181        </receiver>
-182        <receiver
-182-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
-183            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-183-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
-184            android:directBootAware="false"
-184-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
-185            android:enabled="@bool/enable_system_alarm_service_default"
-185-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
-186            android:exported="false" >
-186-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
-187            <intent-filter>
-187-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
-188                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-188-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
-188-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
-189            </intent-filter>
-190        </receiver>
-191        <receiver
-191-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
-192            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-192-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
-193            android:directBootAware="false"
-193-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
-194            android:enabled="true"
-194-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
-195            android:exported="true"
-195-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
-196            android:permission="android.permission.DUMP" >
-196-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
-197            <intent-filter>
-197-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
-198                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-198-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
-198-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/8a4f57b3b252268e0932278a013e2a3a/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
-199            </intent-filter>
-200        </receiver>
-201
-202        <service
-202-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/128e58e7a35e27fd004b6a1cbd8f61ca/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
-203            android:name="androidx.room.MultiInstanceInvalidationService"
-203-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/128e58e7a35e27fd004b6a1cbd8f61ca/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
-204            android:directBootAware="true"
-204-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/128e58e7a35e27fd004b6a1cbd8f61ca/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
-205            android:exported="false" />
-205-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.14.3/transforms/128e58e7a35e27fd004b6a1cbd8f61ca/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
-206
-207        <receiver
-207-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
-208            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-208-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
-209            android:directBootAware="false"
-209-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
-210            android:enabled="true"
-210-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
-211            android:exported="true"
-211-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
-212            android:permission="android.permission.DUMP" >
-212-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
-213            <intent-filter>
-213-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
-214                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-214-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
-214-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
-215            </intent-filter>
-216            <intent-filter>
-216-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
-217                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-217-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
-217-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
-218            </intent-filter>
-219            <intent-filter>
-219-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
-220                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-220-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
-220-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
-221            </intent-filter>
-222            <intent-filter>
-222-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
-223                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-223-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
-223-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/fc9cb8469d42744d97dc95ed3068a307/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
-224            </intent-filter>
-225        </receiver>
-226
-227        <meta-data
-227-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/664f819fd9d327db1dcb306e6cab3b2d/transformed/soloader-0.12.1/AndroidManifest.xml:12:9-14:37
-228            android:name="com.facebook.soloader.enabled"
-228-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/664f819fd9d327db1dcb306e6cab3b2d/transformed/soloader-0.12.1/AndroidManifest.xml:13:13-57
-229            android:value="false" />
-229-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.14.3/transforms/664f819fd9d327db1dcb306e6cab3b2d/transformed/soloader-0.12.1/AndroidManifest.xml:14:13-34
-230    </application>
-231
-232</manifest>
+66    <application
+66-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:15:5-46:19
+67        android:name="com.AppBossDoor.MainApplication"
+67-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:16:7-38
+68        android:allowBackup="false"
+68-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:20:7-34
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.16.0] /Users/macminim4/.gradle/caches/8.13/transforms/499c51aeb928dd9a413745b611cd995c/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+70        android:debuggable="true"
+71        android:extractNativeLibs="false"
+72        android:icon="@mipmap/ic_launcher"
+72-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:18:7-41
+73        android:label="@string/app_name"
+73-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:17:7-39
+74        android:roundIcon="@mipmap/ic_launcher_round"
+74-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:19:7-52
+75        android:supportsRtl="true"
+75-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:22:7-33
+76        android:theme="@style/AppTheme"
+76-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:21:7-38
+77        android:usesCleartextTraffic="true" > <!-- FileProvider để chia sẻ file cho các app viewer khác mà không dính lỗi "FileUriExposed" -->
+77-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/debug/AndroidManifest.xml:6:9-44
+78        <!-- applicationId phải khớp với applicationId thực tế" -->
+79        <provider
+80            android:name="androidx.core.content.FileProvider"
+81            android:authorities="com.AppBossDoor.fileprovider"
+82            android:exported="false"
+83            android:grantUriPermissions="true" >
+84            <meta-data
+84-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-27:63
+85                android:name="android.support.FILE_PROVIDER_PATHS"
+85-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:17-67
+86                android:resource="@xml/file_paths" />
+86-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:17-60
+87        </provider>
+88
+89        <activity
+89-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:34:7-45:18
+90            android:name="com.AppBossDoor.MainActivity"
+90-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:35:9-37
+91            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+91-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:37:9-118
+92            android:exported="true"
+92-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:40:9-32
+93            android:label="@string/app_name"
+93-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:36:9-41
+94            android:launchMode="singleTask"
+94-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:38:9-40
+95            android:windowSoftInputMode="adjustResize" >
+95-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:39:9-51
+96            <intent-filter>
+96-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:41:9-44:25
+97                <action android:name="android.intent.action.MAIN" />
+97-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:42:13-65
+97-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:42:21-62
+98
+99                <category android:name="android.intent.category.LAUNCHER" />
+99-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:43:13-73
+99-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:43:23-70
+100            </intent-filter>
+101        </activity>
+102
+103        <provider
+103-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:9-28:20
+104            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+104-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:13-83
+105            android:authorities="com.AppBossDoor.fileprovider"
+105-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:22:13-64
+106            android:exported="false"
+106-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:13-37
+107            android:grantUriPermissions="true" >
+107-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-47
+108            <meta-data
+108-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-27:63
+109                android:name="android.support.FILE_PROVIDER_PATHS"
+109-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:17-67
+110                android:resource="@xml/file_provider_paths" />
+110-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:17-60
+111        </provider>
+112
+113        <service
+113-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:9-14:40
+114            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+114-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:13-103
+115            android:exported="false" />
+115-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-37
+116        <service
+116-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:9-21:19
+117            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+117-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-95
+118            android:exported="false" >
+118-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:13-37
+119            <intent-filter>
+119-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:29
+120                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+120-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-78
+120-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:25-75
+121            </intent-filter>
+122        </service>
+123
+124        <receiver
+124-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:9-30:20
+125            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+125-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-96
+126            android:exported="true"
+126-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-36
+127            android:permission="com.google.android.c2dm.permission.SEND" >
+127-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:13-73
+128            <intent-filter>
+128-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-29:29
+129                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+129-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:17-81
+129-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:25-78
+130            </intent-filter>
+131        </receiver>
+132
+133        <meta-data
+133-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:32:9-34:37
+134            android:name="delivery_metrics_exported_to_big_query_enabled"
+134-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:33:13-74
+135            android:value="false" />
+135-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:34:13-34
+136        <meta-data
+136-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:35:9-37:37
+137            android:name="firebase_messaging_auto_init_enabled"
+137-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:36:13-64
+138            android:value="false" />
+138-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:37:13-34
+139        <meta-data
+139-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:38:9-40:37
+140            android:name="firebase_messaging_notification_delegation_enabled"
+140-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:39:13-78
+141            android:value="false" />
+141-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:40:13-34
+142        <meta-data
+142-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:41:9-43:32
+143            android:name="com.google.firebase.messaging.default_notification_channel_id"
+143-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:42:13-89
+144            android:value="" />
+144-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:43:13-29
+145        <meta-data
+145-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:44:9-46:47
+146            android:name="com.google.firebase.messaging.default_notification_color"
+146-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:45:13-84
+147            android:resource="@color/white" />
+147-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:46:13-44
+148        <meta-data
+148-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:9-11:36
+149            android:name="app_data_collection_default_enabled"
+149-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-63
+150            android:value="true" />
+150-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-33
+151
+152        <service
+152-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:9-21:19
+153            android:name="com.google.firebase.components.ComponentDiscoveryService"
+153-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:13-84
+154            android:directBootAware="true"
+154-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-43
+155            android:exported="false" >
+155-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-37
+156            <meta-data
+156-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:85
+157                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+157-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-120
+158                android:value="com.google.firebase.components.ComponentRegistrar" />
+158-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:17-82
+159            <meta-data
+159-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:69:13-71:85
+160                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+160-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:70:17-109
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:71:17-82
+162            <meta-data
+162-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:57:13-59:85
+163                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+163-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:58:17-122
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:59:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:60:13-62:85
+166                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+166-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:61:17-119
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:62:17-82
+168            <meta-data
+168-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:15:13-17:85
+169                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+169-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:16:17-130
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:17:17-82
+171            <meta-data
+171-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:18:13-20:85
+172                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+172-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:19:17-127
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.firebase:firebase-installations:19.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/14a9764f8a5f3a125809b0c3dc09838a/transformed/firebase-installations-19.0.1/AndroidManifest.xml:20:17-82
+174            <meta-data
+174-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+175                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+175-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+177            <meta-data
+177-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macminim4/.gradle/caches/8.13/transforms/d76263502fa0fbfa4e416f5668327152/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+178                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+178-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macminim4/.gradle/caches/8.13/transforms/d76263502fa0fbfa4e416f5668327152/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/macminim4/.gradle/caches/8.13/transforms/d76263502fa0fbfa4e416f5668327152/transformed/firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+180        </service>
+181
+182        <provider
+182-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:23:9-27:38
+183            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+183-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:24:13-88
+184            android:authorities="com.AppBossDoor.reactnativefirebaseappinitprovider"
+184-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-86
+185            android:exported="false"
+185-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:13-37
+186            android:initOrder="99" />
+186-->[:react-native-firebase_app] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-35
+187        <provider
+187-->[:react-native-file-viewer] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-file-viewer/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-16:20
+188            android:name="com.vinzscam.reactnativefileviewer.FileProvider"
+188-->[:react-native-file-viewer] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-file-viewer/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-75
+189            android:authorities="com.AppBossDoor.provider"
+189-->[:react-native-file-viewer] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-file-viewer/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-60
+190            android:exported="false"
+190-->[:react-native-file-viewer] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-file-viewer/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
+191            android:grantUriPermissions="true" >
+191-->[:react-native-file-viewer] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-file-viewer/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-47
+192            <meta-data
+192-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-27:63
+193                android:name="android.support.FILE_PROVIDER_PATHS"
+193-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:17-67
+194                android:resource="@xml/file_viewer_provider_paths" />
+194-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:17-60
+195        </provider>
+196        <provider
+196-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-16:20
+197            android:name="com.imagepicker.ImagePickerProvider"
+197-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-63
+198            android:authorities="com.AppBossDoor.imagepickerprovider"
+198-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-71
+199            android:exported="false"
+199-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-37
+200            android:grantUriPermissions="true" >
+200-->[:react-native-image-picker] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:13-47
+201            <meta-data
+201-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:13-27:63
+202                android:name="android.support.FILE_PROVIDER_PATHS"
+202-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:26:17-67
+203                android:resource="@xml/imagepicker_provider_paths" />
+203-->[:react-native-webview] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:17-60
+204        </provider>
+205
+206        <activity
+206-->[com.facebook.react:react-android:0.79.1] /Users/macminim4/.gradle/caches/8.13/transforms/58eb1a4899b574bbb11744576335cc71/transformed/react-android-0.79.1-debug/AndroidManifest.xml:19:9-21:40
+207            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+207-->[com.facebook.react:react-android:0.79.1] /Users/macminim4/.gradle/caches/8.13/transforms/58eb1a4899b574bbb11744576335cc71/transformed/react-android-0.79.1-debug/AndroidManifest.xml:20:13-77
+208            android:exported="false" />
+208-->[com.facebook.react:react-android:0.79.1] /Users/macminim4/.gradle/caches/8.13/transforms/58eb1a4899b574bbb11744576335cc71/transformed/react-android-0.79.1-debug/AndroidManifest.xml:21:13-37
+209
+210        <provider
+210-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:29:9-37:20
+211            android:name="androidx.startup.InitializationProvider"
+211-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:30:13-67
+212            android:authorities="com.AppBossDoor.androidx-startup"
+212-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:31:13-68
+213            android:exported="false" >
+213-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:32:13-37
+214            <meta-data
+214-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:34:13-36:52
+215                android:name="androidx.work.WorkManagerInitializer"
+215-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:35:17-68
+216                android:value="androidx.startup" />
+216-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:36:17-49
+217            <meta-data
+217-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/4eb46c024d596f1ccd234ead92602cac/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+218                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+218-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/4eb46c024d596f1ccd234ead92602cac/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+219                android:value="androidx.startup" />
+219-->[androidx.emoji2:emoji2:1.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/4eb46c024d596f1ccd234ead92602cac/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+220            <meta-data
+220-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.13/transforms/f8ad03533f460d68c2c68a13fb1873f6/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+221                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+221-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.13/transforms/f8ad03533f460d68c2c68a13fb1873f6/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+222                android:value="androidx.startup" />
+222-->[androidx.lifecycle:lifecycle-process:2.8.7] /Users/macminim4/.gradle/caches/8.13/transforms/f8ad03533f460d68c2c68a13fb1873f6/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+223            <meta-data
+223-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+224                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+224-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+225                android:value="androidx.startup" />
+225-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+226        </provider>
+227
+228        <service
+228-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:39:9-45:35
+229            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+229-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:40:13-88
+230            android:directBootAware="false"
+230-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:41:13-44
+231            android:enabled="@bool/enable_system_alarm_service_default"
+231-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:42:13-72
+232            android:exported="false" />
+232-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:43:13-37
+233        <service
+233-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:46:9-52:35
+234            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+234-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:47:13-84
+235            android:directBootAware="false"
+235-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:48:13-44
+236            android:enabled="@bool/enable_system_job_service_default"
+236-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:49:13-70
+237            android:exported="true"
+237-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:50:13-36
+238            android:permission="android.permission.BIND_JOB_SERVICE" />
+238-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:51:13-69
+239        <service
+239-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:53:9-59:35
+240            android:name="androidx.work.impl.foreground.SystemForegroundService"
+240-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:54:13-81
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:55:13-44
+242            android:enabled="@bool/enable_system_foreground_service_default"
+242-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:56:13-77
+243            android:exported="false" />
+243-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:57:13-37
+244
+245        <receiver
+245-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:61:9-66:35
+246            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+246-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:62:13-88
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:63:13-44
+248            android:enabled="true"
+248-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:64:13-35
+249            android:exported="false" />
+249-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:65:13-37
+250        <receiver
+250-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:67:9-77:20
+251            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+251-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:68:13-106
+252            android:directBootAware="false"
+252-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:69:13-44
+253            android:enabled="false"
+253-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:70:13-36
+254            android:exported="false" >
+254-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:71:13-37
+255            <intent-filter>
+255-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:73:13-76:29
+256                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+256-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:17-87
+256-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:74:25-84
+257                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+257-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:17-90
+257-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:75:25-87
+258            </intent-filter>
+259        </receiver>
+260        <receiver
+260-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:78:9-88:20
+261            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+261-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:79:13-104
+262            android:directBootAware="false"
+262-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:80:13-44
+263            android:enabled="false"
+263-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:81:13-36
+264            android:exported="false" >
+264-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:82:13-37
+265            <intent-filter>
+265-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:84:13-87:29
+266                <action android:name="android.intent.action.BATTERY_OKAY" />
+266-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:17-77
+266-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:85:25-74
+267                <action android:name="android.intent.action.BATTERY_LOW" />
+267-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:17-76
+267-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:86:25-73
+268            </intent-filter>
+269        </receiver>
+270        <receiver
+270-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:89:9-99:20
+271            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+271-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:90:13-104
+272            android:directBootAware="false"
+272-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:91:13-44
+273            android:enabled="false"
+273-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:92:13-36
+274            android:exported="false" >
+274-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:93:13-37
+275            <intent-filter>
+275-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:95:13-98:29
+276                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+276-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:17-83
+276-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:96:25-80
+277                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+277-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:17-82
+277-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:97:25-79
+278            </intent-filter>
+279        </receiver>
+280        <receiver
+280-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:100:9-109:20
+281            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+281-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:101:13-103
+282            android:directBootAware="false"
+282-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:102:13-44
+283            android:enabled="false"
+283-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:103:13-36
+284            android:exported="false" >
+284-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:104:13-37
+285            <intent-filter>
+285-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:106:13-108:29
+286                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+286-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:17-79
+286-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:107:25-76
+287            </intent-filter>
+288        </receiver>
+289        <receiver
+289-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:110:9-121:20
+290            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+290-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:111:13-88
+291            android:directBootAware="false"
+291-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:112:13-44
+292            android:enabled="false"
+292-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:113:13-36
+293            android:exported="false" >
+293-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:114:13-37
+294            <intent-filter>
+294-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:116:13-120:29
+295                <action android:name="android.intent.action.BOOT_COMPLETED" />
+295-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:17-79
+295-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:117:25-76
+296                <action android:name="android.intent.action.TIME_SET" />
+296-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:17-73
+296-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:118:25-70
+297                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+297-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:17-81
+297-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:119:25-78
+298            </intent-filter>
+299        </receiver>
+300        <receiver
+300-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:122:9-131:20
+301            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+301-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:123:13-99
+302            android:directBootAware="false"
+302-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:124:13-44
+303            android:enabled="@bool/enable_system_alarm_service_default"
+303-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:125:13-72
+304            android:exported="false" >
+304-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:126:13-37
+305            <intent-filter>
+305-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:128:13-130:29
+306                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+306-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:17-98
+306-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:129:25-95
+307            </intent-filter>
+308        </receiver>
+309        <receiver
+309-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:132:9-142:20
+310            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+310-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:133:13-78
+311            android:directBootAware="false"
+311-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:134:13-44
+312            android:enabled="true"
+312-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:135:13-35
+313            android:exported="true"
+313-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:136:13-36
+314            android:permission="android.permission.DUMP" >
+314-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:137:13-57
+315            <intent-filter>
+315-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:139:13-141:29
+316                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+316-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:17-88
+316-->[androidx.work:work-runtime:2.9.1] /Users/macminim4/.gradle/caches/8.13/transforms/6f5123e4eddddb033a5059fadf79e46d/transformed/work-runtime-2.9.1/AndroidManifest.xml:140:25-85
+317            </intent-filter>
+318        </receiver>
+319
+320        <service
+320-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/03d85cd9fd9bf0e271421cdab4eabaa6/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+321            android:name="androidx.room.MultiInstanceInvalidationService"
+321-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/03d85cd9fd9bf0e271421cdab4eabaa6/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+322            android:directBootAware="true"
+322-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/03d85cd9fd9bf0e271421cdab4eabaa6/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+323            android:exported="false" />
+323-->[androidx.room:room-runtime:2.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/03d85cd9fd9bf0e271421cdab4eabaa6/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+324
+325        <activity
+325-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:29:9-46:20
+326            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+326-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:30:13-80
+327            android:excludeFromRecents="true"
+327-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:31:13-46
+328            android:exported="true"
+328-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:32:13-36
+329            android:launchMode="singleTask"
+329-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:33:13-44
+330            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+330-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:34:13-72
+331            <intent-filter>
+331-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:35:13-45:29
+332                <action android:name="android.intent.action.VIEW" />
+332-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:9-61
+332-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:17-58
+333
+334                <category android:name="android.intent.category.DEFAULT" />
+334-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+334-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
+335                <category android:name="android.intent.category.BROWSABLE" />
+335-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+335-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+336
+337                <data
+337-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:51:9-52
+338                    android:host="firebase.auth"
+339                    android:path="/"
+340                    android:scheme="genericidp" />
+341            </intent-filter>
+342        </activity>
+343        <activity
+343-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:47:9-64:20
+344            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+344-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:48:13-79
+345            android:excludeFromRecents="true"
+345-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:49:13-46
+346            android:exported="true"
+346-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:50:13-36
+347            android:launchMode="singleTask"
+347-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:51:13-44
+348            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+348-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:52:13-72
+349            <intent-filter>
+349-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:53:13-63:29
+350                <action android:name="android.intent.action.VIEW" />
+350-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:9-61
+350-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:49:17-58
+351
+352                <category android:name="android.intent.category.DEFAULT" />
+352-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:17-76
+352-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:38:27-73
+353                <category android:name="android.intent.category.BROWSABLE" />
+353-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:17-78
+353-->[com.google.firebase:firebase-auth:24.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/1a80302178453b3d0be00faf73a81952/transformed/firebase-auth-24.0.1/AndroidManifest.xml:39:27-75
+354
+355                <data
+355-->/Users/macminim4/Desktop/Vietapp/ProjectAppDoor/android/app/src/main/AndroidManifest.xml:51:9-52
+356                    android:host="firebase.auth"
+357                    android:path="/"
+358                    android:scheme="recaptcha" />
+359            </intent-filter>
+360        </activity>
+361
+362        <service
+362-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+363            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+363-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+364            android:enabled="true"
+364-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+365            android:exported="false" >
+365-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+366            <meta-data
+366-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+367                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+367-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+368                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+368-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+369        </service>
+370
+371        <activity
+371-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+372            android:name="androidx.credentials.playservices.HiddenActivity"
+372-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+373            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+373-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+374            android:enabled="true"
+374-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+375            android:exported="false"
+375-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+376            android:fitsSystemWindows="true"
+376-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+377            android:theme="@style/Theme.Hidden" >
+377-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/macminim4/.gradle/caches/8.13/transforms/7ebe68d1c34c5a897e733280ee699720/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+378        </activity>
+379
+380        <meta-data
+380-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.13/transforms/5b6490347d49ebd134d52dbf885c210c/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:23:9-25:69
+381            android:name="com.google.android.gms.version"
+381-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.13/transforms/5b6490347d49ebd134d52dbf885c210c/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:24:13-58
+382            android:value="@integer/google_play_services_version" />
+382-->[com.google.maps.android:android-maps-utils:3.10.0] /Users/macminim4/.gradle/caches/8.13/transforms/5b6490347d49ebd134d52dbf885c210c/transformed/android-maps-utils-3.10.0/AndroidManifest.xml:25:13-66
+383
+384        <uses-library
+384-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:29:9-31:40
+385            android:name="androidx.camera.extensions.impl"
+385-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:30:13-59
+386            android:required="false" />
+386-->[androidx.camera:camera-extensions:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/082d97e8ad91fd1b5dc440c7f22cac4e/transformed/camera-extensions-1.5.0-alpha03/AndroidManifest.xml:31:13-37
+387
+388        <service
+388-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:24:9-33:19
+389            android:name="androidx.camera.core.impl.MetadataHolderService"
+389-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:25:13-75
+390            android:enabled="false"
+390-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:26:13-36
+391            android:exported="false" >
+391-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:27:13-37
+392            <meta-data
+392-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:30:13-32:89
+393                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+393-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:31:17-103
+394                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+394-->[androidx.camera:camera-camera2:1.5.0-alpha03] /Users/macminim4/.gradle/caches/8.13/transforms/f2a946c885eee8c9ea1ab02ebb8d897a/transformed/camera-camera2-1.5.0-alpha03/AndroidManifest.xml:32:17-86
+395        </service>
+396        <service
+396-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:9:9-15:19
+397            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+397-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:10:13-91
+398            android:directBootAware="true"
+398-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
+399            android:exported="false" >
+399-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:11:13-37
+400            <meta-data
+400-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:12:13-14:85
+401                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+401-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:13:17-120
+402                android:value="com.google.firebase.components.ComponentRegistrar" />
+402-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] /Users/macminim4/.gradle/caches/8.13/transforms/5a07d26d50b713f842ef4b32c34ead82/transformed/play-services-mlkit-barcode-scanning-18.3.1/AndroidManifest.xml:14:17-82
+403            <meta-data
+403-->[com.google.mlkit:vision-common:17.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/b1fa280a8259e8d4c03664daa8cd7e57/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+404                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+404-->[com.google.mlkit:vision-common:17.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/b1fa280a8259e8d4c03664daa8cd7e57/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+405                android:value="com.google.firebase.components.ComponentRegistrar" />
+405-->[com.google.mlkit:vision-common:17.3.0] /Users/macminim4/.gradle/caches/8.13/transforms/b1fa280a8259e8d4c03664daa8cd7e57/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+406            <meta-data
+406-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+407                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+407-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+408                android:value="com.google.firebase.components.ComponentRegistrar" />
+408-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+409        </service>
+410
+411        <provider
+411-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+412            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+412-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+413            android:authorities="com.AppBossDoor.mlkitinitprovider"
+413-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+414            android:exported="false"
+414-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+415            android:initOrder="99" />
+415-->[com.google.mlkit:common:18.11.0] /Users/macminim4/.gradle/caches/8.13/transforms/8eaab2065cb9aca934d428aaf7579604/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+416
+417        <activity
+417-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:23:9-27:75
+418            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+418-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:24:13-93
+419            android:excludeFromRecents="true"
+419-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:25:13-46
+420            android:exported="false"
+420-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:26:13-37
+421            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+421-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:27:13-72
+422        <!--
+423            Service handling Google Sign-In user revocation. For apps that do not integrate with
+424            Google Sign-In, this service will never be started.
+425        -->
+426        <service
+426-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:33:9-37:51
+427            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+427-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:34:13-89
+428            android:exported="true"
+428-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:35:13-36
+429            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+429-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:36:13-107
+430            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+430-->[com.google.android.gms:play-services-auth:21.4.0] /Users/macminim4/.gradle/caches/8.13/transforms/8ed196bd3714b818ef49bcc0afba8ea3/transformed/play-services-auth-21.4.0/AndroidManifest.xml:37:13-48
+431        <uses-library
+431-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:7-86
+432            android:name="org.apache.http.legacy"
+432-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:21-58
+433            android:required="false" />
+433-->[com.google.android.gms:play-services-maps:19.1.0] /Users/macminim4/.gradle/caches/8.13/transforms/9209e6ea3ea2f9075d5172d49418804d/transformed/play-services-maps-19.1.0/AndroidManifest.xml:33:59-83
+434
+435        <receiver
+435-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:29:9-40:20
+436            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+436-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:30:13-78
+437            android:exported="true"
+437-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:31:13-36
+438            android:permission="com.google.android.c2dm.permission.SEND" >
+438-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:32:13-73
+439            <intent-filter>
+439-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:27:13-29:29
+440                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+440-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:17-81
+440-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:28:25-78
+441            </intent-filter>
+442
+443            <meta-data
+443-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:37:13-39:40
+444                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+444-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:38:17-92
+445                android:value="true" />
+445-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:39:17-37
+446        </receiver>
+447        <!--
+448             FirebaseMessagingService performs security checks at runtime,
+449             but set to not exported to explicitly avoid allowing another app to call it.
+450        -->
+451        <service
+451-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:46:9-53:19
+452            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+452-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:47:13-82
+453            android:directBootAware="true"
+453-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:48:13-43
+454            android:exported="false" >
+454-->[com.google.firebase:firebase-messaging:25.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2015261bf1d2c84161632ecabf436869/transformed/firebase-messaging-25.0.1/AndroidManifest.xml:49:13-37
+455            <intent-filter android:priority="-500" >
+455-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-20:29
+456                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+456-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-78
+456-->[:react-native-firebase_messaging] /Users/macminim4/Desktop/Vietapp/ProjectAppDoor/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:25-75
+457            </intent-filter>
+458        </service>
+459
+460        <activity
+460-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/d35d2b79eed6e27baaed21a5c62a68b7/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+461            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+461-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/d35d2b79eed6e27baaed21a5c62a68b7/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+462            android:exported="false"
+462-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/d35d2b79eed6e27baaed21a5c62a68b7/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+463            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+463-->[com.google.android.gms:play-services-base:18.5.0] /Users/macminim4/.gradle/caches/8.13/transforms/d35d2b79eed6e27baaed21a5c62a68b7/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+464
+465        <provider
+465-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+466            android:name="com.google.firebase.provider.FirebaseInitProvider"
+466-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+467            android:authorities="com.AppBossDoor.firebaseinitprovider"
+467-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+468            android:directBootAware="true"
+468-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+469            android:exported="false"
+469-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+470            android:initOrder="100" />
+470-->[com.google.firebase:firebase-common:22.0.1] /Users/macminim4/.gradle/caches/8.13/transforms/2d162290b88e28277e6c17b7471287e8/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+471
+472        <receiver
+472-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+473            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+473-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+474            android:directBootAware="false"
+474-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+475            android:enabled="true"
+475-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+476            android:exported="true"
+476-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+477            android:permission="android.permission.DUMP" >
+477-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+478            <intent-filter>
+478-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+479                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+479-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+479-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+480            </intent-filter>
+481            <intent-filter>
+481-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+482                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+482-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+482-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+483            </intent-filter>
+484            <intent-filter>
+484-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+485                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+485-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+485-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+486            </intent-filter>
+487            <intent-filter>
+487-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+488                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+488-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+488-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/macminim4/.gradle/caches/8.13/transforms/7386d963bf7b801a85a5a5112fd19c80/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
+489            </intent-filter>
+490        </receiver>
+491
+492        <service
+492-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+493            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+493-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+494            android:exported="false" >
+494-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+495            <meta-data
+495-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+496                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+496-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+497                android:value="cct" />
+497-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/65e84000438c4d1213a0aa3c91c8ce53/transformed/transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+498        </service>
+499        <service
+499-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+500            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+500-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+501            android:exported="false"
+501-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+502            android:permission="android.permission.BIND_JOB_SERVICE" >
+502-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+503        </service>
+504
+505        <receiver
+505-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+506            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+506-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+507            android:exported="false" />
+507-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/macminim4/.gradle/caches/8.13/transforms/64e81f8a0832cd74e1dac6033fc714a5/transformed/transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+508
+509        <meta-data
+509-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.13/transforms/01b5a68653e8369bd76b4c1221f67aa1/transformed/soloader-0.12.1/AndroidManifest.xml:12:9-14:37
+510            android:name="com.facebook.soloader.enabled"
+510-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.13/transforms/01b5a68653e8369bd76b4c1221f67aa1/transformed/soloader-0.12.1/AndroidManifest.xml:13:13-57
+511            android:value="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+511-->[com.facebook.soloader:soloader:0.12.1] /Users/macminim4/.gradle/caches/8.13/transforms/01b5a68653e8369bd76b4c1221f67aa1/transformed/soloader-0.12.1/AndroidManifest.xml:14:13-34
+512        <activity
+512-->[com.google.android.play:core-common:2.0.3] /Users/macminim4/.gradle/caches/8.13/transforms/2c8bc6a11bbb3ce88a8933939d30bf38/transformed/core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+513            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+513-->[com.google.android.play:core-common:2.0.3] /Users/macminim4/.gradle/caches/8.13/transforms/2c8bc6a11bbb3ce88a8933939d30bf38/transformed/core-common-2.0.3/AndroidManifest.xml:15:13-93
+514            android:exported="false"
+514-->[com.google.android.play:core-common:2.0.3] /Users/macminim4/.gradle/caches/8.13/transforms/2c8bc6a11bbb3ce88a8933939d30bf38/transformed/core-common-2.0.3/AndroidManifest.xml:16:13-37
+515            android:stateNotNeeded="true"
+515-->[com.google.android.play:core-common:2.0.3] /Users/macminim4/.gradle/caches/8.13/transforms/2c8bc6a11bbb3ce88a8933939d30bf38/transformed/core-common-2.0.3/AndroidManifest.xml:17:13-42
+516            android:theme="@style/Theme.PlayCore.Transparent" />
+516-->[com.google.android.play:core-common:2.0.3] /Users/macminim4/.gradle/caches/8.13/transforms/2c8bc6a11bbb3ce88a8933939d30bf38/transformed/core-common-2.0.3/AndroidManifest.xml:18:13-62
+517    </application>
+518
+519</manifest>

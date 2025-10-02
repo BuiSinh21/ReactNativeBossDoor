@@ -91,7 +91,6 @@ const Login = () => {
         password: pass,
       });
       if (res.status == 200) {
-        console.log(44444, res?.data?.data);
         dispatch(setAccessToken(res?.data?.data?.access_token));
         dispatch(setRefreshToken(res?.data?.data?.refresh_token));
         dispatch(setUser(res?.data?.data?.technician))

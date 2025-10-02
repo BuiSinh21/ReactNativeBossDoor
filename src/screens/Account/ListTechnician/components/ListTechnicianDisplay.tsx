@@ -21,6 +21,8 @@ const ListTechnicianDisplay = () => {
     const getDetailTechnician = async (id: number) => {
         try {
             if (id) {
+                console.log("id",id);
+                
                 const res = await showTechniciant(id);
                 if (res.status == 200) {
                     const data = res.data?.data

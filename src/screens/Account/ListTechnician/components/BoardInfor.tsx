@@ -5,23 +5,23 @@ import sty from '../../../../themes/sty';
 import IMAGES from '../../../../assets/images';
 import { appColor } from '../../../../constant/appColor';
 import { useAppSelector } from '../../../../redux/hooks';
+import { formatPrice } from '../../../../utils/helpers';
 
 const BoardInfor = () => {
-    const { result: listTechnician } = useAppSelector(state => state.technician);
-    console.log(11111,listTechnician);
-    
+    const { user } = useAppSelector(state => state.auth);
+    const { detailTechnician, totalOrders, totalRevenue } = useAppSelector(state => state.technician);
     return (
         <View style={styles.background}>
             <View style={[sty.flexRow, { padding: 2, }]}>
                 <View style={[styles.box, { flex: 1 }]}>
                     <Image source={IMAGES.ACCOUNT.order_completed} style={styles.imageBoard} />
                     <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Số đơn hoàn thành"} color={appColor.textBlack} />
-                    <TextDisplay fontWeight='semibold' fontSize={18} text={"60"} color={appColor.primary} />
+                    <TextDisplay fontWeight='semibold' fontSize={18} text={user?.position_id == 1 ? totalOrders : detailTechnician?.lich_su_don_hang?.total} color={appColor.primary} />
                 </View>
                 <View style={[styles.box, { flex: 1 }]}>
                     <Image source={IMAGES.ACCOUNT.revenue_img} style={styles.imageBoard} />
                     <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Doanh thu"} color={appColor.textBlack} />
-                    <TextDisplay fontWeight='semibold' fontSize={18} text={"25,000,000"} color={appColor.primary} />
+                    <TextDisplay fontWeight='semibold' fontSize={18} text={user?.position_id == 1 ? formatPrice(totalRevenue) : formatPrice(detailTechnician?.thong_ke_doanh_thu?.summary?.tong_doanh_thu||0)} color={appColor.primary} />
                 </View>
             </View>
         </View>

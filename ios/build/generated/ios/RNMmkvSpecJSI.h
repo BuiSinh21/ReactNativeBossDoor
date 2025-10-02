@@ -28,7 +28,7 @@ struct Bridging<NativeMmkvMode> {
     } else if (value == "MULTI_PROCESS") {
       return NativeMmkvMode::MULTI_PROCESS;
     } else {
-      throw jsi::JSError(rt, "No appropriate enum member found for value in NativeMmkvMode");
+      throw jsi::JSError(rt, "No appropriate enum member found for value");
     }
   }
 
@@ -38,7 +38,7 @@ struct Bridging<NativeMmkvMode> {
     } else if (value == NativeMmkvMode::MULTI_PROCESS) {
       return bridging::toJs(rt, "MULTI_PROCESS");
     } else {
-      throw jsi::JSError(rt, "No appropriate enum member found for enum value in NativeMmkvMode");
+      throw jsi::JSError(rt, "No appropriate enum member found for enum value");
     }
   }
 };

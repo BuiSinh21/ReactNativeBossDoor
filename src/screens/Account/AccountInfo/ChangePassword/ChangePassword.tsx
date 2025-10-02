@@ -29,6 +29,14 @@ const ChangePassword = () => {
                         }),
                     );
                 }
+                else if (oldPassword == newPassword) {
+                    return dispatch(
+                        setToast({
+                            open: true,
+                            title: 'Mật khẩu mới không được trùng với mật khẩu cũ',
+                        }),
+                    );
+                }
                 else {
                     const res = await changePassword({
                         current_password: oldPassword,
@@ -41,7 +49,7 @@ const ChangePassword = () => {
                                 title: "Thay đổi password thành công",
                             }),
                         );
-                        navigate.back();
+                        navigate.goBack();
                     }
                 }
             }
@@ -53,7 +61,8 @@ const ChangePassword = () => {
                     }),
                 );
             }
-        } catch (error) {
+        }
+         catch (error:any) {
             handleErrorMessage(error, {
                 403: 'Mật khẩu cũ không đúng.',
                 404: 'Dữ không hợp lệ.',

@@ -16,6 +16,7 @@ const icon_swap_camera = require('./icon_swap_camera.png');
 const icon_collaborator = require('./icon_collaborator.png');
 const icon_list_request = require('./icon_list_request.png');
 const icon_file = require('./icon_file.png');
+const icon_play = require('./icon-park-solid_play.png');
 
 const IMAGES_HOME = {
   icon_notification,
@@ -36,6 +37,7 @@ const IMAGES_HOME = {
   icon_collaborator,
   icon_list_request,
   icon_file,
+  icon_play
 };
 
 export default IMAGES_HOME;

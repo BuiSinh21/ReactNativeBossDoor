@@ -1,4 +1,0 @@
-/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/.cxx/Debug/342h2m1h/arm64-v8a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
-/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/.cxx/Debug/342h2m1h/arm64-v8a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
-/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/.cxx/Debug/342h2m1h/arm64-v8a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
-/Users/macminim4/Desktop/Vietapp/ReactNativeBossDoor/android/app/.cxx/Debug/342h2m1h/arm64-v8a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

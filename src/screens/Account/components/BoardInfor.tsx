@@ -9,7 +9,7 @@ import { formatPrice } from '../../../utils/helpers'
 
 const BoardInfor = () => {
     const { user, userDisplay } = useAppSelector(state => state.auth);
-    
+
     return (
         <View style={styles.background}>
             <ImageBackground
@@ -22,13 +22,15 @@ const BoardInfor = () => {
                         <Image source={IMAGES.ACCOUNT.account_img} style={styles.image} />
                         <TextDisplay text={user?.full_name} color='#3683F7' />
                     </View>
-                    <View style={[sty.flexRow, sty.justifyBetween, sty.itemsCenter]}>
-                        <TextDisplay styles={[sty.pb_8, sty.flex_1, sty.pt_12]} text={userDisplay?.technician?.profile?.education_text} color='#fff' />
-                        <View style={[sty.flexRow, sty.justifyBetween, sty.flex_1, sty.gap_4, sty.itemsCenter]}>
-                            <Image style={{ width: 16, height: 16 }} source={IMAGES.ACCOUNT.locationWhite} />
-                            <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={user?.address} color='#fff' />
+                    {user?.position_id == 1 &&
+                        <View style={[sty.flexRow, sty.justifyBetween, sty.itemsCenter]}>
+                            <TextDisplay styles={[sty.pb_8, sty.flex_1, sty.pt_12]} text={userDisplay?.technician?.profile?.education_text} color='#fff' />
+                            <View style={[sty.flexRow, sty.justifyEnd, sty.flex_1, sty.gap_4, sty.itemsCenter]}>
+                                <Image style={{ width: 16, height: 16 }} source={IMAGES.ACCOUNT.locationWhite} />
+                                <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={user?.address} color='#fff' />
+                            </View>
                         </View>
-                    </View>
+                    }
                     <View style={[sty.flexRow, sty.mt_12]}>
                         <View style={{ flex: 1 }}>
                             <Image source={IMAGES.ACCOUNT.order_completed} style={styles.imageBoard} />
@@ -38,12 +40,12 @@ const BoardInfor = () => {
                         <View style={{ flex: 1 }}>
                             <Image source={IMAGES.ACCOUNT.revenue_img} style={styles.imageBoard} />
                             <TextDisplay styles={[sty.pb_8, sty.pt_12]} text={"Doanh thu"} color='#fff' />
-                            <TextDisplay fontWeight='semibold' fontSize={18} text={formatPrice((Number(userDisplay?.thong_ke_doanh_thu?.summary?.tong_doanh_thu )) || 0)} color='#fff' />
+                            <TextDisplay fontWeight='semibold' fontSize={18} text={formatPrice((Number(userDisplay?.thong_ke_doanh_thu?.summary?.tong_doanh_thu)) || 0)} color='#fff' />
                         </View>
                     </View>
                 </View>
-            </ImageBackground>
-        </View>
+            </ImageBackground >
+        </View >
     )
 }
 

@@ -27,10 +27,6 @@ const RevenuaInformation = () => {
             <KeyboardAvoidingView
                 style={sty.flex_1}
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-                <TouchableOpacity
-                    style={sty.flex_1}
-                    activeOpacity={1}
-                    onPress={Keyboard.dismiss}>
                     <ScrollView
                         contentContainerStyle={[
                             sty.p_16,
@@ -61,7 +57,6 @@ const RevenuaInformation = () => {
                         <BoardInforRevenua></BoardInforRevenua>
                         <ListHistoryOrder />
                     </ScrollView>
-                </TouchableOpacity>
             </KeyboardAvoidingView>
 
         </GradientBackground>

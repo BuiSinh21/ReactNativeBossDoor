@@ -4,6 +4,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 import authReducer from './slices/authSlice';
 import commonReducer from './slices/commonSlice';
 import technicianReducer from './slices/technician';
+import reportOrderReducer from './slices/report';
 
 const persistConfig = {
   key: 'root',
@@ -42,6 +43,7 @@ export const rootReducer = combineReducers({
   // timekeeping: persistReducer(timekeepingPersistConfig, timekeepingReducer),
   // collaborator: collaboratorReducer,
   technician: technicianReducer,
+  report: reportOrderReducer,
   // request: requestReducer,
   // configWifi: configWifiReducer,
   // info: infoReducer,

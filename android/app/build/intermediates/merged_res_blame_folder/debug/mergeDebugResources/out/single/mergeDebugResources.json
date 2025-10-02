@@ -1,46 +1,50 @@
 [
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/drawable_rn_edit_text_material.xml.flat",
-        "source": "com.appbossdoor.app-main-58:/drawable/rn_edit_text_material.xml"
+        "merged": "com.AppBossDoor.app-debug-75:/xml_file_paths.xml.flat",
+        "source": "com.AppBossDoor.app-main-77:/xml/file_paths.xml"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.AppBossDoor.app-debug-75:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.AppBossDoor.app-main-77:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "com.appbossdoor.app-debug-56:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.appbossdoor.app-main-58:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.AppBossDoor.app-debug-75:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.AppBossDoor.app-main-77:/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]

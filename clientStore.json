@@ -1,0 +1,65 @@
+{
+    "name": "Công ty test",
+    "phone_number": "0333004376",
+    "email": "congtytest@gmail.com",
+    "address": "34T Hoàng Đạo Thúy",
+    "is_internal_work_shift": false,
+    "department_ids": [
+        3
+    ],
+    "manager_ids": [
+        318
+    ],
+    "work_shifts": [
+        {
+            "name": "Ca  sáng",
+            "salary_supervisor": 100000,
+            "salary_worker": 100000,
+            "start_time": "08:00",
+            "end_time": "17:00",
+            "end_break_time": "13:00",
+            "start_break_time": "11:30"
+        }
+    ],
+    "overtimes": [
+        {
+            "id": null,
+            "name": "Tăng ca tối",
+            "salary_supervisor": 120000,
+            "salary_worker": 120000,
+            "ranges": [
+                {
+                    "start": "17:00",
+                    "end": "20:00",
+                    "ratio": "10",
+                    "is_percent": true,
+                    "end_break_time": "",
+                    "start_break_time": ""
+                }
+            ]
+        }
+    ],
+    "allowances": [
+        {
+            "name": "Ăn uống",
+            "type": "fixed",
+            "value_worker": 100000,
+            "type_supervisor": "fixed",
+            "value_supervisor": 100000
+        }
+    ],
+    "wifi": [],
+    "gps": [],
+    "work_schedule_config": {
+        "ios_device": {
+            "biometrics_auth": true,
+            "location_auth": true,
+            "check_min_ios_version": true,
+            "min_ios_version": 12
+        },
+        "android_device": {
+            "biometrics_auth": true,
+            "location_auth": true
+        }
+    }
+}

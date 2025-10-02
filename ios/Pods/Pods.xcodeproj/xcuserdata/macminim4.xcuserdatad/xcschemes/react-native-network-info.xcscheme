@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "707AD5584524DC40150B3E4F67DBA39C"
-               BuildableName = "libreact-native-network-info.a"
+               BuildableName = "react_native_network_info.framework"
                BlueprintName = "react-native-network-info"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

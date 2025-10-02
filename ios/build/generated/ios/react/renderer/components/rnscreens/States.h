@@ -8,31 +8,130 @@
  */
 #pragma once
 
-#include <react/renderer/core/StateData.h>
-#ifdef RN_SERIALIZABLE_STATE
+#ifdef ANDROID
 #include <folly/dynamic.h>
 #endif
 
 namespace facebook::react {
 
-using RNSBottomTabsScreenState = StateData;
+class RNSBottomTabsScreenState {
+public:
+  RNSBottomTabsScreenState() = default;
 
-using RNSScreenStackHostState = StateData;
+#ifdef ANDROID
+  RNSBottomTabsScreenState(RNSBottomTabsScreenState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
-using RNSSplitViewHostState = StateData;
+class RNSScreenStackHostState {
+public:
+  RNSScreenStackHostState() = default;
 
-using RNSStackScreenState = StateData;
+#ifdef ANDROID
+  RNSScreenStackHostState(RNSScreenStackHostState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
-using RNSScreenContainerState = StateData;
+class RNSSplitViewHostState {
+public:
+  RNSSplitViewHostState() = default;
 
-using RNSScreenContentWrapperState = StateData;
+#ifdef ANDROID
+  RNSSplitViewHostState(RNSSplitViewHostState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
-using RNSScreenFooterState = StateData;
+class RNSStackScreenState {
+public:
+  RNSStackScreenState() = default;
 
-using RNSScreenNavigationContainerState = StateData;
+#ifdef ANDROID
+  RNSStackScreenState(RNSStackScreenState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
-using RNSScreenStackState = StateData;
+class RNSScreenContainerState {
+public:
+  RNSScreenContainerState() = default;
 
-using RNSSearchBarState = StateData;
+#ifdef ANDROID
+  RNSScreenContainerState(RNSScreenContainerState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
+
+class RNSScreenContentWrapperState {
+public:
+  RNSScreenContentWrapperState() = default;
+
+#ifdef ANDROID
+  RNSScreenContentWrapperState(RNSScreenContentWrapperState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
+
+class RNSScreenFooterState {
+public:
+  RNSScreenFooterState() = default;
+
+#ifdef ANDROID
+  RNSScreenFooterState(RNSScreenFooterState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
+
+class RNSScreenNavigationContainerState {
+public:
+  RNSScreenNavigationContainerState() = default;
+
+#ifdef ANDROID
+  RNSScreenNavigationContainerState(RNSScreenNavigationContainerState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
+
+class RNSScreenStackState {
+public:
+  RNSScreenStackState() = default;
+
+#ifdef ANDROID
+  RNSScreenStackState(RNSScreenStackState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
+
+class RNSSearchBarState {
+public:
+  RNSSearchBarState() = default;
+
+#ifdef ANDROID
+  RNSSearchBarState(RNSSearchBarState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
 } // namespace facebook::react

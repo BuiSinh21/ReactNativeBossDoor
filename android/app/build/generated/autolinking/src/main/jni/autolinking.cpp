@@ -8,7 +8,14 @@
 
 #include "autolinking.h"
 #include <rnclipboard.h>
+#include <RNCGeolocationSpec.h>
+#include <RNCSlider.h>
+#include <react/renderer/components/RNCSlider/ComponentDescriptors.h>
+#include <rncamerakit_specs.h>
+#include <react/renderer/components/rncamerakit_specs/ComponentDescriptors.h>
 #include <RNCConfigModule.h>
+#include <RNDatePickerSpecs.h>
+#include <react/renderer/components/RNDatePickerSpecs/ComponentDescriptors.h>
 #include <rngesturehandler_codegen.h>
 #include <react/renderer/components/rngesturehandler_codegen/ComponentDescriptors.h>
 #include <RNImagePickerSpec.h>
@@ -25,6 +32,8 @@
 #include <react/renderer/components/rnscreens/ComponentDescriptors.h>
 #include <rnsvg.h>
 #include <react/renderer/components/rnsvg/ComponentDescriptors.h>
+#include <RNCWebViewSpec.h>
+#include <react/renderer/components/RNCWebViewSpec/ComponentDescriptors.h>
 
 namespace facebook {
 namespace react {
@@ -34,9 +43,25 @@ auto module_rnclipboard = rnclipboard_ModuleProvider(moduleName, params);
 if (module_rnclipboard != nullptr) {
 return module_rnclipboard;
 }
+auto module_RNCGeolocationSpec = RNCGeolocationSpec_ModuleProvider(moduleName, params);
+if (module_RNCGeolocationSpec != nullptr) {
+return module_RNCGeolocationSpec;
+}
+auto module_RNCSlider = RNCSlider_ModuleProvider(moduleName, params);
+if (module_RNCSlider != nullptr) {
+return module_RNCSlider;
+}
+auto module_rncamerakit_specs = rncamerakit_specs_ModuleProvider(moduleName, params);
+if (module_rncamerakit_specs != nullptr) {
+return module_rncamerakit_specs;
+}
 auto module_RNCConfigModule = RNCConfigModule_ModuleProvider(moduleName, params);
 if (module_RNCConfigModule != nullptr) {
 return module_RNCConfigModule;
+}
+auto module_RNDatePickerSpecs = RNDatePickerSpecs_ModuleProvider(moduleName, params);
+if (module_RNDatePickerSpecs != nullptr) {
+return module_RNDatePickerSpecs;
 }
 auto module_rngesturehandler_codegen = rngesturehandler_codegen_ModuleProvider(moduleName, params);
 if (module_rngesturehandler_codegen != nullptr) {
@@ -74,6 +99,10 @@ auto module_rnsvg = rnsvg_ModuleProvider(moduleName, params);
 if (module_rnsvg != nullptr) {
 return module_rnsvg;
 }
+auto module_RNCWebViewSpec = RNCWebViewSpec_ModuleProvider(moduleName, params);
+if (module_RNCWebViewSpec != nullptr) {
+return module_RNCWebViewSpec;
+}
   return nullptr;
 }
 
@@ -85,6 +114,9 @@ return std::make_shared<NativeMmkvModule>(jsInvoker);
 }
 
 void autolinking_registerProviders(std::shared_ptr<ComponentDescriptorProviderRegistry const> providerRegistry) {
+providerRegistry->add(concreteComponentDescriptorProvider<RNCSliderComponentDescriptor>());
+providerRegistry->add(concreteComponentDescriptorProvider<CKCameraComponentDescriptor>());
+providerRegistry->add(concreteComponentDescriptorProvider<RNDatePickerComponentDescriptor>());
 providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerButtonComponentDescriptor>());
 providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerRootViewComponentDescriptor>());
 providerRegistry->add(concreteComponentDescriptorProvider<RNMapsCalloutComponentDescriptor>());
@@ -141,6 +173,7 @@ providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTextComponentDesc
 providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTextPathComponentDescriptor>());
 providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTSpanComponentDescriptor>());
 providerRegistry->add(concreteComponentDescriptorProvider<RNSVGUseComponentDescriptor>());
+providerRegistry->add(concreteComponentDescriptorProvider<RNCWebViewComponentDescriptor>());
   return;
 }
 

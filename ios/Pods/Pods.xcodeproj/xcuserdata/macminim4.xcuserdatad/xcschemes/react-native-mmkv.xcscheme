@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C8D1A10AEC04F22076B7DE655909079A"
-               BuildableName = "libreact-native-mmkv.a"
+               BuildableName = "react_native_mmkv.framework"
                BlueprintName = "react-native-mmkv"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

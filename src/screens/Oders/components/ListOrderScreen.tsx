@@ -1,4 +1,4 @@
-import { View,  StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import IMAGES from '../../../assets/images'
 import { useNavigation } from '@react-navigation/native';
@@ -13,85 +13,54 @@ import { logoutAPI } from '../../../apis/auth';
 import Tag from '../../../components/Tag';
 import { appColor } from '../../../constant/appColor';
 import LineRow from '../../../components/LineRow';
+import { DetailOrder } from '../../../interfaces/auth';
+import moment from 'moment';
+import { formatPhoneNumber, listOrderServices } from '../../../common/until';
+import { setOrderDetail,  setOrderReportService } from '../../../redux/slices/report';
 
 const ListOrderScreen = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigation<any>();
-    const { user, employee, fcmToken } = useAppSelector(state => state.auth);
-    const list = [
-
-        {
-            code: "FH984HG0",
-            status: 0,
-            title: "Dịch vụ sửa chữa cửa cuốn",
-            name: 'Nguyễn Văn A',
-            phone: "0941.523.644",
-            img: IMAGES.ACCOUNT.listTechnician,
-            address: "123 Đường Lê Duẩn, Phường Khâm Thiên, Quận Đống Đa, Hà Nội, Việt Nam",
-            date: "09:00 - 12/05/2025",
-            amount: "400000"
-        },
-        {
-            code: "FH984HG0",
-            status: 1,
-            title: "Dịch vụ sửa chữa cửa cuốn",
-            name: 'Nguyễn Văn A',
-            phone: "0941.523.644",
-            img: IMAGES.ACCOUNT.listTechnician,
-            address: "123 Đường Lê Duẩn, Phường Khâm Thiên, Quận Đống Đa, Hà Nội, Việt Nam",
-            date: "09:00 - 12/05/2025",
-            amount: "400000"
-        },
-    ]
-
-
-
-    const handleLogout = async () => {
-        try {
-            dispatch(setModalLoading(true));
-            await logoutAPI({ fcm_token: fcmToken as string });
-            dispatch(resetAuthState());
-            navigate.reset({
-                index: 0,
-                routes: [{ name: ROOT_ROUTES.AUTH_STACK }],
-            });
-            dispatch(setModalLoading(false));
-        } catch (error) {
-            dispatch(setModalLoading(false));
-            handleErrorMessage(error);
-        }
-    };
-
+    const { user, userDisplay, fcmToken } = useAppSelector(state => state.auth);
+    const { result } = useAppSelector(state => state.report);
+    const getOrderReportDetail = (order_id: number) => {
+        const getOrder = listOrderServices(result, order_id);
+        dispatch(setOrderReportService(getOrder))
+        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
+            screen: PROFILE_ROUTES.DETAIL_ORDER,
+        })
+    }
+    
     return (
         <View>
-            {list.map((item: any, index: number) => (
+            {userDisplay.lich_su_don_hang?.data.map((item: DetailOrder, index: number) => (
                 <TouchableOpacity
                     key={index}
                     activeOpacity={0.8}
-                    onPress={() =>
-                        navigate.navigate(ROOT_ROUTES.PROFILE_STACK, {
-                            screen: PROFILE_ROUTES.DETAIL_ORDER,
-                        })
+                    onPress={() => {
+                        getOrderReportDetail(item.order_id);
+                        dispatch(setOrderDetail(item));
+                    }
                     }
                 >
                     <View style={[styles.sectionToach]}>
                         <View style={[styles.flexRow]}>
                             <View style={[sty.flexRow]}>
                                 <TextDisplay text={"Đơn hàng:"} />
-                                <TextDisplay fontWeight='bold' color={appColor.textBlack} text={" #" + item.code} />
+                                <TextDisplay fontWeight='bold' fontSize={12} color={appColor.textBlack} text={" #" + item.order_code} />
                             </View>
-                            <Tag bgColor={item.status == 1 ?appColor.bgGreen: appColor.bgOrange} label={item.status == 1 ?"Hoàn thành" :"Đang xử lý"} color={item.status == 1 ? appColor.textGreen : appColor.textOrange}></Tag>
+                            <Tag bgColor={item.status == "hoan_thanh" ? appColor.bgGreen : appColor.bgOrange} label={item.status == "hoan_thanh" ? "Hoàn thành" : "Đang xử lý"} color={item.status == "hoan_thanh" ? appColor.textGreen : appColor.textOrange}></Tag>
                         </View>
-                        <TextDisplay fontWeight='bold' lineHeight={30} fontSize={16} color={appColor.textBlack} text={item?.title} />
+                        <TextDisplay fontWeight='bold' lineHeight={30} fontSize={16} color={appColor.textBlack} text={'Dịch vụ sửa chữa cửa cuốn'} />
 
                         <View style={[sty.flexRow, sty.gap_16, sty.mt_12]}>
                             <Image source={IMAGES.ORDER.locationdefault} style={{ height: 18, width: 14 }} />
                             <View>
                                 <View style={[sty.flexRow, sty.gap_16, sty.mb_8]}>
-                                    <TextDisplay fontSize={15} color={appColor.textBlack} text={item.name} />
-                                    <TextDisplay text={item.phone} />
+                                    <TextDisplay fontSize={15} color={appColor.textBlack} text={item.ten_khach_hang} />
+                                    <TextDisplay text={formatPhoneNumber(item.so_dien_thoai)} />
                                 </View>
-                                <TextDisplay lineHeight={25} text={item.address} />
+                                <TextDisplay lineHeight={25} text={item.dia_chi} />
                             </View>
                         </View>
                         <LineRow />
@@ -99,14 +68,15 @@ const ListOrderScreen = () => {
                         <View style={[sty.flexRow, sty.justifyBetween]}>
                             <View style={[sty.flexRow, sty.gap_16, sty.itemsCenter]}>
                                 <Image style={{ height: 16, width: 16 }} source={IMAGES.ORDER.date} />
-                                <TextDisplay fontSize={13} color={appColor.textBlack} text={item.date} />
+                                <TextDisplay fontSize={13} color={appColor.textBlack} text={moment(item.order_date).format("HH:mm - DD/MM/YYYY")} />
                             </View>
-                            <TextDisplay fontSize={16} fontWeight='bold' color={appColor.primary} text={formatPrice(Number(item.amount)) + " đ"} />
+                            <TextDisplay fontSize={16} fontWeight='bold' color={appColor.primary} text={formatPrice(Number(item.tong_tien)) + " đ"} />
                         </View>
                     </View>
                 </TouchableOpacity>
-            ))}
-        </View>
+            ))
+            }
+        </View >
     )
 }
 

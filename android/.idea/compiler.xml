@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="AppHRM.react-native-clipboard_clipboard" target="21" />
+      <module name="AppHRM.react-native-community_geolocation" target="21" />
+      <module name="AppHRM.react-native-community_slider" target="21" />
+      <module name="AppHRM.react-native-config" target="21" />
+      <module name="AppHRM.react-native-date-picker" target="21" />
+      <module name="AppHRM.react-native-device-info" target="21" />
+      <module name="AppHRM.react-native-file-viewer" target="21" />
+      <module name="AppHRM.react-native-firebase_app" target="21" />
+      <module name="AppHRM.react-native-firebase_auth" target="21" />
+      <module name="AppHRM.react-native-firebase_messaging" target="21" />
+      <module name="AppHRM.react-native-fs" target="21" />
+      <module name="AppHRM.react-native-get-random-values" target="21" />
+      <module name="AppHRM.react-native-image-picker" target="21" />
+      <module name="AppHRM.react-native-linear-gradient" target="21" />
+      <module name="AppHRM.react-native-mmkv" target="21" />
+      <module name="AppHRM.react-native-month-year-picker" target="21" />
+      <module name="AppHRM.react-native-network-info" target="21" />
+      <module name="AppHRM.react-native-reanimated" target="21" />
+      <module name="AppHRM.react-native-svg" target="21" />
+      <module name="AppHRM.react-native-touch-id" target="21" />
+      <module name="AppHRM.react-native-version-check" target="21" />
+      <module name="AppHRM.react-native-worklets" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

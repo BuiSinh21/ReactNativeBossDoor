@@ -23,6 +23,8 @@ export const fetchAllTechnician = createAsyncThunk(
 
 interface TechnicianState {
     result: UserAccount[]
+    totalOrders: number,
+    totalRevenue: number,
     detailTechnician: UserAccountInfor | null,
     isFetching: boolean,
 }
@@ -30,7 +32,9 @@ interface TechnicianState {
 const initialState: TechnicianState = {
     isFetching: true,
     result: [],
-    detailTechnician:null ,
+    totalOrders: 0,
+    totalRevenue: 0,
+    detailTechnician: null,
 };
 
 export const technician = createSlice({
@@ -52,11 +56,13 @@ export const technician = createSlice({
 
         builder.addCase(fetchAllTechnician.fulfilled, (state, action) => {
             state.isFetching = false;
+            state.totalOrders=action.payload?.grand_total_completed_orders;
+            state.totalRevenue=action.payload?.grand_total_revenue;
             state.result = action.payload?.data;
         });
     },
 });
 
-export const { setDetailTechnician} = technician.actions;
+export const { setDetailTechnician } = technician.actions;
 
 export default technician.reducer;

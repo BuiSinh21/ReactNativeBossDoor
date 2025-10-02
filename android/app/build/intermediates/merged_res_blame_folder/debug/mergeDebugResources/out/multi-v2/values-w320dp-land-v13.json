@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.appbossdoor.app-mergeDebugResources-54:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.AppBossDoor.app-mergeDebugResources-73:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/macminim4/.gradle/caches/8.14.3/transforms/90c9cdc579835457692a8001b37f9e22/transformed/material-1.12.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+                    "source": "/Users/macminim4/.gradle/caches/8.13/transforms/3a3a4701cdbaa526f0892cb684367c6d/transformed/material-1.12.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

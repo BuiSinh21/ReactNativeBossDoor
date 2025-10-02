@@ -1,6 +1,6 @@
 import { View, StyleSheet, Image, TouchableOpacity, Dimensions } from 'react-native'
 import React, { useState } from 'react'
-import { useAppDispatch } from '../../../../redux/hooks';
+import { useAppDispatch, useAppSelector } from '../../../../redux/hooks';
 import { useNavigation } from '@react-navigation/core';
 import IMAGES from '../../../../assets/images';
 import sty from '../../../../themes/sty';
@@ -12,6 +12,8 @@ import { IconStar } from '../../../../components/Icons';
 import FormInputText2 from '../../../../components/Form/FormInputText2';
 import PagerView from "react-native-pager-view";
 import { Text } from 'react-native-svg';
+import { formatPhoneNumber } from '../../../../common/until';
+import { Services } from '../../../../interfaces/auth';
 const { width } = Dimensions.get("window");
 
 const InformationDetail = () => {
@@ -21,54 +23,61 @@ const InformationDetail = () => {
     const [startOfEmployee, setStartOfEmployee] = useState<number | undefined>(undefined);
     const [comment, setComment] = useState<string>("");
     const [page, setPage] = useState(0);
-    const [page2, setPage2] = useState(0);
-    const list =
-    {
-        code: "FH984HG0",
-        status: 0,
-        title: "Dịch vụ sửa chữa cửa cuốn",
-        name: 'Nguyễn Văn A',
-        phone: "0941.523.644",
-        img: IMAGES.ACCOUNT.listTechnician,
-        address: "123 Đường Lê Duẩn, Phường Khâm Thiên, Quận Đống Đa, Hà Nội, Việt Nam",
-        date: "09:00 - 12/05/2025",
-        amount: "400000"
-    }
+    const [page2, setPage2] = useState(0)
+    const { orderDetail, orderReportService } = useAppSelector(state => state.report);
 
-    const images = [
-        "https://cdn.pixabay.com/photo/2025/09/12/16/42/dog-9830813_1280.jpg",
-        "https://cdn.pixabay.com/photo/2025/02/05/08/07/man-9383629_1280.jpg",
-        "https://cdn.pixabay.com/photo/2021/12/28/16/11/cathedral-6899648_1280.jpg",
-    ];
+    const totalDoanhThu = (arr: Services[]) => {
+        
+        const total = arr.reduce((sum, record) => {
+            return sum + Number(record?.doanh_thu || 0);
+        }, 0);
+        console.log(total);
+        return total;
+    };
+
     return (
         <View>
             <View style={[styles.sectionToach]}>
-                <TextDisplay fontWeight='bold' lineHeight={30} fontSize={16} color={appColor.textBlack} text={list?.title} />
+                <TextDisplay fontWeight='bold' lineHeight={30} fontSize={16} color={appColor.textBlack} text={"Dịch vụ sửa chữa của cuốn"} />
                 <View style={[sty.flexRow, sty.gap_16, sty.mt_12]}>
                     <Image source={IMAGES.ORDER.locationdefault} style={{ height: 18, width: 14 }} />
                     <View>
-                        <View style={[sty.flexRow, sty.gap_16, sty.mb_8]}>
-                            <TextDisplay fontSize={15} color={appColor.textBlack} text={list.name} />
-                            <TextDisplay text={list.phone} />
+                        <View style={[sty.flexRow, sty.gap_12, sty.mb_8]}>
+                            <TextDisplay fontWeight='bold' fontSize={15}  color={appColor.textBlack} text={orderDetail?.ten_khach_hang} />
+                            <TextDisplay text={formatPhoneNumber(orderDetail?.so_dien_thoai)} />
                         </View>
-                        <TextDisplay lineHeight={25} text={list.address} />
+                        <TextDisplay  text={orderDetail?.dia_chi} />
                     </View>
                 </View>
                 {/*  */}
                 <LineRow />
-                <View style={[sty.flexRow, sty.justifyBetween]}>
-                    <TextDisplay fontSize={13} color={appColor.textGray} text={"Sửa chữa cánh cửa:"} />
-                    <TextDisplay fontSize={14} color={appColor.textBlack} text={formatPrice(Number(list.amount)) + " đ"} />
-                </View>
-                <View style={[sty.flexRow, sty.justifyBetween]}>
-                    <TextDisplay fontSize={13} color={appColor.textGray} text={"Sửa bộ điều khiển:"} />
-                    <TextDisplay fontSize={14} color={appColor.textBlack} text={formatPrice(Number(list.amount)) + " đ"} />
-                </View>
+                {orderReportService && orderReportService?.length > 0 &&
+                    orderReportService.map(item => (
+                        <View key={"key_"+item.service_details_id} style={[sty.flexRow, sty.itemsCenter, sty.justifyBetween, {marginBottom:5, flexWrap: "wrap" }]}>
+                            <View style={{ flex: 3, flexShrink: 1 }}>
+                                <TextDisplay
+                                    fontSize={13}
+                                    color={appColor.textGray}
+                                    text={item.ten_dich_vu + " "}
+                                />
+                            </View>
+                            <View style={{ flex: 2, alignItems: "flex-end" }}>
+                                <TextDisplay
+                                    fontSize={14}
+                                    color={appColor.textBlack}
+                                    fontWeight='bold'
+                                    text={formatPrice(Number(item.doanh_thu)) + " đ"}
+                                />
+                            </View>
+                        </View>
+                    ))
+                }
+
                 <LineRow style={{ marginTop: 20, marginBottom: 10 }} />
                 {/*  */}
                 <View style={[sty.flexRow, sty.justifyBetween]}>
                     <TextDisplay fontSize={14} color={appColor.textGray} text={"Thành tiền: "} />
-                    <TextDisplay fontSize={16} fontWeight='bold' color={appColor.primary} text={formatPrice(Number(397000)) + " đ"} />
+                    <TextDisplay fontSize={16} fontWeight='bold' color={appColor.primary} text={formatPrice(Number(totalDoanhThu(orderReportService))) + " đ"} />
                 </View>
             </View>
 
@@ -106,60 +115,69 @@ const InformationDetail = () => {
             <View style={[styles.sectionToach]}>
                 <View style={styles.container}>
                     <TextDisplay styles={{ marginBottom: 15 }} text={"Tình trạng cửa trước khi sửa"} color={appColor.textBlack} fontWeight='bold' fontSize={16}></TextDisplay>
-                    <PagerView
-                        style={styles.pager}
-                        initialPage={0}
-                        onPageSelected={(e) => setPage(e.nativeEvent.position)}
-                    >
-                        {images.map((uri, index) => (
-                            <View key={index} style={styles.page}>
-                                <Image source={{ uri }} style={styles.image} />
-                            </View>
-                        ))}
-                    </PagerView>
+                    {orderDetail && orderDetail?.after_repair_images?.length > 0 &&
+                        <>
+                            <PagerView
+                                style={styles.pager}
+                                initialPage={0}
+                                onPageSelected={(e) => setPage(e.nativeEvent.position)}
+                            >
+                                {orderDetail?.before_repair_images?.map((uri, index) => (
+                                    <View key={index} style={styles.page}>
+                                        <Image source={{ uri }} style={styles.image} />
+                                    </View>
+                                ))}
+                            </PagerView>
 
-                    {/* indicator */}
-                    <View style={styles.dotContainer}>
-                        {images.map((_, i) => (
-                            <View
-                                key={i}
-                                style={[
-                                    styles.dot,
-                                    { backgroundColor: i === page ? "#007bff" : "#ccc" },
-                                ]}
-                            />
-                        ))}
-                    </View>
+                            {/* indicator */}
+                            <View style={styles.dotContainer}>
+                                {orderDetail?.before_repair_images?.map((_, i) => (
+                                    <View
+                                        key={i}
+                                        style={[
+                                            styles.dot,
+                                            { backgroundColor: i === page ? "#007bff" : "#ccc" },
+                                        ]}
+                                    />
+                                ))}
+                            </View>
+                        </>
+                    }
                 </View>
             </View>
             {/* Tình trạng sau khi sửa */}
             <View style={[styles.sectionToach]}>
                 <View style={styles.container}>
                     <TextDisplay styles={{ marginBottom: 15 }} text={"Tình trạng cửa trước khi sửa"} color={appColor.textBlack} fontWeight='bold' fontSize={16}></TextDisplay>
-                    <PagerView
-                        style={styles.pager}
-                        initialPage={0}
-                        onPageSelected={(e) => setPage2(e.nativeEvent.position)}
-                    >
-                        {images.map((uri, index) => (
-                            <View key={index} style={styles.page}>
-                                <Image source={{ uri }} style={styles.image} />
-                            </View>
-                        ))}
-                    </PagerView>
 
-                    {/* indicator */}
-                    <View style={styles.dotContainer}>
-                        {images.map((_, i) => (
-                            <View
-                                key={i}
-                                style={[
-                                    styles.dot,
-                                    { backgroundColor: i === page2 ? "#007bff" : "#ccc" },
-                                ]}
-                            />
-                        ))}
-                    </View>
+                    {orderDetail && orderDetail?.after_repair_images?.length > 0 &&
+                        <>
+                            <PagerView
+                                style={styles.pager}
+                                initialPage={0}
+                                onPageSelected={(e) => setPage2(e.nativeEvent.position)}
+                            >
+                                {orderDetail?.after_repair_images?.map((uri, index) => (
+                                    <View key={index} style={styles.page}>
+                                        <Image source={{ uri }} style={styles.image} />
+                                    </View>
+                                ))}
+                            </PagerView>
+
+                            {/* indicator */}
+                            <View style={styles.dotContainer}>
+                                {orderDetail?.after_repair_images?.map((_, i) => (
+                                    <View
+                                        key={i}
+                                        style={[
+                                            styles.dot,
+                                            { backgroundColor: i === page2 ? "#007bff" : "#ccc" },
+                                        ]}
+                                    />
+                                ))}
+                            </View>
+                        </>
+                    }
                 </View>
             </View>
 

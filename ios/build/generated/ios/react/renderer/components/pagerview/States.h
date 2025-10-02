@@ -8,13 +8,22 @@
  */
 #pragma once
 
-#include <react/renderer/core/StateData.h>
-#ifdef RN_SERIALIZABLE_STATE
+#ifdef ANDROID
 #include <folly/dynamic.h>
 #endif
 
 namespace facebook::react {
 
-using RNCViewPagerState = StateData;
+class RNCViewPagerState {
+public:
+  RNCViewPagerState() = default;
+
+#ifdef ANDROID
+  RNCViewPagerState(RNCViewPagerState const &previousState, folly::dynamic data){};
+  folly::dynamic getDynamic() const {
+    return {};
+  };
+#endif
+};
 
 } // namespace facebook::react

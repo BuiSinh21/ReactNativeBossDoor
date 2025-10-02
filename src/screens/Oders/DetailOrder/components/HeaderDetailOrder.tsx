@@ -14,6 +14,7 @@ import sty from '../../../../themes/sty';
 import IMAGES from '../../../../assets/images';
 import Tag from '../../../../components/Tag';
 import { appColor } from '../../../../constant/appColor';
+import { useAppSelector } from '../../../../redux/hooks';
 
 interface HeaderBackProps {
   title: string;
@@ -33,6 +34,8 @@ const HeaderDetailOrder = ({
 }: HeaderBackProps) => {
   const navigate = useNavigation<any>();
   const insets = useSafeAreaInsets();
+  const { orderDetail } = useAppSelector(state => state.report);
+
   return (
     <View style={[styles.HeaderBack, { paddingTop: insets.top }, style]}>
       <TouchableOpacity
@@ -54,9 +57,9 @@ const HeaderDetailOrder = ({
         />
         <View style={[sty.flexRow,sty.itemsCenter, sty.gap_8]}>
           <Image source={IMAGES.ORDER.document} style={{ height: 13, width: 11 }}></Image>
-          <TextDisplay text={code_order}></TextDisplay>
+          <TextDisplay text={orderDetail?.order_code}></TextDisplay>
           <Image source={IMAGES.ORDER.dot} style={{ height: 6, width: 6 }}></Image>
-          <Tag bgColor={status == 1 ? appColor.bgGreen : appColor.bgOrange} label={status == 1 ? "Hoàn thành" : "Đang xử lý"} color={status == 1 ? appColor.textGreen : appColor.textOrange}></Tag>
+          <Tag bgColor={orderDetail?.status == "hoan_thanh" ? appColor.bgGreen : appColor.bgOrange} label={orderDetail?.status == "hoan_thanh"? "Hoàn thành" : "Đang xử lý"} color={orderDetail?.status == "hoan_thanh" ? appColor.textGreen : appColor.textOrange}></Tag>
         </View>
       </View>
 

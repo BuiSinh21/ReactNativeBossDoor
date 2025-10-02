@@ -1,12 +1,12 @@
 import axiosBase from '../utils/axiosBase';
 
 export const getAllTechnician = () => {
-  return axiosBase.get('/technician/list_all');
+  return axiosBase.get('/technician');
 };
 
 // export const updateTechnician = (param: any) => {
 //   return axiosBase.put(`/technician`, param);
-// };
+// };S
 
 export const updateTechnician = (params: {
   id: number,
@@ -23,8 +23,6 @@ export const updateTechnicianSupports = (params: {
   error_description?: string;
   image?: string | null;
 }) => {
-  console.log(12121221, params);
-
   return axiosBase.post(`/supports`, params);
 };
 export const showTechniciant = (user_id: number) => {

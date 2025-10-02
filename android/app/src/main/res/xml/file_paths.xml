@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Cho phép chia sẻ file trong cache nội bộ của app -->
+    <cache-path name="cache" path="." />
+    <!-- (Tùy chọn) Nếu sau này bạn lưu ở files/ thay vì cache -->
+    <files-path name="files" path="." />
+    <!-- (Tùy chọn) Nếu bạn lưu ở external files (không khuyến nghị cho trường hợp này) -->
+    <!-- <external-files-path name="external_files" path="." /> -->
+</paths>
