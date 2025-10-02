@@ -17,6 +17,7 @@ const icon_collaborator = require('./icon_collaborator.png');
 const icon_list_request = require('./icon_list_request.png');
 const icon_file = require('./icon_file.png');
 const icon_play = require('./icon-park-solid_play.png');
+const icon_stop = require('./icon_stop.png');
 
 const IMAGES_HOME = {
   icon_notification,
@@ -37,7 +38,8 @@ const IMAGES_HOME = {
   icon_collaborator,
   icon_list_request,
   icon_file,
-  icon_play
+  icon_play,
+  icon_stop
 };
 
 export default IMAGES_HOME;

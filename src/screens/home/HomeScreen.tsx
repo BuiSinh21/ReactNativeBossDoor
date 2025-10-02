@@ -11,6 +11,8 @@ import { fetchOrdersReport } from "../../redux/slices/report";
 import { TextDisplay } from "../../components";
 import IMAGES from "../../assets/images";
 import sty from "../../themes/sty";
+import { appColor } from "../../constant/appColor";
+import { formatPhoneNumber } from "../../common/until";
 
 const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImFlMDgxYTk2OWM4NDRiMTI5Mjg2NmYxOTM0ZWFkYzBkIiwiaCI6Im11cm11cjY0In0=";
 
@@ -19,7 +21,7 @@ const MapScreen = () => {
   const dispatch = useAppDispatch();
   const [routeCoords, setRouteCoords] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [status, setStatus] = useState<boolean>(true);
+  const [status, setStatus] = useState<boolean>(false);
 
   const [origin] = useState({
     latitude: 21.05, // Hồ Tây
@@ -91,12 +93,6 @@ const MapScreen = () => {
 
     }
   };
-  const displayCoords = [
-    { latitude: 21.050000, longitude: 105.816667 }, // Gần Hồ Tây
-    { latitude: 21.040000, longitude: 105.825000 }, // Điểm trung gian 1
-    { latitude: 21.035000, longitude: 105.830000 }, // Điểm trung gian 2
-    { latitude: 21.028611, longitude: 105.854167 }, // Gần Hồ Gươm
-  ];
   useEffect(() => {
     getUserDisplay();
     fetchRoute();
@@ -129,18 +125,52 @@ const MapScreen = () => {
             />
           )}
         </MapView>
-        <View style={styles.buttonContainer}>
-          <View style={[styles.buttonOffline]}>
-            <View style={[styles.offline,sty.flexRow, sty.itemsCenter,{backgroundColor: status ? "#DDF6E2" : "#FFE7E7" }]}>
-              <View style={[styles.dot, {backgroundColor: status ? "#19C43F" : "#FF605D" }]}></View>
-              <TextDisplay text={"Offline"} styles={[styles.offlineText,{color: status ? "#19C43F" : "#FF605D" }]} />
+
+
+        <View style={[sty.flex_1, sty.flexRow, sty.justifyCenter]}>
+          <View style={[styles.sectionToach]}>
+            <TextDisplay fontWeight='bold' lineHeight={30} fontSize={16} color={appColor.textBlack} text={"Dịch vụ sửa chữa của cuốn"} />
+            <View style={[sty.flexRow, sty.flex_1, sty.gap_16, sty.mt_12]}>
+              <Image source={IMAGES.ORDER.locationdefault} style={{ height: 18, width: 14 }} />
+              <View style={{ flex: 1 }}>
+                <View style={[sty.flexRow, sty.gap_12, sty.mb_8]}>
+                  <TextDisplay fontWeight='bold' fontSize={15} color={appColor.textBlack} text={"Nguyễn Văn A"} />
+                  <TextDisplay text={formatPhoneNumber("0941523644")} />
+                </View>
+                <TextDisplay
+                  text={"123 Đường Lê Duẩn, Phường Khâm Thiên, Quận Đống Đa, Hà Nội, Việt Nam"}
+                  styles={{ flexShrink: 1, flexWrap: "wrap" }}
+                />
+              </View>
             </View>
+
           </View>
 
-          <TouchableOpacity style={[styles.button, sty.flexRow, sty.itemsCenter, sty.gap_12, styles.start]}>
-            <Text style={styles.startText}>Bắt đầu làm việc</Text>
-            <Image source={IMAGES.HOME.icon_play} style={{ width: 22, height: 22 }}></Image>
-          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonContainer}>
+          <View style={[styles.buttonOffline]}>
+            <View style={[styles.offline, sty.flexRow, sty.itemsCenter, { backgroundColor: status ? "#DDF6E2" : "#FFE7E7" }]}>
+              <View style={[styles.dot, { backgroundColor: status ? "#19C43F" : "#FF605D" }]}></View>
+              <TextDisplay text={"Offline"} styles={[styles.offlineText, { color: status ? "#19C43F" : "#FF605D" }]} />
+            </View>
+          </View>
+          {
+            status ?
+              <TouchableOpacity
+                onPress={() => setStatus(!status)}
+                activeOpacity={0.9} style={[styles.button, sty.flexRow, sty.itemsCenter, sty.gap_12, styles.stop_working]}>
+                <TextDisplay color="#fff" fontWeight="bold" text={"Kết thúc"} ></TextDisplay>
+                <Image source={IMAGES.HOME.icon_stop} style={{ width: 22, height: 22 }}></Image>
+              </TouchableOpacity>
+              :
+              <TouchableOpacity
+                onPress={() => setStatus(!status)}
+                activeOpacity={0.9} style={[styles.button, sty.flexRow, sty.itemsCenter, sty.gap_12, styles.start]}>
+                <Text style={styles.startText}>Bắt đầu làm việc</Text>
+                <Image source={IMAGES.HOME.icon_play} style={{ width: 22, height: 22 }}></Image>
+              </TouchableOpacity>
+          }
+
         </View>
       </View>
 
@@ -157,6 +187,16 @@ const styles = StyleSheet.create({
   map: {
     width: Dimensions.get("window").width,
     height: Dimensions.get("window").height,
+  },
+  sectionToach: {
+    position: 'absolute',
+    top: "30%",
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    width: "95%",
+    borderColor: '#EDEFF2',
+    borderRadius: 15,
+    padding: 15,
   },
   buttonContainer: {
     position: "absolute",
@@ -192,14 +232,21 @@ const styles = StyleSheet.create({
   },
   offline: {
     borderRadius: 25,
-    paddingVertical:7,
+    paddingVertical: 7,
     paddingHorizontal: 10,
-    justifyContent:"space-around",
+    justifyContent: "space-around",
     backgroundColor: "#FFE7E7",
   },
   start: {
     backgroundColor: "#3683F7",
     shadowColor: '#3683F766',
+    shadowOffset: { width: -2, height: 5 },
+    shadowOpacity: 0.5,
+    shadowRadius: 3,
+  },
+  stop_working: {
+    backgroundColor: "#F4A32A",
+    shadowColor: '#FFB74B66',
     shadowOffset: { width: -2, height: 5 },
     shadowOpacity: 0.5,
     shadowRadius: 3,
@@ -211,10 +258,10 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
-  dot:{
-    width:10,
-    height:10,
-    borderRadius:"100%"
+  dot: {
+    width: 10,
+    height: 10,
+    borderRadius: "100%"
   }
 });
 

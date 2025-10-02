@@ -13,7 +13,7 @@ const DetailOrdersScreen = () => {
 
     return (
         <GradientBackground>
-            <HeaderDetailOrder title='Thông tin đơn hàng' code_order='DV-984HG0' />
+            <HeaderDetailOrder title='Thông tin đơn hàng' />
             <DividerCustom styles={sty.mt_12} />
             <KeyboardAvoidingView
                 style={[sty.flex_1]}
